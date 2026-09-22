@@ -485,25 +485,29 @@
 /* =====================================================================
    NOTES DATA — CVS MODULE
    ===================================================================== */
+
+
+
+
 const NOTES_DATA = [
-  /* ==================== CVS ANATOMY ==================== */
+  /* ==================== ANATOMY ==================== */
   {
     id: "anatomy-gross",
-    subject: "CVS Anatomy",
+    subject: "Anatomy",
     title: "Gross Anatomy — Full Notes",
     icon: "🫀",
     file: "Anatomy.pdf"
   },
   {
     id: "anatomy-histology",
-    subject: "CVS Anatomy",
+    subject: "Anatomy",
     title: "Histology — Full Notes",
     icon: "🔬",
     file: "Histology_Notes.pdf"
   },
   {
     id: "anatomy-embryo",
-    subject: "CVS Anatomy",
+    subject: "Anatomy",
     title: "Embryology — Full Notes",
     icon: "🫁",
     file: "Embryo.pdf"
@@ -525,15 +529,15 @@ const NOTES_DATA = [
     file: "Dr.DocECG.pdf"
   },
 
-  
-  /* ==================== CVS BIOCHEMISTRY ==================== */
+  /* ==================== BIOCHEMISTRY ==================== */
   {
     id: "biochem-doc",
-    subject: "CVS Biochemistry",
+    subject: "Biochemistry",
     title: "Biochemistry — Full Notes",
     icon: "🧬",
     file: "Biochem.pdf"
   },
+
   /* ==================== CVS MICROBIOLOGY ==================== */
   {
     id: "micro-doc",
@@ -543,42 +547,49 @@ const NOTES_DATA = [
     file: "Microbiology_Notes.pdf"
   },
 
-  /* ==================== CVS PATHOLOGY ==================== */
+  /* ==================== PATHOLOGY ==================== */
   {
     id: "patho-doc",
-    subject: "CVS Pathology",
+    subject: "Pathology",
     title: "Pathology — Full Notes",
     icon: "🔬",
     file: "Pathology_Notes.pdf"
   },
 
-  /* ==================== CVS PHARMACOLOGY ==================== */
+  /* ==================== PHARMACOLOGY ==================== */
   {
     id: "pharma-general",
-    subject: "CVS Pharmacology",
+    subject: "Pharmacology",
     title: "Pharmacology — Full Notes",
     icon: "💊",
     file: "Pharma.pdf"
   },
   {
     id: "pharma-hypertension",
-    subject: "CVS Pharmacology",
+    subject: "Pharmacology",
     title: "Pharmacology — Hypertension",
     icon: "🩸",
     file: "Pharma_Hypertension.pdf"
   }
 ];
 
+
+
+
+
+
 const TELEGRAM_URL = "https://t.me/+_SmdJHWESxlhM2Rk";
 
 /* =====================================================================
    QUIZ DATA — CVS EXAMS
    ===================================================================== */
+
 const QUIZ_DATA = [
-   /* ========== ANATOMY 2016 ========== */
+
+  /* ========== ANATOMY 2016 ========== */
   {
     id: "anatomy-2016",
-    subject: "CVS Anatomy",
+    subject: "Anatomy",
     topic: "Cardiovascular",
     year: 2016,
     title: "Anatomy 2016",
@@ -892,6 +903,8 @@ const QUIZ_DATA = [
 
       /* ⬇️ MORE QUESTIONS WILL BE ADDED IN PART 2 — DO NOT CLOSE THE ARRAY YET */
 
+              , // 👈 keep this comma so the array continues
+
       {
         q: "Cardiovascular system is histologically composed of the following tissues, Except:",
         options: [
@@ -1121,7 +1134,7 @@ const QUIZ_DATA = [
   /* ========== ANATOMY 2015 ========== */
   {
     id: "anatomy-2015",
-    subject: "CVS Anatomy",
+    subject: "Anatomy",
     topic: "Cardiovascular",
     year: 2015,
     title: "Anatomy 2015",
@@ -1333,7 +1346,7 @@ const QUIZ_DATA = [
     /* ========== ANATOMY 2018 ========== */
   {
     id: "anatomy-2018",
-    subject: "CVS Anatomy",
+    subject: "Anatomy",
     topic: "Cardiovascular",
     year: 2018,
     title: "Anatomy 2018",
@@ -1608,7 +1621,7 @@ const QUIZ_DATA = [
     /* ========== ANATOMY 2024 (Mixed / General) ========== */
   {
     id: "anatomy-2024",
-    subject: "CVS Anatomy",
+    subject: "Anatomy",
     topic: "Cardiovascular",
     year: 2024,
     title: "Anatomy — Mixed Review",
@@ -1858,7 +1871,6 @@ const QUIZ_DATA = [
 
     ]
   },
-      
 
   /* ========== CVS PHYSIOLOGY ========== */
   {
@@ -1907,7 +1919,7 @@ const QUIZ_DATA = [
   },
 
   /* ========== CVS PATHOLOGY ========== */
- 
+  
     {
     id: "cvs-patho-2018",
     subject: "CVS Pathology",
@@ -3121,10 +3133,10 @@ const QUIZ_DATA = [
   },
 
   /* ========== CVS PHARMACOLOGY ========== */
+ 
 
 
 
-  
 /* ========== CVS PHARMACOLOGY 2014 ========== */
 {
   id: "cvs-pharm-2014",
@@ -4741,283 +4753,7 @@ const QUIZ_DATA = [
 
 
 
-  
-  /* ========== CVS MICROBIOLOGY ========== */
-  {
-    id: "cvs-micro-2014", subject: "CVS Microbiology", topic: "General", year: 2014,
-    title: "CVS Microbiology 2014", icon: "🦠", section: "PLATE I",
-    questions: [
-      { q: "Sample CVS Microbiology 2014 question:",
-        options: [
-          { letter: "A", text: "Option A" }, { letter: "B", text: "Option B" },
-          { letter: "C", text: "Option C" }, { letter: "D", text: "Option D" }, { letter: "E", text: "Option E" }
-        ], correct: "A", explanation: "Explanation for this CVS Microbiology 2014 question." }
-    ]
-  },
-  {
-    id: "cvs-micro-2015", subject: "CVS Microbiology", topic: "General", year: 2015,
-    title: "CVS Microbiology 2015", icon: "🦠", section: "PLATE I",
-    questions: [
-      { q: "Sample CVS Microbiology 2015 question:",
-        options: [
-          { letter: "A", text: "Option A" }, { letter: "B", text: "Option B" },
-          { letter: "C", text: "Option C" }, { letter: "D", text: "Option D" }, { letter: "E", text: "Option E" }
-        ], correct: "A", explanation: "Explanation for this CVS Microbiology 2015 question." }
-    ]
-  },
-  {
-    id: "cvs-micro-2016", subject: "CVS Microbiology", topic: "General", year: 2016,
-    title: "CVS Microbiology 2016", icon: "🦠", section: "PLATE I",
-    questions: [
-      { q: "Sample CVS Microbiology 2016 question:",
-        options: [
-          { letter: "A", text: "Option A" }, { letter: "B", text: "Option B" },
-          { letter: "C", text: "Option C" }, { letter: "D", text: "Option D" }, { letter: "E", text: "Option E" }
-        ], correct: "A", explanation: "Explanation for this CVS Microbiology 2016 question." }
-    ]
-  },
-
-  /* ========== CVS BIOCHEMISTRY ========== */
-  {
-    id: "cvs-biochem-2024",
-    subject: "CVS Biochemistry",
-    topic: "Cardiovascular Biochemistry",
-    year: 2024,
-    title: "CVS Biochemistry 2024",
-    icon: "🧬",
-    section: "Dr. Doc MCQs — Cardiac Markers & Lipoproteins",
-    questions: [
-
-      {
-        q: "During periods of increased energy demand, cardiac muscle cells can switch from predominantly utilizing fatty acids to?",
-        options: [
-          { letter: "A", text: "Ketone bodies" },
-          { letter: "B", text: "Glucose" },
-          { letter: "C", text: "Amino acids" },
-          { letter: "D", text: "Lactate" }
-        ],
-        correct: "B",
-        explanation: "📖 Explanation:<br><br>Under normal conditions with sufficient oxygen, the heart is a \"metabolic omnivore\" but prefers fatty acids (50–70%).<br><br>However, when workload or muscular activity increases significantly, the heart adapts by greatly increasing its consumption of glucose."
-      },
-
-      {
-        q: "Which of the following troponins is most unique to the heart and most commonly used in animals for diagnosis?",
-        options: [
-          { letter: "A", text: "Troponin-B" },
-          { letter: "B", text: "Troponin-C" },
-          { letter: "C", text: "Troponin-I" },
-          { letter: "D", text: "Troponin-T" }
-        ],
-        correct: "C",
-        explanation: "📖 Explanation:<br><br>Cardiac Troponin I (cTnI) is entirely unique to heart tissue and has additional amino acid residues on its N-terminal that are not present in skeletal forms, making it a highly specific biomarker for cardiac injury."
-      },
-
-      {
-        q: "Which of the following statements is true?",
-        options: [
-          { letter: "A", text: "Both Troponin-I and NT-proBNP are functional markers" },
-          { letter: "B", text: "Both Troponin-I and NT-proBNP are leakage markers" },
-          { letter: "C", text: "Troponin-I is a leakage marker and NT-proBNP is a functional marker" },
-          { letter: "D", text: "NT-proBNP is a leakage marker and Troponin-I is a functional marker" }
-        ],
-        correct: "C",
-        explanation: "📖 Explanation:<br><br>Troponins are structural proteins leaked into the blood only when the cell membrane is damaged (infarction).<br><br>In contrast, Natriuretic Peptides (like BNP/NT-proBNP) are hormones actively synthesized and released in response to functional stress, such as volume overload and ventricular wall stretch."
-      },
-
-      {
-        q: "The protein used during muscle contraction, which we monitor for heart health, is called?",
-        options: [
-          { letter: "A", text: "Creatinine kinase" },
-          { letter: "B", text: "Creatinine" },
-          { letter: "C", text: "Creatine kinase" },
-          { letter: "D", text: "Troponin" }
-        ],
-        correct: "D",
-        explanation: "📖 Explanation:<br><br>Troponin is a complex of three regulatory proteins (TnC, TnT, TnI) integral to muscle contraction that regulates the interaction between actin and myosin.<br><br>It is the \"gold standard\" biomarker monitored to detect myocardial injury."
-      },
-
-      {
-        q: "Of the following, which one is false about cardiac muscles?",
-        options: [
-          { letter: "A", text: "Cardiac muscle predominantly relies on aerobic metabolism to generate ATP" },
-          { letter: "B", text: "Cardiac muscle primarily utilizes fatty acids and glucose as energy substrates" },
-          { letter: "C", text: "Fatty acids are the preferred source of energy for cardiac muscle under normal conditions" },
-          { letter: "D", text: "Glucose is the preferred source of energy for cardiac muscle under normal conditions" }
-        ],
-        correct: "D",
-        explanation: "📖 Explanation:<br><br>In a normal resting heart, fatty acids are the primary fuel of choice, providing the majority of energy (50–70%), whereas glucose only provides about 30%."
-      },
-
-      {
-        q: "Which of the following is a likely outcome from release of natriuretic peptides?",
-        options: [
-          { letter: "A", text: "Increase in sodium and water retention" },
-          { letter: "B", text: "Decrease in activation of the renin-angiotensin-aldosterone system" },
-          { letter: "C", text: "Increase in systemic blood pressure" },
-          { letter: "D", text: "Increase in volume overload" }
-        ],
-        correct: "B",
-        explanation: "📖 Explanation:<br><br>Natriuretic peptides (ANP and BNP) act to protect the cardiovascular system from volume overload by inducing natriuresis (sodium loss) and diuresis, and by directly inhibiting the renin-angiotensin-aldosterone system (RAAS) to lower blood pressure."
-      },
-
-      {
-        q: "What is the earliest cardiac marker that can be detected?",
-        options: [
-          { letter: "A", text: "Troponin" },
-          { letter: "B", text: "Creatine kinase-MB" },
-          { letter: "C", text: "Myoglobin" },
-          { letter: "D", text: "Lactate dehydrogenase" }
-        ],
-        correct: "C",
-        explanation: "📖 Explanation:<br><br>Myoglobin is a small protein released very rapidly from damaged muscle, typically within 1 hour of injury, which is earlier than both Troponin (2–3 hours) and CK-MB (4–6 hours)."
-      },
-
-      {
-        q: "Which of the following cardiac biomarkers remains elevated longer after myocardial injury?",
-        options: [
-          { letter: "A", text: "Lactate dehydrogenase" },
-          { letter: "B", text: "Troponin" },
-          { letter: "C", text: "Creatine kinase-MB" },
-          { letter: "D", text: "Myoglobin" }
-        ],
-        correct: "B",
-        explanation: "📖 Explanation:<br><br>While most markers return to baseline within 1–2 days, elevations of Cardiac Troponin I and T can persist in the blood for 5 to 10 days."
-      },
-
-      {
-        q: "In diabetic patients, activity of the enzyme lipoprotein lipase is low. Which of the following lipoproteins are increased in the highest % in the plasma?",
-        options: [
-          { letter: "A", text: "VLDL" },
-          { letter: "B", text: "Chylomicrons" },
-          { letter: "C", text: "Triacylglycerol" },
-          { letter: "D", text: "LDL" }
-        ],
-        correct: "B",
-        explanation: "📖 Explanation:<br><br>Lipoprotein lipase (LPL) is essential for clearing triacylglycerol-rich lipoproteins. When LPL activity is low, chylomicrons (which are 90% triacylglycerol) cannot be hydrolyzed, leading to their dramatic accumulation in the plasma."
-      },
-
-      {
-        q: "Hormone sensitive lipase (HSL) activity is inhibited by the hormone:",
-        options: [
-          { letter: "A", text: "Epinephrine" },
-          { letter: "B", text: "Glucocorticoids" },
-          { letter: "C", text: "Thyroxine" },
-          { letter: "D", text: "None" }
-        ],
-        correct: "D",
-        explanation: "📖 Explanation:<br><br>Epinephrine, glucocorticoids, and thyroxine are catabolic hormones that activate lipolysis.<br><br>The primary inhibitor of HSL is insulin (which is not listed in the options); insulin instead stimulates the storage of fats and the activity of LPL."
-      },
-
-      {
-        q: "Familial Hypercholesterolemia is an autosomal dominant genetic disorder caused by a mutation of the gene that encodes for:",
-        options: [
-          { letter: "A", text: "Apolipoprotein E" },
-          { letter: "B", text: "Apolipoprotein B" },
-          { letter: "C", text: "LDL receptor" },
-          { letter: "D", text: "VLDL receptor" }
-        ],
-        correct: "C",
-        explanation: "📖 Explanation:<br><br>Type IIa hyperlipidemia (Familial Hypercholesterolemia) is characterized by a genetic deficiency of functional LDL receptors, preventing the clearance of LDL from the blood and leading to high cholesterol."
-      },
-
-      {
-        q: "A child with failure to thrive has extremely low plasma cholesterol and triglycerides with no detectable chylomicrons, VLDL, or LDL. Identify the cause:",
-        options: [
-          { letter: "A", text: "Mutation in the gene that codes for ApoB" },
-          { letter: "B", text: "Mutation in the gene that codes for MTP" },
-          { letter: "C", text: "Mutation in the gene that codes for ApoC-II" },
-          { letter: "D", text: "Mutation in the gene that codes for CEPT" }
-        ],
-        correct: "B",
-        explanation: "📖 Explanation:<br><br>Abetalipoproteinemia is caused by a mutation in MTP (microsomal triglyceride transfer protein). Without MTP, ApoB cannot be lipidated, leading to the absence of all ApoB-containing lipoproteins (chylomicrons, VLDL, LDL)."
-      },
-
-      {
-        q: "The class of lipoproteins that is protective against atherosclerosis is:",
-        options: [
-          { letter: "A", text: "High-density lipoproteins" },
-          { letter: "B", text: "Chylomicrons" },
-          { letter: "C", text: "Low-density lipoproteins" },
-          { letter: "D", text: "Very low-density lipoproteins" }
-        ],
-        correct: "A",
-        explanation: "📖 Explanation:<br><br>HDL is the \"good cholesterol\" because it facilitates reverse cholesterol transport, moving excess cholesterol from peripheral tissues back to the liver for disposal."
-      },
-
-      {
-        q: "Tangier disease is a disorder of lipoprotein metabolism. The phenotype corresponds to:",
-        options: [
-          { letter: "A", text: "Low level of VLDL" },
-          { letter: "B", text: "Low level of LDL" },
-          { letter: "C", text: "Low level of IDL" },
-          { letter: "D", text: "Low level of HDL" }
-        ],
-        correct: "D",
-        explanation: "📖 Explanation:<br><br>Tangier disease (Familial alpha-lipoprotein deficiency) is a genetic condition where HDL particles are almost entirely absent from the plasma."
-      },
-
-      {
-        q: "Familial Hypercholesterolemia is a dominant genetic disorder caused by a mutation of the gene that encodes for:",
-        options: [
-          { letter: "A", text: "VLDL receptor" },
-          { letter: "B", text: "Apolipoprotein E" },
-          { letter: "C", text: "Apolipoprotein B" },
-          { letter: "D", text: "LDL receptor" }
-        ],
-        correct: "D",
-        explanation: "📖 Explanation:<br><br>Familial Hypercholesterolemia (Type IIa) is characterized by a genetic deficiency of functional LDL receptors. This prevents the clearance of LDL from the plasma, leading to severely elevated cholesterol levels and accelerated atherosclerosis."
-      },
-
-      {
-        q: "Familial hypertriglycerolemia is associated with:",
-        options: [
-          { letter: "A", text: "Over production of VLDL" },
-          { letter: "B", text: "Increased LDL concentration" },
-          { letter: "C", text: "Increased HDL concentration" },
-          { letter: "D", text: "Slow clearance of chylomicrons" }
-        ],
-        correct: "A",
-        explanation: "📖 Explanation:<br><br>Type IV hyperlipidemia is specifically characterized by the overproduction of endogenous triacylglycerols by the liver, which are carried by increased levels of VLDL."
-      },
-
-      {
-        q: "The HDL is taken up by the hepatocytes via:",
-        options: [
-          { letter: "A", text: "LDL receptor" },
-          { letter: "B", text: "Apo CII receptor" },
-          { letter: "C", text: "Scavenger receptor BI" },
-          { letter: "D", text: "None of the above" }
-        ],
-        correct: "C",
-        explanation: "📖 Explanation:<br><br>The specific molecular name for the receptor that mediates the uptake of cholesteryl esters from HDL in the liver is Scavenger Receptor BI (SR-BI)."
-      },
-
-      {
-        q: "All of the following are causes of hyperlipoproteinemia EXCEPT:",
-        options: [
-          { letter: "A", text: "Familial LCAT deficiency" },
-          { letter: "B", text: "CETP deficiency" },
-          { letter: "C", text: "Deficiency of hepatic lipase" },
-          { letter: "D", text: "Excess of Lp(a)" }
-        ],
-        correct: "B",
-        explanation: "📖 Explanation:<br><br>CETP deficiency is a relatively benign condition that actually results in high \"good\" HDL levels.<br><br>The other options (LCAT deficiency, Hepatic Lipase deficiency, and excess Lp(a)) all lead to pathological elevations of harmful lipid components."
-      },
-
-      {
-        q: "Type I hyperlipidemia is a condition in which hydrolysis of chylomicrons is impaired. Which of the following is WRONG regarding the condition?",
-        options: [
-          { letter: "A", text: "Deficiency of lipoprotein lipase" },
-          { letter: "B", text: "Deficiency of hormones acting on LPL" },
-          { letter: "C", text: "Lack of apo-CIII, which is required as an activator of LPL" },
-          { letter: "D", text: "Mutations in LPL gene or apo CII" }
-        ],
-        correct: "C",
-        explanation: "📖 Explanation:<br><br>This statement is false because Apo C-II, not Apo C-III, is the necessary activator for LPL. Apo C-III actually functions as an inhibitor of the enzyme."
-      }
-
-    ]
-  },
+    /* ========== CVS Biochemistry ========== */
   {
     id: "cvs-biochem-2020",
     subject: "CVS Biochemistry",
@@ -6219,9 +5955,943 @@ const QUIZ_DATA = [
         correct: "D",
         explanation: "📖 Explanation:<br><br>Lp(a) is atherogenic because its Apo(a) component structurally resembles plasminogen and competes for its binding sites, thereby inhibiting (rather than stimulating) the activation of plasminogen to plasmin. This results in antifibrinolytic activity, which prevents the dissolution of blood clots and promotes plaque progression."
       }
+
     ]
   },
+
+
+/* ========== CVS MICROBIOLOGY 2014 ========== */
+
+{
+  id: "cvs-micro-2014",
+  subject: "CVS Microbiology",
+  topic: "Cardiovascular Infections",
+  year: 2014,
+  title: "CVS Microbiology 2014",
+  icon: "🦠",
+  section: "JU Microbiology Exam — 2014",
+  questions: [
+    {
+      q: "Rheumatic Fever usually follows an infection with:",
+      options: [
+        { letter: "A", text: "Streptococcus pyogenes" },
+        { letter: "B", text: "Staphylococcus aureus" },
+        { letter: "C", text: "Streptococcus viridans" },
+        { letter: "D", text: "H. influenzae" }
+      ],
+      correct: "A",
+      explanation: "Answer: A. Streptococcus pyogenes<br><br>Explanation:<br><br>Acute Rheumatic Fever (ARF) follows an upper respiratory tract infection caused by Group A β-hemolytic Streptococcus (GAS).<br><br>Streptococcus pyogenes is the most important GAS species.<br><br>It causes an autoimmune reaction leading to Rheumatic Heart Disease (RHD)."
+    },
+    {
+      q: "Acute and sub-acute endocarditis are caused by which bacteria respectively?",
+      options: [
+        { letter: "A", text: "S. pyogenes, S. aureus" },
+        { letter: "B", text: "S. viridans, S. aureus" },
+        { letter: "C", text: "S. aureus, S. viridans" },
+        { letter: "D", text: "S. viridans, Enterococcus" }
+      ],
+      correct: "C",
+      explanation: "Answer: C. S. aureus, S. viridans<br><br>Explanation:<br><br>- Acute IE → Highly virulent organisms → S. aureus<br>- Subacute IE → Less virulent organisms → Viridans streptococci"
+    },
+    {
+      q: "Which of the following organisms is not commonly implicated in infective endocarditis?",
+      options: [
+        { letter: "A", text: "Streptococcus species" },
+        { letter: "B", text: "Staphylococcus species" },
+        { letter: "C", text: "Enterococcus species" },
+        { letter: "D", text: "Candida species" }
+      ],
+      correct: "D",
+      explanation: "Answer: D. Candida species<br><br>Explanation:<br><br>About 85–90% of infective endocarditis cases are caused by:<br><br>Staphylococci<br>Streptococci<br>Enterococci<br><br>Candida is a rare cause."
+    },
+    {
+      q: "The condition associated with the highest risk of developing infective endocarditis is?",
+      options: [
+        { letter: "A", text: "Mitral valve prolapse with regurgitation" },
+        { letter: "B", text: "Presence of a prosthetic heart valve" },
+        { letter: "C", text: "Rheumatic fever without valvular defects" },
+        { letter: "D", text: "Intravenous drug abuse" }
+      ],
+      correct: "B",
+      explanation: "Answer: B. Presence of a prosthetic heart valve<br><br>Explanation:<br><br>Prosthetic valves provide an ideal surface for:<br><br>Bacterial adhesion<br>Biofilm formation<br>Persistent infection<br><br>Therefore they carry the highest risk."
+    },
+    {
+      q: "Myocarditis & Pericarditis is usually caused by?",
+      options: [
+        { letter: "A", text: "Coxsackie A" },
+        { letter: "B", text: "Coxsackie B" },
+        { letter: "C", text: "Candida species" },
+        { letter: "D", text: "S. pyogenes" }
+      ],
+      correct: "B",
+      explanation: "Answer: B. Coxsackie B<br><br>Explanation:<br><br>Coxsackie B virus is the classic and most common cause of:<br><br>Myocarditis<br>Pericarditis"
+    },
+    {
+      q: "A 64-year-old man with RHD develops symptoms after a dental procedure. Most likely organism and type of endocarditis?",
+      options: [
+        { letter: "A", text: "Viridans streptococci and sub-acute endocarditis" },
+        { letter: "B", text: "S. aureus and acute endocarditis" },
+        { letter: "C", text: "Enterococcus faecalis and subacute endocarditis" },
+        { letter: "D", text: "S. pyogenes and acute endocarditis" }
+      ],
+      correct: "A",
+      explanation: "Answer: A. Viridans streptococci and sub-acute endocarditis<br><br>Explanation:<br><br>Classic Clues:<br><br>Damaged valve (RHD)<br>Recent dental procedure<br>Gradual symptom onset<br><br>Viridans streptococci causing subacute infective endocarditis."
+    },
+    {
+      q: "The prototypic lesion of infective endocarditis composed of platelets, fibrin, microorganisms and inflammatory cells is called:",
+      options: [
+        { letter: "A", text: "Aneurysm" },
+        { letter: "B", text: "Janeway lesion" },
+        { letter: "C", text: "Embolization" },
+        { letter: "D", text: "Vegetation" }
+      ],
+      correct: "D",
+      explanation: "Answer: D. Vegetation<br><br>Explanation:<br><br>Vegetation = Hallmark lesion of IE<br><br>Contains:<br>Platelets<br>Fibrin<br>Bacterial colonies<br>Inflammatory cells"
+    },
+    {
+      q: "All are features of HACEK organisms except:",
+      options: [
+        { letter: "A", text: "Gram negative" },
+        { letter: "B", text: "Fastidious" },
+        { letter: "C", text: "Fast-growing" },
+        { letter: "D", text: "Normal flora of oral cavity" }
+      ],
+      correct: "C",
+      explanation: "Answer: C. Fast-growing<br><br>Explanation:<br><br>HACEK organisms are:<br><br>Gram negative<br>Oral flora<br>Capnophilic<br>Fastidious<br>Slow-growing<br><br>Not fast-growing."
+    },
+    {
+      q: "The underlying mechanism of post-streptococcal rheumatic heart disease is:",
+      options: [
+        { letter: "A", text: "Production of autoimmune antibodies that do not discriminate between M proteins in bacterial cell wall and cardiac muscle" },
+        { letter: "B", text: "Production of pyrogenic exotoxins" },
+        { letter: "C", text: "Massive release of cytokines by T cells and macrophages" },
+        { letter: "D", text: "Formation of biofilm on cardiac muscles" }
+      ],
+      correct: "A",
+      explanation: "Answer: A<br><br>Explanation:<br><br>Molecular Mimicry<br>Anti-M protein antibodies<br>Cross-react with<br>Cardiac tissues<br><br>Result:<br><br>Autoimmune inflammation<br>Rheumatic Heart Disease"
+    },
+    {
+      q: "NOT true about acute rheumatic fever:",
+      options: [
+        { letter: "A", text: "Not directly associated with bacterial dissemination" },
+        { letter: "B", text: "Is associated with streptococcal pharyngitis" },
+        { letter: "C", text: "It forms pancarditis" },
+        { letter: "D", text: "None" }
+      ],
+      correct: "D",
+      explanation: "Answer: D. None<br><br>Explanation:<br><br>ARF is autoimmune<br>Follows streptococcal pharyngitis<br>Causes pancarditis<br>Therefore all statements are true."
+    },
+    {
+      q: "All are features of Coxiella burnetii EXCEPT:",
+      options: [
+        { letter: "A", text: "Phagolysosome multiplication" },
+        { letter: "B", text: "Cause zoonotic disease" },
+        { letter: "C", text: "Obligate intracellular" },
+        { letter: "D", text: "Acute infection manifested as endocarditis" },
+        { letter: "E", text: "None" }
+      ],
+      correct: "D",
+      explanation: "Answer: D<br><br>Explanation:<br><br>Q Fever = Coxiella burnetii<br><br>Zoonotic<br>Obligate intracellular<br>Replicates in phagolysosomes<br><br>Endocarditis occurs in chronic infection, not acute infection."
+    },
+    {
+      q: "The causative agent of Q-fever is:",
+      options: [
+        { letter: "A", text: "Coxsackie A" },
+        { letter: "B", text: "Coxiella burnetii" },
+        { letter: "C", text: "Borrelia burgdorferi" },
+        { letter: "D", text: "None" }
+      ],
+      correct: "B",
+      explanation: "Answer: B. Coxiella burnetii<br><br>Explanation:<br><br>Q-Fever → Coxiella burnetii<br><br>Classic cause of chronic endocarditis."
+    },
+    {
+      q: "Which of the following is not true regarding Enterococcus?",
+      options: [
+        { letter: "A", text: "Common species are E. faecalis and E. faecium" },
+        { letter: "B", text: "It is a cause of peritonitis" },
+        { letter: "C", text: "It is universally susceptible to penicillins" },
+        { letter: "D", text: "Can cause intra-abdominal abscess" }
+      ],
+      correct: "C",
+      explanation: "Answer: C<br><br>Explanation:<br><br>Enterococci are often resistant to:<br><br>Penicillin<br>Vancomycin (VRE)<br><br>Thus they are not universally susceptible."
+    },
+    {
+      q: "ICU (Intensive Care unit) patient with central venous catheter develops persistent bacteremia despite vancomycin. Organism?",
+      options: [
+        { letter: "A", text: "Staph aureus" },
+        { letter: "B", text: "Viridans streptococci" },
+        { letter: "C", text: "Enterococcus faecalis" },
+        { letter: "D", text: "Staphylococcus aureus" },
+        { letter: "E", text: "Staphylococcus epidermidis" }
+      ],
+      correct: "C",
+      explanation: "Answer: C. Enterococcus faecalis<br><br>Explanation:<br><br>- Gram-positive cocci in chains<br>- Catalase negative<br>- Enterococcus<br><br>Persistent infection despite vancomycin suggests VRE."
+    },
+    {
+      q: "Which test would be most useful for diagnosis of rheumatic fever?",
+      options: [
+        { letter: "A", text: "Blood culture" },
+        { letter: "B", text: "Synovial fluid culture" },
+        { letter: "C", text: "Measurement of ASO antibodies" },
+        { letter: "D", text: "Measurement of antistreptokinase antibodies" },
+        { letter: "E", text: "Microscopic examination of subcutaneous skin nodules." }
+      ],
+      correct: "C",
+      explanation: "Answer: C. Measurement of ASO antibodies<br><br>Explanation:<br><br>Elevated ASO titer<br>- Evidence of recent Group A Streptococcal infection.<br><br>Rheumatic Fever Diagnosis:<br><br>ASO (Antistreptolysin O) titer: Measures antibodies against streptolysin O, a toxin produced by Streptococcus pyogenes, confirming a recent throat infection (a required Jones criteria component)."
+    },
+    {
+      q: "Which laboratory diagnosis of Coxsackie B virus is challenging?",
+      options: [
+        { letter: "A", text: "Serological" },
+        { letter: "B", text: "Cell culture" },
+        { letter: "C", text: "Blood culture" },
+        { letter: "D", text: "Molecular" }
+      ],
+      correct: "C",
+      explanation: "Answer: C. Blood culture<br><br>Explanation:<br><br>Coxsackie B virus is an enterovirus, and viruses do not grow in routine blood culture media because they require living cells to replicate. Therefore, blood culture is not a useful diagnostic test.<br><br>A. Serological - Can be used, but interpretation may be difficult because of cross-reactivity and the need for paired sera.<br><br>B. Cell culture - Possible, although it is slow and less commonly used today.<br><br>C. Blood culture - Correct. Routine blood cultures detect bacteria and fungi, not viruses.<br><br>D. Molecular (RT-PCR) - The most sensitive and specific method; widely used for diagnosis.<br><br>For viral infections, remember:<br><br>Blood culture → Not useful<br>PCR (molecular tests) → Best diagnostic method<br>Cell culture → Possible but slow<br>Serology → Useful in some cases, but may have limitations"
+    },
+    {
+      q: "Which of the following is not true about S. aureus?",
+      options: [
+        { letter: "A", text: "Usually causes acute infective endocarditis" },
+        { letter: "B", text: "Commonly causes disease in prosthetic valves" },
+        { letter: "C", text: "Has more virulence factors than S. epidermidis" },
+        { letter: "D", text: "It is a normal flora of the skin" }
+      ],
+      correct: "B",
+      explanation: "Answer: B<br><br>Explanation:<br><br>B is False: While S. aureus can certainly infect prosthetic valves, it is not the most common cause of prosthetic valve endocarditis (PVE).<br><br>Staphylococcus epidermidis (a Coagulase-negative Staphylococcus) is the classic and most common culprit in prosthetic valve infections.<br><br>A is True: S. aureus is the leading cause of acute infective endocarditis, often aggressively attacking native heart valves.<br><br>C is True: S. aureus is highly virulent and possesses a wide array of virulence factors (e.g., coagulase, toxins, protein A). S. epidermidis has a much smaller repertoire of virulence factors and is often referred to as an \"accidental pathogen\".<br><br>D is True: S. aureus is a normal component of the human skin flora (especially in the anterior nares and skin)."
+    },
+    {
+      q: "Not true about subacute infective endocarditis:",
+      options: [
+        { letter: "A", text: "Commonly occurs in damaged valves" },
+        { letter: "B", text: "Caused by less virulent bacteria" },
+        { letter: "C", text: "Can be caused by S. epidermidis" },
+        { letter: "D", text: "Mortality is higher than acute" }
+      ],
+      correct: "D",
+      explanation: "Answer: D<br><br>Explanation:<br><br>Acute IE is:<br><br>More aggressive<br>More destructive<br>Higher mortality<br><br>Subacute IE progresses more slowly."
+    },
+    {
+      q: "Untreated Lyme disease can cause:",
+      options: [
+        { letter: "A", text: "Sub-acute infective endocarditis" },
+        { letter: "B", text: "Acute infective endocarditis" },
+        { letter: "C", text: "Myocarditis" },
+        { letter: "D", text: "None" }
+      ],
+      correct: "C",
+      explanation: "Answer: C. Myocarditis<br><br>Explanation: Lyme disease is caused by Borrelia burgdorferi. Cardiac involvement (Lyme carditis) may occur weeks to months after infection.<br><br>Common manifestations include:<br><br>Myocarditis<br>Pericarditis<br>Reversible complete heart block<br><br>Lyme carditis is the most common cause of reversible complete heart block."
+    },
+    {
+      q: "Coxsackie virus is transmitted by:",
+      options: [
+        { letter: "A", text: "Arthropod" },
+        { letter: "B", text: "Aerosol spread" },
+        { letter: "C", text: "Feco-oral" },
+        { letter: "D", text: "Direct contact" }
+      ],
+      correct: "C",
+      explanation: "Answer: C. Feco-oral<br><br>Explanation: Coxsackie viruses belong to the Enterovirus group.<br><br>Main route of transmission: Feco-oral route<br><br>Less commonly: Respiratory secretions, Direct contact"
+    },
+    {
+      q: "Which organism antigenic shift is its virulence factor?",
+      options: [
+        { letter: "A", text: "Borrelia burgdorferi" },
+        { letter: "B", text: "Coxiella burnetii" },
+        { letter: "C", text: "Coxsackie virus" },
+        { letter: "D", text: "S. aureus" }
+      ],
+      correct: "A",
+      explanation: "Answer: A. Borrelia burgdorferi<br><br>Explanation: Borrelia burgdorferi can alter its surface antigens.<br><br>This allows:<br><br>Immune evasion<br>Persistent infection<br>Chronic disease progression<br><br>Antigenic variation is an important virulence mechanism."
+    },
+    {
+      q: "85% of infective Endocarditis is caused by:",
+      options: [
+        { letter: "A", text: "Staphylococcus, Streptococci & Enterococcus" },
+        { letter: "B", text: "Staphylococcus, HACEK & Enterococcus" },
+        { letter: "C", text: "Streptococci & Enterococcus" },
+        { letter: "D", text: "Staphylococcus & Streptococci" }
+      ],
+      correct: "A",
+      explanation: "Answer: A. Staphylococcus, Streptococci & Enterococcus<br><br>Explanation: Approximately 85–90% of infective endocarditis cases are caused by:<br><br>Staphylococci<br>Streptococci<br>Enterococci<br><br>These three groups account for the overwhelming majority of cases."
+    },
+    {
+      q: "NOT true about Influenza virus:",
+      options: [
+        { letter: "A", text: "Family Orthomyxoviridae" },
+        { letter: "B", text: "Transmitted by respiratory aerosol" },
+        { letter: "C", text: "Usually causes heart disease" },
+        { letter: "D", text: "None" }
+      ],
+      correct: "C",
+      explanation: "Answer: C. Usually causes heart disease<br><br>Explanation:<br><br>Influenza virus belongs to: Family Orthomyxoviridae<br><br>Transmission occurs mainly through:<br><br>Respiratory droplets<br>Aerosol spread<br><br>Cardiac complications such as myocarditis may occur, but they are uncommon, not usual manifestations."
+    },
+    {
+      q: "All are features of S. epidermidis organisms except:",
+      options: [
+        { letter: "A", text: "Gram positive arranged in chain" },
+        { letter: "B", text: "Less virulent than S. aureus" },
+        { letter: "C", text: "Thick peptidoglycan wall" },
+        { letter: "D", text: "Normal flora of the skin" }
+      ],
+      correct: "A",
+      explanation: "Answer: A. Gram positive arranged in chain<br><br>Explanation:<br><br>S. epidermidis is:<br>- Gram positive<br>- Arranged in clusters<br>- Normal skin flora<br>- Less virulent than S. aureus<br><br>Not arranged in chains.<br><br>Chains are more characteristic of Streptococcus and Enterococci."
+    },
+    {
+      q: "Which organism can directly damage target cell?",
+      options: [
+        { letter: "A", text: "Borrelia burgdorferi" },
+        { letter: "B", text: "Coxiella burnetii" },
+        { letter: "C", text: "Coxsackie virus" },
+        { letter: "D", text: "S. aureus" }
+      ],
+      correct: "C",
+      explanation: "Answer: C. Coxsackie virus<br><br>Explanation: Coxsackie viruses are cytolytic viruses.<br><br>After entering host cells they:<br>- Replicate intracellularly<br>- Cause cell lysis<br>- Produce direct tissue destruction<br>- This mechanism is responsible for viral myocarditis."
+    }
+  ]
+},
+
+/* ========== CVS MICROBIOLOGY 2016 (2023 Exam) ========== */
+{
+  id: "cvs-micro-2016",
+  subject: "CVS Microbiology",
+  topic: "Cardiovascular Infections",
+  year: 2016,
+  title: "CVS Microbiology 2016",
+  icon: "🦠",
+  section: "JU Microbiology Exam — 2016 (2023 exam session)",
+  questions: [
+    {
+      q: "Regarding the role of biofilms, select the incorrect role played?",
+      options: [
+        { letter: "A", text: "A biofilm can play a role in preventing phagocytosis" },
+        { letter: "B", text: "Biofilms protects bacteria from disinfectants" },
+        { letter: "C", text: "Biofilms can make many antibiotics less effective" },
+        { letter: "D", text: "A biofilm helps prevent bacteria from attaching to any one specific surface" }
+      ],
+      correct: "D",
+      explanation: "Answer: D. A biofilm helps prevent bacteria from attaching to any one specific surface.<br><br>This statement is false because the primary step in biofilm formation is the adherence of free-floating bacteria to a specific surface.<br><br>Instead of preventing attachment, biofilms actively anchor and lock bacterial communities onto surfaces.<br><br>Why the other options are incorrect:<br><br>a. A biofilm can play a role in preventing phagocytosis:<br><br>This statement is a correct role.<br><br>The thick extracellular polymeric substance (EPS) matrix acts as a physical shield that prevents immune cells like macrophages from engulfing and destroying the bacteria.<br><br>b. Biofilms protects bacteria from disinfectants:<br><br>This statement is a correct role.<br><br>The dense structure of a biofilm slows down or entirely blocks the penetration of harmful chemicals and disinfectants.<br><br>c. Biofilms can make many antibiotics less effective:<br><br>This statement is a correct role.<br><br>Biofilms cause phenotypic resistance by restricting antibiotic penetration, maintaining a low-metabolism core, and sharing resistance genes, making infections highly difficult to treat."
+    },
+    {
+      q: "A 9-year-old boy has been lethargic and irritable for a week. The mother says he had a sore throat 3 weeks ago but did not see a physician because the family lacks health care coverage and \"it wasn't that bad.\" Examination reveals arthritis two joints and a heart murmur. His antistreptolysin O (ASO) titer is elevated. His cardiac findings are most likely due to antibody stimulated by:",
+      options: [
+        { letter: "A", text: "Pyrogenic exotoxin" },
+        { letter: "B", text: "M protein" },
+        { letter: "C", text: "Streptolysin O" },
+        { letter: "D", text: "Lipoteichoic acid" }
+      ],
+      correct: "B",
+      explanation: "Explanation:<br><br>This 9-year-old boy has acute rheumatic fever (ARF), suggested by:<br><br>Sore throat 3 weeks earlier → untreated Group A Streptococcus (Streptococcus pyogenes) pharyngitis<br>Heart murmur (carditis)<br>Migratory arthritis<br>Elevated ASO titer → evidence of a recent streptococcal infection<br><br>These are classic features of ARF.<br><br>Why is M protein the answer?<br><br>The cardiac damage in acute rheumatic fever is caused by molecular mimicry.<br><br>M protein is the major virulence factor of S. pyogenes.<br><br>Antibodies produced against M protein cross-react with proteins in the:<br><br>Heart (myocardium and valves)<br>Joints<br>Brain (causing Sydenham chorea)<br><br>This autoimmune cross-reaction leads to inflammation and tissue damage.<br><br>Carditis in rheumatic fever is caused by antibodies against M protein, not by direct bacterial infection.<br><br>Why the other options are incorrect:<br><br>A. Pyrogenic exotoxin — Causes scarlet fever and contributes to streptococcal toxic shock syndrome. It does not cause rheumatic heart disease.<br><br>C. Streptolysin O — Streptolysin O is a hemolysin. ASO antibodies are used only as a marker of recent infection. They do not cross-react with heart tissue.<br><br>D. Lipoteichoic acid — Helps bacteria adhere to epithelial cells. Not responsible for the autoimmune cardiac lesions of rheumatic fever.<br><br>High-Yield Exam Pearl:<br><br>Untreated Streptococcus pyogenes pharyngitis → Antibodies against M protein (molecular mimicry) → Carditis + Migratory polyarthritis + Sydenham chorea + Erythema marginatum + Subcutaneous nodules."
+    },
+    {
+      q: "A 12-year-old boy showed at a local hospital complaining from a persistent fever and a multiple joint pain. He has a history of rheumatic fever, and a recent tooth extraction. The physician found an echocardiography finding for intracardiac mass. Which of the following is the most common causative agent?",
+      options: [
+        { letter: "A", text: "Staphylococcus aureus." },
+        { letter: "B", text: "Fungi." },
+        { letter: "C", text: "Streptococcus viridans." },
+        { letter: "D", text: "Coxiella burnetii" }
+      ],
+      correct: "C",
+      explanation: "Answer: C. Streptococcus viridans (also known as Viridans group streptococci).<br><br>Pathophysiological Breakdown:<br><br>This clinical scenario describes a classic case of Subacute Infective Endocarditis.<br><br>The Key Steps in the Disease Process:<br><br>[Prior Rheumatic Fever] → Damaged Valve Leaflets (Fibrin/Platelet deposition) → NBTE<br>[Dental Extraction] → Oral Cavity Flora (S. viridans) → Transient Bacteremia in Bloodstream → S. viridans adheres to Fibrin-Platelet Clot on Valve → [Intracardiac Vegetation] (Intracardiac Mass)<br><br>The Predisposing Factor (Damaged Valve):<br><br>The child's history of Rheumatic Fever left behind scarred, damaged valve leaflets (endothelial injury). This rough surface attracts small deposits of platelets and fibrin, creating a fertile ground for bacterial attachment.<br><br>The Trigger (Tooth Extraction):<br><br>Viridans streptococci are normal, commensal bacteria residing in the human oral cavity (mouth). Dental procedures like tooth extraction disrupt the oral mucosa, allowing these bacteria to leak into the bloodstream (transient bacteremia).<br><br>The Molecular Mechanism (Dextrans):<br><br>Streptococcus viridans synthesizes extracellular polysaccharides called dextrans from sucrose. Dextrans act as a powerful bio-adhesive, allowing the bacteria to stick tightly to the fibrin-platelet clots on the damaged heart valve.<br><br>The Vegetation (Intracardiac Mass):<br><br>Once attached, the bacteria proliferate, recruit more platelets and fibrin, and build a protective biofilm, resulting in the intracardiac mass (vegetation) seen on the echocardiogram.<br><br>Why Other Options are Less Likely/Incorrect:<br><br>A. Staphylococcus aureus:<br>S. aureus is a highly virulent organism that causes Acute Infective Endocarditis. It is capable of attacking and destroying completely normal, healthy valves (commonly seen in intravenous drug users). It causes rapid, high-grade fevers and severe valve destruction within days, rather than a slow, subacute course following a dental procedure.<br><br>B. Fungi (e.g., Candida or Aspergillus):<br>Fungal endocarditis is rare and typically seen in patients with prosthetic heart valves, long-term central venous catheters, or severe immunocompromise.<br><br>D. Coxiella burnetii:<br>This organism is the causative agent of Q fever. It is a major cause of culture-negative endocarditis, typically acquired through contact with infected livestock (cattle, sheep, goats) or unpasteurized milk, not dental procedures."
+    },
+    {
+      q: "Which group of microorganisms is often implicated in culture-negative endocarditis cases?",
+      options: [
+        { letter: "A", text: "Streptococcus viridans" },
+        { letter: "B", text: "Coagulase-negative Staphylococci" },
+        { letter: "C", text: "HACEK group organisms" },
+        { letter: "D", text: "Streptococcus pyogenes" }
+      ],
+      correct: "C",
+      explanation: "The correct answer is C. HACEK group organisms.<br><br>1. What is the HACEK Group?<br><br>The HACEK group consists of fastidious, Gram-negative bacilli that are part of the normal oral and upper respiratory flora:<br><br>- H - Haemophilus species (e.g., H. parainfluenza)<br>- A - Aggregatibacter species (A. actinomycetemcomitans)<br>- C - Cardiobacterium hominis<br>- E - Eikenella corrodens<br>- K - Kingella kingae<br><br>2. Why do they cause Culture-Negative Endocarditis?<br><br>These organisms grow very slowly in vitro and require specialized culture conditions (like carbon dioxide-enriched environments or specific growth supplements). In traditional blood culture systems, they often fail to grow within the standard 5-day incubation period, making them the classic causes of culture-negative or fastidious endocarditis.<br><br>Why the Other Options are Incorrect:<br><br>A. Streptococcus viridans: Easily cultured using standard routine blood culture bottles within 24 to 48 hours. It is the most common overall cause of native-valve culture-positive subacute infective endocarditis.<br><br>B. Coagulase-negative Staphylococcus (e.g., S. epidermidis): Readily grow in standard blood culture media. They are a primary cause of culture-positive endocarditis on prosthetic heart valves and indwelling vascular catheters.<br><br>D. Streptococcus pyogenes: Readily grows on basic blood agar plates. It is known for causing pharyngitis and triggering post-infectious autoimmune Rheumatic Fever, rather than directly causing infective endocarditis.<br><br>High-Yield Board Clue:<br><br>Other major causes of true culture-negative endocarditis to remember for exams include intracellular pathogens such as:<br><br>1. Coxiella burnetii (Q fever - contact with livestock/milk).<br>2. Bartonella henselae (Cat scratch disease).<br>3. Tropheryma whipplei (Whipple's disease)."
+    },
+    {
+      q: "Myocarditis is usually caused by:",
+      options: [
+        { letter: "A", text: "Group A Streptococcus" },
+        { letter: "B", text: "Coxsackie B" },
+        { letter: "C", text: "Coxsackie A" },
+        { letter: "D", text: "Mycobacterium" }
+      ],
+      correct: "B",
+      explanation: "The correct answer is B. Coxsackie B.<br><br>Pathophysiological Breakdown:<br><br>Myocarditis is an inflammation of the heart muscle (myocardium) most commonly caused by viral infections.<br><br>Why Coxsackie B is the Primary Cause:<br><br>1. Viral Tropism: Coxsackievirus Group B (a single-stranded RNA enterovirus) is the most classic and common viral cause of infectious myocarditis and pericarditis.<br><br>2. Mechanism of Entry: Coxsackie B viruses have a specific affinity for cardiac muscle cells because cardiomyocytes abundantly express the CAR (Coxsackievirus and Adenovirus Receptor) on their surface.<br><br>3. Cardiomyocyte Destruction: Once inside, the virus causes direct cell lysis (killing the myocytes) and triggers a secondary, heavy T-cell-mediated immune response that further damages the heart wall, potentially leading to Dilated Cardiomyopathy.<br><br>Why the Other Options are Incorrect:<br><br>A. Group A Streptococcus: Causes Acute Rheumatic Fever, which can manifest as pancarditis (affecting endocardium, myocardium, and pericardium) via an autoimmune antibody mechanism (molecular mimicry), but it is not a direct infectious cause of isolated viral myocarditis.<br><br>C. Coxsackie A: Primarily causes Hand-Foot-and-Mouth disease, herpangina, and acute hemorrhagic conjunctivitis. While it can occasionally affect the heart, Coxsackie B is vastly more cardiotropic and heavily associated with heart infections.<br><br>D. Mycobacterium tuberculosis: Classically causes Tuberculous Pericarditis (leading to thick, calcified constrictive pericarditis), rather than isolated primary myocarditis."
+    },
+    {
+      q: "A 62-year-old female patient was admitted to local hospital with fever and chills following cardiac surgery at a major referral specialized teaching hospital. Blood cultures were taken from the patient and a Gram-positive coccus grew within 24 hours. Initial test indicated that the isolate is catalase negative and resistant to penicillin. The most likely identification is:",
+      options: [
+        { letter: "A", text: "S. aureus" },
+        { letter: "B", text: "Enterococcus species" },
+        { letter: "C", text: "Streptococcus pyogenes" },
+        { letter: "D", text: "Streptococcus agalactiae" }
+      ],
+      correct: "B",
+      explanation: "The correct answer is B. Enterococcus species (e.g., Enterococcus faecalis or Enterococcus faecium).<br><br>Microbiological & Clinical Step-by-Step Breakdown:<br><br>1. Lab Clue #1: Gram-Positive Coccus & Catalase Negative<br><br>Catalase Test:<br>- Differentiates Staphylococcus (catalase-positive) from Streptococcus/Enterococci (catalase-negative).<br>- Being catalase-negative immediately rules out Staphylococcus aureus (Option A), as all Staphylococcus produce catalase to break down hydrogen peroxide (H2O2).<br><br>2. Lab Clue #2: Resistance to Penicillin<br><br>Both Streptococcus pyogenes (Group A Strep) and Streptococcus agalactiae (Group B Strep) remain 100% universally susceptible to Penicillin. Penicillin resistance has never naturally emerged in S. pyogenes or S. agalactiae, making Options C and D incorrect.<br><br>Enterococci, on the other hand, possess intrinsic (and acquired) resistance to penicillin and many other β-lactam antibiotics due to low-affinity Penicillin-Binding Proteins (PBPs, specifically PBP5).<br><br>3. Clinical Context: Post-Cardiac Surgery / Nosocomial Infection<br><br>Enterococcus species are normal commensal flora of the gastrointestinal and genitourinary tracts.<br><br>They are major nosocomial (hospital-acquired) pathogens commonly causing catheter-related bloodstream infections, urinary tract infections, and nosocomial infective endocarditis following surgery or invasive instrumentation.<br><br>Enterococcus species are:<br>catalase-negative + Gram-positive cocci + intrinsic or acquired resistance to penicillin + a common cause of healthcare-associated infections like endocarditis after heart surgery."
+    },
+    {
+      q: "The key step in the formation of a multi-layered biofilm essential for the pathogenesis of device-related S. epidermidis infection is:",
+      options: [
+        { letter: "A", text: "Production of clumping factor" },
+        { letter: "B", text: "Production of coagulase" },
+        { letter: "C", text: "Production of urease" },
+        { letter: "D", text: "Adherence to the prosthetic device with the aid of PIA" }
+      ],
+      correct: "D",
+      explanation: "The correct answer is D. Adherence to the prosthetic device with the aid of PIA.<br><br>Microbiological & Pathophysiological Breakdown:<br><br>Staphylococcus epidermidis is a major component of normal human skin flora and the primary cause of infections on foreign prosthetic devices (e.g., artificial heart valves, joint prostheses, indwelling central lines, and urinary catheters).<br><br>Its main virulence factor is its ability to form a dense, protective biofilm.<br><br>1. What is PIA?<br><br>PIA stands for Polysaccharide Intercellular Adhesin also called PNAG (poly-N-acetylglucosamine), is produced by the icaADBC operon.<br><br>2. Mechanism:<br><br>PIA is a sticky extracellular exopolysaccharide that acts as the primary \"glue.\"<br><br>PIA allows:<br><br>1. Adherence to prosthetic devices (initial attachment).<br>2. Bacterial aggregation into multilayered biofilms.<br><br>It allows individual S. epidermidis cells to stick to plastic/metal surfaces and, more importantly, bind to each other to build up thick, multi-layered bacterial communities (biofilm maturation).<br><br>3. Protection from antibiotics and host immune defenses.<br><br>This biofilm is the key pathogenic mechanism in device-related S. epidermidis infections.<br><br>Why the Other Options are Incorrect:<br><br>A. Production of clumping factor: Clumping factor (ClfA/ClfB) is a surface protein produced by Staphylococcus aureus that binds to fibrinogen. S. epidermidis lacks clumping factor.<br><br>B. Production of coagulase: Staphylococcus epidermidis is the classic Coagulase-Negative Staphylococcus (CoNS). It does not produce coagulase (coagulase production is the hallmark test used to identify Staphylococcus aureus).<br><br>C. Production of urease: While S. epidermidis can produce urease (to convert urea to ammonia), this is not the key step in biofilm formation."
+    },
+    {
+      q: "All of the following statements are correct regarding candida myocarditis except:",
+      options: [
+        { letter: "A", text: "Candida organisms rarely adhere to and colonize normal valvular endothelium" },
+        { letter: "B", text: "Intravenous drug use predisposes to the infection" },
+        { letter: "C", text: "Candida spp. may reach the pericardium via direct inoculation at the time of cardiac surgery" },
+        { letter: "D", text: "Hematogenous seeding of the pericardium is the only route of acquisition" }
+      ],
+      correct: "D",
+      explanation: "The correct answer is D. Hematogenous seeding of the pericardium is the only route of acquisition.<br><br>Clinical & Microbiological Breakdown:<br><br>This question asks for the FALSE statement regarding fungal (Candida) cardiac and pericardial infections.<br><br>Why Option D is the Correct \"EXCEPT\" Answer:<br><br>Multiple Routes of Infection:<br><br>While hematogenous spread (fungemia traveling via the bloodstream) is a common pathway, it is NOT the only route. Candida species can reach the pericardium and heart through:<br><br>1. Direct Inoculation: During open-heart surgery, chest trauma, or pericardiocentesis.<br>2. Contiguous Spread: Extension from an adjacent infection in the mediastinum, lungs, or esophagus (e.g., esophageal perforations or severe esophageal candidiasis).<br><br>Why the Other Options are TRUE (Correct Statements):<br><br>A. Candida organisms rarely adhere to and colonize normal valvular endothelium (TRUE):<br>Candida has low inherent virulence on smooth, intact vascular tissue. It requires damaged endothelial surfaces (scarred valves, fibrin deposits) or foreign material (prosthetic valves, central venous lines) to establish an infection.<br><br>B. Intravenous drug use predisposes to the infection (TRUE):<br>IV drug users are at a high risk for fungal endocarditis and myocarditis due to repeated injection of unsterile, contaminated solution or skin flora directly into the venous circulation.<br><br>C. Candida spp. may reach the pericardium via direct inoculation at the time of cardiac surgery (TRUE):<br>Direct contamination during sternotomy or cardiac valve replacement is a well-documented cause of post-operative fungal pericarditis/endocarditis."
+    },
+    {
+      q: "One of the bacteria may not be member of HACEK organisms.",
+      options: [
+        { letter: "A", text: "Hemophilus sps" },
+        { letter: "B", text: "Aggregatibacter sps" },
+        { letter: "C", text: "Cardiobacterium sps" },
+        { letter: "D", text: "Enterobacter sps" },
+        { letter: "E", text: "Kingella sps" }
+      ],
+      correct: "D",
+      explanation: "The correct answer is: D. Enterobacter spp.<br><br>Explanation:<br><br>HACEK organisms are a group of fastidious Gram-negative bacteria that are a well-known cause of culture-negative infective endocarditis.<br><br>The acronym HACEK stands for:<br><br>H - Haemophilus spp. (now includes some organisms reclassified to Aggregatibacter)<br>A - Aggregatibacter spp.<br>C - Cardiobacterium spp.<br>E - Eikenella spp.<br>K - Kingella spp.<br><br>These organisms are:<br><br>Gram-negative bacilli/coccobacilli<br>Part of the normal oral flora<br>An important cause of infective endocarditis, especially culture-negative endocarditis due to their slow growth."
+    },
+    {
+      q: "One of the following is obligate intracellular and spore former:",
+      options: [
+        { letter: "A", text: "B. burgdorferi" },
+        { letter: "B", text: "Viridans streptococci" },
+        { letter: "C", text: "Enterococcus fecalis" },
+        { letter: "D", text: "Coxiella burnetii" }
+      ],
+      correct: "D",
+      explanation: "The correct answer is D. Coxiella burnetii.<br><br>The bacterium Coxiella burnetii is an obligate intracellular pathogen that forms a tough, spore-like small cell variant (SCV) enabling it to survive for long periods in harsh environmental conditions outside the host."
+    },
+    {
+      q: "The HACEK group organisms are responsible for which type of endocarditis?",
+      options: [
+        { letter: "A", text: "Acute endocarditis" },
+        { letter: "B", text: "Subacute endocarditis" },
+        { letter: "C", text: "Prosthetic valve endocarditis" },
+        { letter: "D", text: "Fungal endocarditis" }
+      ],
+      correct: "B",
+      explanation: "The correct answer is B. Subacute endocarditis.<br><br>Clinical & Microbiological Breakdown:<br><br>The HACEK group (Haemophilus, Aggregatibacter, Cardiobacterium, Eikenella, Kingella) consists of low-virulence, fastidious Gram-negative bacteria that are part of the normal human oral and upper respiratory flora.<br><br>Why HACEK organisms cause Subacute (not Acute) Endocarditis:<br><br>1. Indolent, Slow Course:<br>Because these bacteria have low intrinsic virulence, they do not cause rapid tissue destruction. Instead, they cause a slow, insidious, indolent infection that develops over several weeks to months, characterized by low-grade fevers, fatigue, and systemic symptoms—the classic presentation of Subacute Infective Endocarditis.<br><br>2. Pre-existing Valve Disease:<br>Like Viridans streptococci, HACEK organisms generally require preexisting valvular damage (e.g., prior rheumatic heart disease or congenital valve defects) to adhere and establish vegetations.<br><br>3. Culture-Negative Association:<br>They grow very slowly in culture, making them a well-known cause of fastidious/culture-negative subacute endocarditis.<br><br>Why the Other Options are Incorrect:<br><br>A. Acute endocarditis: Characterized by rapid, fulminant destruction of healthy valves over days, typically caused by highly virulent pathogens like Staphylococcus aureus.<br><br>C. Prosthetic valve endocarditis: While HACEK organisms can occasionally infect prosthetic valves, the classic and dominant primary causes of early prosthetic valve endocarditis are Staphylococcus epidermidis and Staphylococcus aureus.<br><br>D. Fungal endocarditis: Caused by fungal pathogens such as Candida or Aspergillus species, not bacteria."
+    },
+    {
+      q: "Which of the following assessments is crucial for the diagnosis of IE?",
+      options: [
+        { letter: "A", text: "Vital signs" },
+        { letter: "B", text: "Hematology tests" },
+        { letter: "C", text: "Erythrocyte sedimentation rate" },
+        { letter: "D", text: "Blood cultures" }
+      ],
+      correct: "D",
+      explanation: "The correct answer is D. Blood cultures.<br><br>Clinical & Diagnostic Breakdown:<br><br>Infective Endocarditis (IE) is diagnosed clinically using the Modified Duke Criteria, which divides findings into Major and Minor criteria.<br><br>Why Blood Cultures are Crucial:<br><br>1. Major Duke Criterion: Obtaining positive blood cultures (showing typical organisms like S. viridans, S. aureus, or Enterococcus in separate sets) is one of the two primary Major Criteria for establishing a definitive diagnosis (the other being an Echocardiogram showing a vegetation/mass).<br><br>2. Pathogen Identification & Targeted Therapy:<br>Blood cultures are essential not only to confirm the diagnosis but also to isolate the specific bacterium and perform antibiotic susceptibility testing, allowing clinicians to select the correct, life-saving IV antibiotic regimen.<br><br>Why the Other Options are Incorrect (Minor/Non-Specific Findings):<br><br>A. Vital signs (e.g., Fever): Fever is common in IE, but it is a non-specific finding (only a Minor Duke Criterion) that occurs in countless other systemic infections.<br><br>B. Hematology tests (e.g., CBC showing leukocytosis): A high white blood cell count indicates inflammation or infection, but it cannot differentiate endocarditis from pneumonia, UTI, or sepsis.<br><br>C. Erythrocyte sedimentation rate (ESR): ESR is an inflammatory marker. While an elevated ESR is part of the immunologic phenomena (a Minor Duke Criterion), it is elevated in nearly any systemic inflammatory or infectious condition and is not specific enough to diagnose IE."
+    },
+    {
+      q: "A 64-year-old male had rheumatic heart disease for thirty-two years. Three months prior to death he began to have episodes of fever and chills accompanied by signs of worsening congestive heart failure. Splinter hemorrhages and purpuric skin rashes were noted three weeks before death. Most cases that present with these findings are caused by:",
+      options: [
+        { letter: "A", text: "Viruses" },
+        { letter: "B", text: "Rickettsiae" },
+        { letter: "C", text: "Fungi" },
+        { letter: "D", text: "Bacteria" }
+      ],
+      correct: "D",
+      explanation: "The correct answer is D. Bacteria.<br><br>This patient is presenting with classic signs and symptoms of infective endocarditis (fever, chills, worsening heart failure, splinter hemorrhages, and purpuric skin rashes) superimposed on chronic rheumatic heart disease, which is most commonly caused by bacterial pathogens such as Streptococcus viridans or Staphylococcus aureus.<br><br>Clinical Reasoning Infective Endocarditis:<br><br>The new-onset fever, chills, and peripheral manifestations (splinter hemorrhages, purpura) in a patient with pre-existing valvular damage (rheumatic heart disease) strongly indicate a microbial infection of the heart valves. Bacterial Etiology: Bacteria account for the vast majority of infective endocarditis cases worldwide, far outnumbering fungi, viruses, or rickettsiae in this specific clinical presentation.<br><br>Clinical & Pathophysiological Breakdown:<br><br>This clinical scenario describes a textbook case of Subacute Infective Endocarditis (SBE) superimposed on chronic Rheumatic Heart Disease (RHD).<br><br>1. Clinical Features Present in the Patient:<br><br>- Pre-existing Valve Damage: 32-year history of Rheumatic Heart Disease (scarred valves, usually mitral or aortic).<br>- Constitutional Symptoms: 3 months of fever, chills, and malaise (indicates an indolent, subacute course).<br>- Cardiac Failure: Worsening congestive heart failure caused by progressive bacterial destruction/perforation of the valve leaflets and chordae tendineae.<br>- Vascular & Immunologic Phenomena:<br>- Splinter Hemorrhages: Linear, dark red streaks under the fingernails caused by micro-emboli breaking off the valvular vegetation and lodging in nail bed capillaries.<br>- Purpuric Skin Rashes: Represents Janeway lesions (painless erythematous macules from septic micro-emboli) or Osler nodes (painful immune-complex mediated nodules).<br><br>2. Etiology:<br><br>More than 80-90% of all cases of Infective Endocarditis are caused by Bacteria:<br><br>1. Viridans group Streptococci (e.g., S. sanguinis, S. mutans) – Most common cause on previously damaged/rheumatic valves following oral/dental procedures.<br>2. Staphylococcus aureus – Most common cause of acute bacterial endocarditis.<br>3. Enterococcus species – Common following GI/GU tract instrumentation.<br><br>Why Other Options are Incorrect:<br><br>- A. Viruses: Viruses cause myocarditis (e.g., Coxsackie B) and pericarditis, but they do not cause classical endocarditis with destructive valvular vegetations and splinter hemorrhages.<br><br>- B. Rickettsiae: Coxiella burnetii (formerly classified with Rickettsiae) can cause culture-negative endocarditis, but it accounts for a tiny fraction (<1–2%) of total endocarditis cases.<br><br>- C. Fungi: Fungal endocarditis (Candida, Aspergillus) is rare (<1–2%), occurring mainly in severely immunocompromised patients, IV drug users, or those with artificial prosthetic valves."
+    },
+    {
+      q: "In this particular patient the most likely causative organism was:",
+      options: [
+        { letter: "A", text: "Group A Staphylococcus" },
+        { letter: "B", text: "Group A Streptococci" },
+        { letter: "C", text: "Viridans Streptococci" },
+        { letter: "D", text: "Group B Streptococci" },
+        { letter: "E", text: "Coxsackie B" }
+      ],
+      correct: "C",
+      explanation: "The correct answer is C. Viridans Streptococci.<br><br>Pathophysiological & Clinical Breakdown:<br><br>This question directly builds on Question #13 (the 64-year-old male with a 32-year history of Rheumatic Heart Disease who developed Subacute Infective Endocarditis).<br><br>Why Viridans Streptococci is the Most Likely Causative Organism:<br><br>1. Subacute Clinical Course (3 Months):<br>The patient experienced an indolent, slowly worsening 3-month course of fever, chills, and heart failure. Viridans streptococci have low intrinsic virulence, producing a slow, subacute infection rather than the rapid, destructive course seen with S. aureus.<br><br>2. Pre-existing Valve Damage:<br>Viridans streptococci cannot easily infect normal, smooth heart valves. However, they readily adhere to previously damaged valve leaflets (like those scarred by chronic Rheumatic Heart Disease) using extracellular dextrans.<br><br>3. Classic Peripheral Signs:<br>The presence of splinter hemorrhages and purpuric lesions reflects long-standing, subacute vegetations releasing micro-emboli over several weeks.<br><br>Why the Other Options are Incorrect:<br><br>A. Group A Staphylococcus: \"Group A\" classification applies to Streptococci (Lancefield classification), not Staphylococcus.<br><br>B. Group A Streptococci (S. pyogenes): Triggers the initial acute rheumatic fever in childhood, but it is not the agent that directly colonizes and infects the damaged valves years later to cause subacute endocarditis.<br><br>D. Group B Streptococci (S. agalactiae): Primarily causes neonatal sepsis, meningitis, and infections in elderly/diabetic patients, not classic subacute endocarditis on rheumatic valves.<br><br>E. Coxsackie B: A virus that causes myocarditis and pericarditis, not bacterial endocarditis."
+    },
+    {
+      q: "A female patient diagnosed with infective endocarditis caused by catalase and coagulase positive bacteria. Which of the following can be the etiology?",
+      options: [
+        { letter: "A", text: "Staphylococcus aureus" },
+        { letter: "B", text: "Fungi" },
+        { letter: "C", text: "Streptococcus viridans" },
+        { letter: "D", text: "Coxiella burnetii" }
+      ],
+      correct: "A",
+      explanation: "The correct answer is A. Staphylococcus aureus.<br><br>Explanation:<br><br>Infectious Endocarditis:<br><br>Staphylococcus aureus is a common and aggressive cause of infective endocarditis, particularly in individuals with intravenous drug use, prosthetic valves, or central venous catheters.<br><br>Catalase Positive:<br>Staphylococcus aureus produces the enzyme catalase, which breaks down hydrogen peroxide. This is a key test to differentiate staphylococci from streptococci.<br><br>Coagulase Positive:<br>Staphylococcus aureus produces the enzyme coagulase, which clots plasma. This is a crucial test to differentiate Staphylococcus aureus from other staphylococci (like Staphylococcus epidermidis).<br><br>Let's quickly review why the other options are incorrect:<br><br>C. Streptococcus viridans: While it causes infective endocarditis, Streptococcus viridans is catalase negative and coagulase negative.<br><br>D. Coxiella burnetii: It causes Q fever endocarditis, but Coxiella burnetii is coagulase negative (it's an obligate intracellular bacterium and doesn't produce this enzyme).<br><br>B. Fungi: Fungi can cause endocarditis, but they do not produce coagulase."
+    },
+    {
+      q: "A 46-year-old male presents to a hospital with fever and chills. He has a history of valve replacement surgery. The doctor did an x-ray on him and found a calcification around the prosthetic valve. He diagnosed him as a late prosthetic valve infective endocarditis. Which of the following bacteria contributes to the infection?",
+      options: [
+        { letter: "A", text: "Enterococcus faecalis." },
+        { letter: "B", text: "Brucella species." },
+        { letter: "C", text: "Streptococcus viridans" },
+        { letter: "D", text: "Coxiella burnetii" }
+      ],
+      correct: "C",
+      explanation: "The correct answer is C. Streptococcus viridans, which is a primary cause of late prosthetic valve infective endocarditis along with Staphylococcus aureus.<br><br>Key Facts on Prosthetic Valve Endocarditis (PVE):<br><br>Early PVE (occurring within 2 months to 1 year of surgery) is usually caused by nosocomial or skin contaminants like Staphylococcus epidermidis or Staphylococcus aureus.<br><br>Late PVE (occurring more than 12 months after surgery) resembles community-acquired native valve endocarditis, with Streptococcus viridans and Staphylococcus aureus being the major contributing pathogens.<br><br>Coxiella burnetii and Brucella species are rare, fastidious causes of culture-negative endocarditis, but not the classic community-acquired etiology matching this typical presentation."
+    },
+    {
+      q: "Q-fever that is caused by Coxiella burnetii is associated with:",
+      options: [
+        { letter: "A", text: "Subacute bacterial endocarditis" },
+        { letter: "B", text: "Fulminant acute bacterial endocarditis" },
+        { letter: "C", text: "IVDU endocarditis" },
+        { letter: "D", text: "Chronic endocarditis" }
+      ],
+      correct: "D",
+      explanation: "Q-fever caused by Coxiella burnetii is classically associated with chronic endocarditis.<br><br>Clinical Associations:<br><br>Chronic Q Fever: Endocarditis is the most common and severe manifestation of chronic Q fever, accounting for 60% to 78% of all chronic cases.<br><br>Risk Factors: It occurs almost exclusively in patients with pre-existing heart valve defects, vascular lesions, or compromised immune systems.<br><br>Culture-Negative: Coxiella burnetii is an obligate intracellular bacterium, making it a leading cause of blood culture-negative infective endocarditis.<br><br>Explanation:<br><br>Q fever is caused by Coxiella burnetii, an obligate intracellular Gram-negative bacterium.<br><br>Acute Q fever usually presents with: Fever, Pneumonia, Hepatitis<br><br>A. Subacute bacterial endocarditis: Although Q fever endocarditis has a slow, indolent course similar to subacute endocarditis, Coxiella burnetii is not a bacterium causing \"subacute bacterial endocarditis\" in the classic classification (which usually refers to organisms like viridans streptococci and Enterococcus faecalis). It is specifically described as chronic Q fever endocarditis.<br><br>B. Fulminant acute bacterial endocarditis: Typically caused by Staphylococcus aureus.<br><br>C. IVDU endocarditis: Most commonly caused by Staphylococcus aureus."
+    },
+    {
+      q: "Which of the following is not true about S. aureus?",
+      options: [
+        { letter: "A", text: "Usually causes acute infective endocarditis" },
+        { letter: "B", text: "Commonly cause disease in patients with prosthetic valve" },
+        { letter: "C", text: "It has more virulent factor than S. epidermidis" },
+        { letter: "D", text: "It is a normal flora of the skin" }
+      ],
+      correct: "B",
+      explanation: "The correct answer is B. Commonly cause disease in patients with prosthetic valve.<br><br>Breakdown of the Options:<br><br>A. Usually causes acute infective endocarditis (True):<br>Staphylococcus aureus is highly virulent and classically causes a rapid, aggressive form of acute infective endocarditis, frequently destroying healthy, normal heart valves.<br><br>B. Commonly cause disease in patients with prosthetic valve (False / Not True):<br>While S. aureus can certainly infect prosthetic valves, Staphylococcus epidermidis (and other coagulase-negative staphylococci) is historically the most common and classic cause of early-onset prosthetic valve endocarditis. It is highly virulent and can infect both normal and damaged heart valves.<br><br>C. It has more virulent factors than S. epidermidis (True):<br>S. aureus possesses an extensive arsenal of aggressive toxins (like alpha-toxin and PVL) and enzymes (like coagulase). Conversely, S. epidermidis is an opportunistic pathogen whose primary virulence mechanism relies mostly on forming biofilms on medical hardware.<br><br>D. It is a normal flora of the skin (True):<br>S. aureus routinely colonizes human skin and mucous membranes (especially the anterior nares) as part of our normal or transient bacterial flora."
+    },
+    {
+      q: "Which of the following laboratory diagnosis of Coxsackie B virus is challenging?",
+      options: [
+        { letter: "A", text: "Serological" },
+        { letter: "B", text: "Cell culture" },
+        { letter: "C", text: "Blood culture" },
+        { letter: "D", text: "Molecular" }
+      ],
+      correct: "C",
+      explanation: "The correct answer is C. Blood culture.<br><br>Because Coxsackie B is a virus and cannot grow on standard bacteriological blood culture media, making routine blood culture ineffective for viral isolation.<br><br>Coxsackie B virus is an RNA enterovirus that can cause:<br><br>Molecular tests (like RT-PCR) and cell cultures using specialized lines or serological antibody pair testing are the actual practical modalities used for identification instead.<br><br>Laboratory diagnosis:<br><br>A. Serological → Possible: Detection of specific IgM antibodies or a rising IgG titer can support the diagnosis. It may be challenging because of cross-reactivity among enteroviruses, but it is still used.<br><br>B. Cell culture → Possible but difficult: The virus can be isolated in cell culture, although this is slow and less commonly used today.<br><br>C. Blood culture → Correct answer: Blood culture is used to grow bacteria, not viruses. Viruses require living cells for replication and cannot grow on routine blood culture media.<br><br>D. Molecular → Best current method: RT-PCR is the most sensitive and rapid method for detecting Coxsackie B viral RNA in blood, cerebrospinal fluid, or tissue."
+    },
+    {
+      q: "Which organism can directly damage target cell:",
+      options: [
+        { letter: "A", text: "B. burgdorferi" },
+        { letter: "B", text: "Coxiella burnetii" },
+        { letter: "C", text: "Coxsackie virus" },
+        { letter: "D", text: "S. aureus" }
+      ],
+      correct: "C",
+      explanation: "Answer: C. Coxsackie virus<br><br>Explanation:<br><br>A. Borrelia burgdorferi — Causes Lyme disease. Cardiac damage (Lyme carditis) is mainly due to inflammation, not direct cytopathic effects.<br><br>B. Coxiella burnetii — Causes Q fever and chronic endocarditis. It survives intracellularly but does not typically cause direct cytopathic destruction of myocardial cells.<br><br>C. Coxsackie B virus — Correct. It is the most common viral cause of myocarditis. It directly infects and lyses cardiac myocytes, causing direct cytopathic damage. In addition, it can trigger an immune-mediated response that contributes to myocardial injury.<br><br>D. Staphylococcus aureus — Causes infective endocarditis through infection and toxin production, not by directly infecting and destroying cardiac muscle cells.<br><br>Coxsackie virus, which can directly damage target cells through lytic viral replication, viral protein toxicity, and induction of apoptosis.<br><br>Coxsackie virus: Directly invades and lyses host cells (such as myocardial or pancreatic beta cells), inhibiting host macromolecular synthesis and causing direct cytopathic damage.<br><br>B. burgdorferi, Coxiella burnetii, and S. aureus: While they cause severe tissue pathology, their mechanisms often involve toxin production, intracellular niche survival, or triggering extensive indirect immunopathological and inflammatory host responses rather than direct single-cell viral cytopathic destruction."
+    }
+  ]
+},
+
+/* ========== CVS MICROBIOLOGY 2018 ========== */
+{
+  id: "cvs-micro-2018",
+  subject: "CVS Microbiology",
+  topic: "Cardiovascular Infections",
+  year: 2018,
+  title: "CVS Microbiology 2018",
+  icon: "🦠",
+  section: "JU Microbiology Exam — 2018",
+  questions: [
+    {
+      q: "A female patient is diagnosed with infective endocarditis. Blood culture reveals a Gram-positive coccus that is part of the normal oral flora and is commonly associated with infective endocarditis following dental procedures. Which of the following is the most likely cause?",
+      options: [
+        { letter: "A", text: "Fungi" },
+        { letter: "B", text: "Streptococcus viridans" },
+        { letter: "C", text: "Coxiella burnetii" },
+        { letter: "D", text: "Staphylococcus aureus" }
+      ],
+      correct: "B",
+      explanation: "Correct Answer: B. Streptococcus viridans<br><br>Explanation:<br><br>Streptococcus viridans is a Gram-positive, alpha-hemolytic coccus that normally inhabits the oral cavity. It is the classic cause of subacute infective endocarditis, especially after dental procedures or in patients with pre-existing damaged heart valves.<br><br>Fungi (e.g., Candida species) can cause infective endocarditis but are not Gram-positive bacteria.<br><br>Coxiella burnetii is a Gram-negative intracellular bacterium that causes Q fever endocarditis, not a Gram-positive organism.<br><br>Staphylococcus aureus is also a Gram-positive coccus and is a major cause of acute infective endocarditis, particularly in intravenous drug users or healthcare-associated infections. It is not associated with normal oral flora or dental procedures, so it is not the best answer to this corrected question."
+    },
+    {
+      q: "A patient with rheumatic heart disease develops fever, a new heart murmur, and blood cultures positive for Enterococcus faecium. What is the most likely source of the infection?",
+      options: [
+        { letter: "A", text: "Skin wound" },
+        { letter: "B", text: "Dental extraction" },
+        { letter: "C", text: "Urinary tract" },
+        { letter: "D", text: "Intravenous drug use" }
+      ],
+      correct: "C",
+      explanation: "Correct Answer: C. Urinary tract<br><br>Explanation:<br><br>Enterococcus faecium is part of the normal flora of the gastrointestinal tract and can also colonize the genitourinary tract.<br><br>It is a common cause of urinary tract infections (UTIs), especially in hospitalized patients, elderly individuals, or those with urinary catheters.<br><br>From the urinary tract, it can enter the bloodstream and cause infective endocarditis, particularly in patients with pre-existing valvular heart disease such as rheumatic heart disease.<br><br>Why the other options are incorrect:<br><br>A. Skin wound — More commonly associated with Staphylococcus aureus.<br><br>B. Dental extraction — Classically associated with Viridans streptococci infective endocarditis.<br><br>D. Intravenous drug use — Most commonly associated with Staphylococcus aureus infective endocarditis, especially affecting the tricuspid valve.<br><br>Key Exam Point:<br><br>Viridans streptococci → Dental procedures/oral cavity<br>Enterococcus faecium/faecalis → Urinary or gastrointestinal tract<br>Staphylococcus aureus → Skin infections and intravenous drug use<br>HACEK organisms → Oral flora, culture-negative or subacute endocarditis in some cases."
+    },
+    {
+      q: "Which of the following is a characteristic feature of infective endocarditis caused by Staphylococcus aureus?",
+      options: [
+        { letter: "A", text: "It usually has an indolent course with slow progression." },
+        { letter: "B", text: "It typically affects only previously abnormal heart valves." },
+        { letter: "C", text: "It is associated with rapid valve destruction and an acute clinical course." },
+        { letter: "D", text: "It is rarely seen in intravenous drug users." }
+      ],
+      correct: "C",
+      explanation: "Correct Answer: C. It is associated with rapid valve destruction and an acute clinical course.<br><br>Explanation:<br><br>Staphylococcus aureus is the most common cause of acute infective endocarditis.<br><br>It is a highly virulent organism that can infect both normal and damaged heart valves, causing rapid tissue destruction, severe valve damage, and complications such as heart failure.<br><br>A. Incorrect: An indolent, slow course is more typical of Streptococcus viridans.<br><br>B. Incorrect: S. aureus can infect normal as well as abnormal valves.<br><br>C. Correct: It causes acute infective endocarditis with rapid valve destruction.<br><br>D. Incorrect: S. aureus is commonly associated with infective endocarditis in intravenous drug users, especially involving the tricuspid valve.<br><br>High-yield Exam Point:<br><br>Acute IE: Staphylococcus aureus → rapid onset, highly destructive, normal or abnormal valves.<br><br>Subacute IE: Streptococcus viridans → slow progression, usually affects previously damaged valves."
+    },
+    {
+      q: "Which of the following statements is NOT correct regarding prosthetic valve endocarditis (PVE)?",
+      options: [
+        { letter: "A", text: "Early PVE occurs within the first 12 months after valve surgery and is commonly caused by coagulase-negative staphylococci, Staphylococcus aureus, Gram-negative bacilli, or fungi." },
+        { letter: "B", text: "Late PVE occurs after 12 months or more after valve surgery and is usually caused by oral streptococci, enterococci, or coagulase-negative staphylococci." },
+        { letter: "C", text: "Fever, bacteremia, and a cardiac murmur typically occur after embolization." },
+        { letter: "D", text: "Perivalvular leaks are serious complications of PVE." }
+      ],
+      correct: "C",
+      explanation: "Correct Answer: C. Fever, bacteremia, and a cardiac murmur typically occur after embolization.<br><br>Explanation:<br><br>The classic clinical manifestations of prosthetic valve endocarditis include fever, persistent bacteremia, and a new or changing cardiac murmur. Embolization is a complication of infective endocarditis and may occur at any stage of the disease—it is not a prerequisite for these clinical findings."
+    },
+    {
+      q: "Which Gram-negative bacilli are part of the HACEK group causing culture-negative endocarditis?",
+      options: [
+        { letter: "A", text: "Haemophilus, Actinobacillus, Cardiobacterium" },
+        { letter: "B", text: "Haemophilus, Acinetobacter, Campylobacter" },
+        { letter: "C", text: "Hemophilus, Aeromonas, Citrobacter, Enterobacter, Klebsiella" },
+        { letter: "D", text: "Haemophilus, Actinomyces, Clostridium, Escherichia, Klebsiella" }
+      ],
+      correct: "A",
+      explanation: "Answer: A. Haemophilus, Actinobacillus, Cardiobacterium"
+    },
+    {
+      q: "Which organism is associated with culture-negative endocarditis?",
+      options: [
+        { letter: "A", text: "Staphylococcus aureus" },
+        { letter: "B", text: "HACEK group" },
+        { letter: "C", text: "Streptococcus pyogenes" },
+        { letter: "D", text: "Escherichia coli" }
+      ],
+      correct: "B",
+      explanation: "Answer: B. HACEK group"
+    }
+  ]
+},
+
+/* ========== CVS MICROBIOLOGY 2016 (Dr. Doc session — key principles) ========== */
+{
+  id: "cvs-micro-2016b",
+  subject: "CVS Microbiology",
+  topic: "Cardiovascular Infections",
+  year: 2016,
+  title: "CVS Microbiology — Key Principles",
+  icon: "🦠",
+  section: "Dr. Doc — Microbiology Exam Session",
+  questions: [
+    {
+      q: "Not true about Sub-acute infective endocarditis:",
+      options: [
+        { letter: "A", text: "Commonly occurs in previously damaged valves" },
+        { letter: "B", text: "Caused by less virulent organisms" },
+        { letter: "C", text: "Can be caused by S. epidermidis" },
+        { letter: "D", text: "Mortality rate is higher than acute" }
+      ],
+      correct: "D",
+      explanation: "Answer: D<br><br>Explanation:<br><br>Acute infective endocarditis has much higher mortality than subacute infective endocarditis."
+    },
+    {
+      q: "Which of the following is not true about S. aureus?",
+      options: [
+        { letter: "A", text: "Usually causes acute infective endocarditis" },
+        { letter: "B", text: "Commonly causes disease in prosthetic valves" },
+        { letter: "C", text: "Has more virulence factors than S. epidermidis" },
+        { letter: "D", text: "It is a normal flora of the skin" }
+      ],
+      correct: "B",
+      explanation: "Answer is B. Commonly causes disease in prosthetic valves.<br><br>Here is why:<br><br>B is False: While S. aureus can certainly infect prosthetic valves, it is not the most common cause of prosthetic valve endocarditis (PVE).<br><br>Staphylococcus epidermidis (a Coagulase-negative Staphylococcus) is the classic and most common culprit in prosthetic valve infections.<br><br>A is True: S. aureus is the leading cause of acute infective endocarditis, often aggressively attacking native heart valves.<br><br>C is True: S. aureus is highly virulent and possesses a wide array of virulence factors (e.g., coagulase, toxins, protein A). S. epidermidis has a much smaller repertoire of virulence factors and is often referred to as an \"accidental pathogen\".<br><br>D is True: S. aureus is a normal component of the human skin flora (especially in the anterior nares and skin)."
+    },
+    {
+      q: "ICU patient with central venous catheter develops fever. Blood culture shows Gram-positive cocci in chains, catalase negative, persistent despite vancomycin. Most likely organism:",
+      options: [
+        { letter: "A", text: "Staph aureus" },
+        { letter: "B", text: "Enterococcus faecalis" },
+        { letter: "C", text: "Viridans streptococci" },
+        { letter: "D", text: "S. epidermidis" }
+      ],
+      correct: "B",
+      explanation: "Answer: Enterococcus faecalis.<br><br>Explanation:<br><br>Gram-positive cocci in chains + catalase negative + hospital infection = Enterococcus faecalis."
+    },
+    {
+      q: "Rheumatic Fever usually follows an infection with:",
+      options: [
+        { letter: "A", text: "Streptococcus pyogenes" },
+        { letter: "B", text: "Staphylococcus aureus" },
+        { letter: "C", text: "Streptococcus viridans" },
+        { letter: "D", text: "H. influenzae" }
+      ],
+      correct: "A",
+      explanation: "Answer: A. Streptococcus pyogenes<br><br>Explanation:<br><br>Acute Rheumatic Fever (ARF) follows an upper respiratory tract infection caused by Group A β-hemolytic Streptococci (GAS).<br><br>Streptococcus pyogenes is the most important GAS species.<br><br>It causes an autoimmune reaction leading to Rheumatic Heart Disease (RHD)."
+    },
+    {
+      q: "Acute and sub-acute endocarditis are caused by which bacteria respectively?",
+      options: [
+        { letter: "A", text: "S. pyogenes, S. aureus" },
+        { letter: "B", text: "S. viridans, S. aureus" },
+        { letter: "C", text: "S. aureus, S. viridans" },
+        { letter: "D", text: "S. viridans, Enterococcus" }
+      ],
+      correct: "C",
+      explanation: "Answer: C. S. aureus, S. viridans<br><br>Explanation:<br><br>- Acute IE → Highly virulent organisms → S. aureus<br>- Subacute IE → Less virulent organisms → Viridans streptococci"
+    },
+    {
+      q: "Which of the following organisms is not commonly implicated in infective endocarditis?",
+      options: [
+        { letter: "A", text: "Streptococcus species" },
+        { letter: "B", text: "Staphylococci species" },
+        { letter: "C", text: "Enterococcus species" },
+        { letter: "D", text: "Candida species" }
+      ],
+      correct: "D",
+      explanation: "Answer: D. Candida species<br><br>Explanation:<br><br>About 85–90% of infective endocarditis cases are caused by:<br><br>Staphylococci<br>Streptococci<br>Enterococci<br><br>Candida is a rare cause."
+    },
+    {
+      q: "The condition associated with the highest risk of developing infective endocarditis is?",
+      options: [
+        { letter: "A", text: "Mitral valve prolapse with regurgitation" },
+        { letter: "B", text: "Presence of a prosthetic heart valve" },
+        { letter: "C", text: "Rheumatic fever without valvular defects" },
+        { letter: "D", text: "Intravenous drug abuse" }
+      ],
+      correct: "B",
+      explanation: "Answer: B. Presence of a prosthetic heart valve<br><br>Explanation:<br><br>Prosthetic valves provide an ideal surface for:<br><br>Bacterial adhesion<br>Biofilm formation<br>Persistent infection<br><br>Therefore they carry the highest risk."
+    },
+    {
+      q: "Myocarditis & Pericarditis is usually caused by?",
+      options: [
+        { letter: "A", text: "Coxsackie A" },
+        { letter: "B", text: "Coxsackie B" },
+        { letter: "C", text: "Candida species" },
+        { letter: "D", text: "S. pyogenes" }
+      ],
+      correct: "B",
+      explanation: "Answer: B. Coxsackie B<br><br>Explanation:<br><br>Coxsackie B virus is the classic and most common cause of:<br><br>Myocarditis<br>Pericarditis"
+    },
+    {
+      q: "A 64-year-old man with RHD develops symptoms after a dental procedure. Most likely organism and type of endocarditis?",
+      options: [
+        { letter: "A", text: "Viridans streptococci and sub-acute endocarditis" },
+        { letter: "B", text: "S. aureus and acute endocarditis" },
+        { letter: "C", text: "Enterococcus faecalis and subacute endocarditis" },
+        { letter: "D", text: "S. pyogenes and acute endocarditis" }
+      ],
+      correct: "A",
+      explanation: "Answer: A. Viridans streptococci and sub-acute endocarditis<br><br>Explanation:<br><br>Classic Clues:<br><br>Damaged valve (RHD)<br>Recent dental procedure<br>Gradual symptom onset<br><br>Viridans streptococci causing subacute infective endocarditis."
+    },
+    {
+      q: "The prototypic lesion of infective endocarditis composed of platelets, fibrin, microorganisms and inflammatory cells is called:",
+      options: [
+        { letter: "A", text: "Aneurysm" },
+        { letter: "B", text: "Janeway lesion" },
+        { letter: "C", text: "Embolization" },
+        { letter: "D", text: "Vegetation" }
+      ],
+      correct: "D",
+      explanation: "Answer: D. Vegetation<br><br>Explanation:<br><br>Vegetation = Hallmark lesion of IE<br><br>Contains:<br>Platelets<br>Fibrin<br>Bacterial colonies<br>Inflammatory cells"
+    },
+    {
+      q: "All are features of HACEK organisms except:",
+      options: [
+        { letter: "A", text: "Gram negative" },
+        { letter: "B", text: "Fastidious" },
+        { letter: "C", text: "Fast-growing" },
+        { letter: "D", text: "Normal flora of oral cavity" }
+      ],
+      correct: "C",
+      explanation: "Answer: C. Fast-growing<br><br>Explanation:<br><br>HACEK organisms are:<br><br>Gram negative<br>Oral flora<br>Capnophilic<br>Fastidious<br>Slow-growing<br><br>Not fast-growing."
+    },
+    {
+      q: "The underlying mechanism of post-streptococcal rheumatic heart disease is:",
+      options: [
+        { letter: "A", text: "Production of autoimmune antibodies that do not discriminate between M proteins in bacterial cell wall and cardiac muscle" },
+        { letter: "B", text: "Production of pyrogenic exotoxins" },
+        { letter: "C", text: "Massive release of cytokines by T cells and macrophages" },
+        { letter: "D", text: "Formation of biofilm on cardiac muscles" }
+      ],
+      correct: "A",
+      explanation: "Answer: A<br><br>Explanation:<br><br>Molecular Mimicry<br>Anti-M protein antibodies<br>Cross-react with<br>Cardiac tissues<br><br>Result:<br><br>Autoimmune inflammation<br>Rheumatic Heart Disease"
+    },
+    {
+      q: "NOT true about acute rheumatic fever:",
+      options: [
+        { letter: "A", text: "Not directly associated with bacterial dissemination" },
+        { letter: "B", text: "Is associated with streptococcal pharyngitis" },
+        { letter: "C", text: "It forms pancarditis" },
+        { letter: "D", text: "None" }
+      ],
+      correct: "D",
+      explanation: "Answer: D. None<br><br>Explanation:<br><br>ARF is autoimmune<br>Follows streptococcal pharyngitis<br>Causes pancarditis<br>Therefore all statements are true."
+    },
+    {
+      q: "All are features of Coxiella burnetii EXCEPT:",
+      options: [
+        { letter: "A", text: "Phagolysosome multiplication" },
+        { letter: "B", text: "Cause zoonotic disease" },
+        { letter: "C", text: "Obligate intracellular" },
+        { letter: "D", text: "Acute infection manifested as endocarditis" },
+        { letter: "E", text: "None" }
+      ],
+      correct: "D",
+      explanation: "Answer: D<br><br>Explanation:<br><br>Q Fever = Coxiella burnetii<br><br>Zoonotic<br>Obligate intracellular<br>Replicates in phagolysosomes<br><br>Endocarditis occurs in chronic infection, not acute infection."
+    },
+    {
+      q: "The causative agent of Q-fever is:",
+      options: [
+        { letter: "A", text: "Coxsackie A" },
+        { letter: "B", text: "Coxiella burnetii" },
+        { letter: "C", text: "Borrelia burgdorferi" },
+        { letter: "D", text: "None" }
+      ],
+      correct: "B",
+      explanation: "Answer: B. Coxiella burnetii<br><br>Explanation:<br><br>Q-Fever → Coxiella burnetii<br><br>Classic cause of chronic endocarditis."
+    },
+    {
+      q: "Which of the following is not true regarding Enterococcus?",
+      options: [
+        { letter: "A", text: "Common species are E. faecalis and E. faecium" },
+        { letter: "B", text: "It is a cause of peritonitis" },
+        { letter: "C", text: "It is universally susceptible to penicillins" },
+        { letter: "D", text: "Can cause intra-abdominal abscess" }
+      ],
+      correct: "C",
+      explanation: "Answer: C<br><br>Explanation:<br><br>Enterococci are often resistant to:<br><br>Penicillin<br>Vancomycin (VRE)<br><br>Thus they are not universally susceptible."
+    },
+    {
+      q: "ICU (Intensive Care unit) patient with central venous catheter develops persistent bacteremia despite vancomycin. Organism?",
+      options: [
+        { letter: "A", text: "Staph aureus" },
+        { letter: "B", text: "Viridans streptococci" },
+        { letter: "C", text: "Enterococcus faecalis" },
+        { letter: "D", text: "Staphylococcus aureus" },
+        { letter: "E", text: "Staphylococcus epidermidis" }
+      ],
+      correct: "C",
+      explanation: "Answer: C. Enterococcus faecalis<br><br>Explanation:<br><br>- Gram-positive cocci in chains<br>- Catalase negative<br>- Enterococcus<br><br>Persistent infection despite vancomycin suggests VRE."
+    },
+    {
+      q: "Which test would be most useful for diagnosis of rheumatic fever?",
+      options: [
+        { letter: "A", text: "Blood culture" },
+        { letter: "B", text: "Synovial fluid culture" },
+        { letter: "C", text: "Measurement of ASO antibodies" },
+        { letter: "D", text: "Measurement of antistreptokinase antibodies" },
+        { letter: "E", text: "Microscopic examination of subcutaneous skin nodules." }
+      ],
+      correct: "C",
+      explanation: "Answer: C. Measurement of ASO antibodies<br><br>Explanation:<br><br>Elevated ASO titer<br>- Evidence of recent Group A Streptococcal infection.<br><br>Rheumatic Fever Diagnosis:<br><br>ASO (Antistreptolysin O) titer: Measures antibodies against streptolysin O, a toxin produced by Streptococcus pyogenes, confirming a recent throat infection (a required Jones criteria component)."
+    },
+    {
+      q: "Which laboratory diagnosis of Coxsackie B virus is challenging?",
+      options: [
+        { letter: "A", text: "Serological" },
+        { letter: "B", text: "Cell culture" },
+        { letter: "C", text: "Blood culture" },
+        { letter: "D", text: "Molecular" }
+      ],
+      correct: "C",
+      explanation: "Answer: C. Blood culture<br><br>Explanation:<br><br>Coxsackie B virus is an enterovirus, and viruses do not grow in routine blood culture media because they require living cells to replicate. Therefore, blood culture is not a useful diagnostic test.<br><br>A. Serological - Can be used, but interpretation may be difficult because of cross-reactivity and the need for paired sera.<br><br>B. Cell culture - Possible, although it is slow and less commonly used today.<br><br>C. Blood culture - Correct. Routine blood cultures detect bacteria and fungi, not viruses.<br><br>D. Molecular (RT-PCR) - The most sensitive and specific method; widely used for diagnosis.<br><br>For viral infections, remember:<br><br>Blood culture → Not useful<br>PCR (molecular tests) → Best diagnostic method<br>Cell culture → Possible but slow<br>Serology → Useful in some cases, but may have limitations"
+    },
+    {
+      q: "Which of the following is not true about S. aureus?",
+      options: [
+        { letter: "A", text: "Usually causes acute infective endocarditis" },
+        { letter: "B", text: "Commonly causes disease in prosthetic valves" },
+        { letter: "C", text: "Has more virulence factors than S. epidermidis" },
+        { letter: "D", text: "It is a normal flora of the skin" }
+      ],
+      correct: "B",
+      explanation: "Answer: B<br><br>B is False: While S. aureus can certainly infect prosthetic valves, it is not the most common cause of prosthetic valve endocarditis (PVE).<br><br>Staphylococcus epidermidis (a Coagulase-negative Staphylococcus) is the classic and most common culprit in prosthetic valve infections.<br><br>A is True: S. aureus is the leading cause of acute infective endocarditis, often aggressively attacking native heart valves.<br><br>C is True: S. aureus is highly virulent and possesses a wide array of virulence factors (e.g., coagulase, toxins, protein A). S. epidermidis has a much smaller repertoire of virulence factors and is often referred to as an \"accidental pathogen\".<br><br>D is True: S. aureus is a normal component of the human skin flora (especially in the anterior nares and skin)."
+    },
+    {
+      q: "Not true about subacute infective endocarditis:",
+      options: [
+        { letter: "A", text: "Commonly occurs in damaged valves" },
+        { letter: "B", text: "Caused by less virulent bacteria" },
+        { letter: "C", text: "Can be caused by S. epidermidis" },
+        { letter: "D", text: "Mortality is higher than acute" }
+      ],
+      correct: "D",
+      explanation: "Answer: D<br><br>Explanation:<br><br>Acute IE is:<br><br>More aggressive<br>More destructive<br>Higher mortality<br><br>Subacute IE progresses more slowly."
+    },
+    {
+      q: "Untreated Lyme disease can cause:",
+      options: [
+        { letter: "A", text: "Sub-acute infective endocarditis" },
+        { letter: "B", text: "Acute infective endocarditis" },
+        { letter: "C", text: "Myocarditis" },
+        { letter: "D", text: "None" }
+      ],
+      correct: "C",
+      explanation: "Answer: C. Myocarditis<br><br>Explanation: Lyme disease is caused by Borrelia burgdorferi. Cardiac involvement (Lyme carditis) may occur weeks to months after infection.<br><br>Common manifestations include:<br><br>Myocarditis<br>Pericarditis<br>Reversible complete heart block<br><br>Lyme carditis is the most common cause of reversible complete heart block."
+    },
+    {
+      q: "Coxsackie virus is transmitted by:",
+      options: [
+        { letter: "A", text: "Arthropod" },
+        { letter: "B", text: "Aerosol spread" },
+        { letter: "C", text: "Feco-oral" },
+        { letter: "D", text: "Direct contact" }
+      ],
+      correct: "C",
+      explanation: "Answer: C. Feco-oral<br><br>Explanation: Coxsackie viruses belong to the Enterovirus group.<br><br>Main route of transmission: Feco-oral route<br><br>Less commonly: Respiratory secretions, Direct contact"
+    },
+    {
+      q: "Which organism antigenic shift is its virulence factor?",
+      options: [
+        { letter: "A", text: "Borrelia burgdorferi" },
+        { letter: "B", text: "Coxiella burnetii" },
+        { letter: "C", text: "Coxsackie virus" },
+        { letter: "D", text: "S. aureus" }
+      ],
+      correct: "A",
+      explanation: "Answer: A. Borrelia burgdorferi<br><br>Explanation: Borrelia burgdorferi can alter its surface antigens.<br><br>This allows:<br><br>Immune evasion<br>Persistent infection<br>Chronic disease progression<br><br>Antigenic variation is an important virulence mechanism."
+    },
+    {
+      q: "85% of infective Endocarditis is caused by:",
+      options: [
+        { letter: "A", text: "Staphylococcus, Streptococci & Enterococcus" },
+        { letter: "B", text: "Staphylococcus, HACEK & Enterococcus" },
+        { letter: "C", text: "Streptococci & Enterococcus" },
+        { letter: "D", text: "Staphylococcus & Streptococci" }
+      ],
+      correct: "A",
+      explanation: "Answer: A. Staphylococcus, Streptococci & Enterococcus<br><br>Explanation: Approximately 85–90% of infective endocarditis cases are caused by:<br><br>Staphylococci<br>Streptococci<br>Enterococci<br><br>These three groups account for the overwhelming majority of cases."
+    },
+    {
+      q: "NOT true about Influenza virus:",
+      options: [
+        { letter: "A", text: "Family Orthomyxoviridae" },
+        { letter: "B", text: "Transmitted by respiratory aerosol" },
+        { letter: "C", text: "Usually causes heart disease" },
+        { letter: "D", text: "None" }
+      ],
+      correct: "C",
+      explanation: "Answer: C. Usually causes heart disease<br><br>Explanation:<br><br>Influenza virus belongs to: Family Orthomyxoviridae<br><br>Transmission occurs mainly through:<br><br>Respiratory droplets<br>Aerosol spread<br><br>Cardiac complications such as myocarditis may occur, but they are uncommon, not usual manifestations."
+    },
+    {
+      q: "All are features of S. epidermidis organisms except:",
+      options: [
+        { letter: "A", text: "Gram positive arranged in chain" },
+        { letter: "B", text: "Less virulent than S. aureus" },
+        { letter: "C", text: "Thick peptidoglycan wall" },
+        { letter: "D", text: "Normal flora of the skin" }
+      ],
+      correct: "A",
+      explanation: "Answer: A. Gram positive arranged in chain<br><br>Explanation:<br><br>S. epidermidis is:<br>- Gram positive<br>- Arranged in clusters<br>- Normal skin flora<br>- Less virulent than S. aureus<br><br>Not arranged in chains.<br><br>Chains are more characteristic of Streptococcus and Enterococci."
+    },
+    {
+      q: "Which organism can directly damage target cell?",
+      options: [
+        { letter: "A", text: "Borrelia burgdorferi" },
+        { letter: "B", text: "Coxiella burnetii" },
+        { letter: "C", text: "Coxsackie virus" },
+        { letter: "D", text: "S. aureus" }
+      ],
+      correct: "C",
+      explanation: "Answer: C. Coxsackie virus<br><br>Explanation: Coxsackie viruses are cytolytic viruses.<br><br>After entering host cells they:<br>- Replicate intracellularly<br>- Cause cell lysis<br>- Produce direct tissue destruction<br>- This mechanism is responsible for viral myocarditis."
+    }
+  ]
+}
+
 ];
+
 
 /* =====================================================================
    ⚙️  APP LOGIC
