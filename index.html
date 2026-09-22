@@ -4,6 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Cardio — CVS Past Year Exams</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>❤️</text></svg>">
 <style>
   :root {
     --bg: #0a0e14;
@@ -547,14 +548,14 @@ const NOTES_DATA = [
     file: "Microbiology_Notes.pdf"
   },
 
-/* ==================== CVS PATHOLOGY ==================== */
-{
-  id: "patho-doc",
-  subject: "CVS Pathology",
-  title: "Pathology — Full Notes",
-  icon: "🔬",
-  file: "Pathology_Notes.pdf"
-},
+  /* ==================== PATHOLOGY ==================== */
+  {
+    id: "patho-doc",
+    subject: "CVS Pathology",
+    title: "Pathology — Full Notes",
+    icon: "🔬",
+    file: "Pathology_Notes.pdf"
+  },
 
 /* ==================== CVS PHARMACOLOGY ==================== */
 {
@@ -572,10 +573,6 @@ const NOTES_DATA = [
   file: "Pharma_Hypertension.pdf"
 }
 ];
-
-
-
-
 
 
 const TELEGRAM_URL = "https://t.me/+_SmdJHWESxlhM2Rk";
@@ -1873,9 +1870,10 @@ const QUIZ_DATA = [
   },
 
   /* ========== CVS PHYSIOLOGY ========== */
+ 
 
-  
- /* ========== CVS PHYSIOLOGY 2014 ========== */
+
+/* ========== CVS PHYSIOLOGY 2014 ========== */
 {
   id: "cvs-physio-2014",
   subject: "CVS Physiology",
@@ -3136,6 +3134,8 @@ const QUIZ_DATA = [
   ]
 },
 
+
+
   /* ========== CVS PATHOLOGY ========== */
   
     {
@@ -4349,9 +4349,6 @@ const QUIZ_DATA = [
       }
     ]
   },
-
-  /* ========== CVS PHARMACOLOGY ========== */
- 
 
 
 
@@ -8144,7 +8141,8 @@ const state = {
   showExplanation: false,
   streak: 0,
   startTime: null,
-  progress: loadProgress()
+  progress: loadProgress(),
+  bookmarks: loadBookmarks()
 };
 
 function loadProgress() {
@@ -8154,6 +8152,36 @@ function loadProgress() {
 function saveProgress() {
   try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state.progress)); } catch {}
 }
+
+const BOOKMARK_KEY = "cvs_bookmarks_v1";
+
+function loadBookmarks() {
+  try { return JSON.parse(localStorage.getItem(BOOKMARK_KEY)) || {}; }
+  catch { return {}; }
+}
+
+function saveBookmarks() {
+  try { localStorage.setItem(BOOKMARK_KEY, JSON.stringify(state.bookmarks)); } catch {}
+}
+
+function isBookmarked(examId, qIdx) {
+  return !!(state.bookmarks[examId] && state.bookmarks[examId][qIdx]);
+}
+
+function toggleBookmark(examId, qIdx) {
+  if (!state.bookmarks[examId]) state.bookmarks[examId] = {};
+  if (state.bookmarks[examId][qIdx]) {
+    delete state.bookmarks[examId][qIdx];
+    if (Object.keys(state.bookmarks[examId]).length === 0) delete state.bookmarks[examId];
+    showToast("Bookmark removed");
+  } else {
+    state.bookmarks[examId][qIdx] = true;
+    showToast("⭐ Question bookmarked");
+  }
+  saveBookmarks();
+}
+
+
 function getExamProgress(exam) {
   const p = state.progress[exam.id] || {};
   const answered = Object.keys(p).length;
@@ -8239,16 +8267,33 @@ function renderCourses() {
             <path d="M14 2v6h6M8 13h8M8 17h5"/>
           </svg>
         </button>
+        <button class="icon-btn" id="resetBtn" title="Reset all progress">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+    <path d="M3 12a9 9 0 109-9 9.75 9.75 0 00-6.74 2.74L3 8"/>
+    <path d="M3 3v5h5"/>
+  </svg>
+</button>
         <div class="avatar">CV</div>
       </div>
     </header>
 
-    ${QUIZ_DATA.length > 0 ? `
-      <div class="hero">
-        <div class="hero-title">CVS Module 👋</div>
-        <div class="hero-sub">${totalQuestions} questions across ${courses.length} courses · ${totalAnswered} answered so far</div>
+${QUIZ_DATA.length > 0 ? `
+  <div class="hero">
+    <div class="hero-title">CVS Module 👋</div>
+    <div class="hero-sub">${totalQuestions} questions across ${courses.length} courses · ${totalAnswered} answered so far</div>
+    ${totalAnswered > 0 ? `
+      <div style="margin-top:14px;">
+        <div style="display:flex;justify-content:space-between;font-size:11px;font-weight:700;color:var(--text-dim);margin-bottom:6px;text-transform:uppercase;letter-spacing:0.5px;">
+          <span>Overall Progress</span>
+          <span>${Math.round((totalAnswered / totalQuestions) * 100)}%</span>
+        </div>
+        <div class="progress-bar" style="height:8px;">
+          <div class="progress-fill" style="width:${(totalAnswered / totalQuestions) * 100}%;background:linear-gradient(90deg, var(--accent), var(--accent-2));"></div>
+        </div>
       </div>
     ` : ""}
+  </div>
+` : ""}
 
     <div class="search-wrap">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -8268,6 +8313,29 @@ function renderCourses() {
         <svg class="course-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 18l6-6-6-6"/></svg>
       </button>
     ` : ""}
+
+
+${(() => {
+  const bookmarkCount = Object.values(state.bookmarks).reduce((s, exam) => s + Object.keys(exam).length, 0);
+  return bookmarkCount > 0 ? `
+    <div class="section-title" style="margin-top:8px;">
+      ⭐ Bookmarked Questions
+      <span class="count">${bookmarkCount}</span>
+    </div>
+    <div class="list" style="margin-bottom:16px;">
+      <button class="course-card" data-open-bookmarks="1"
+        style="--course-color:#f5b800;--course-color-2:#ff6d00;">
+        <div class="course-thumb" style="background:rgba(245,184,0,0.12);border-color:rgba(245,184,0,0.3);">⭐</div>
+        <div class="course-body">
+          <div class="course-title">Review Bookmarked</div>
+          <div class="course-meta">${bookmarkCount} question${bookmarkCount === 1 ? "" : "s"} saved for later</div>
+        </div>
+        <svg class="course-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+    </div>
+  ` : "";
+})()}
+
 
     <div class="section-title">
       CVS Courses
@@ -8366,6 +8434,20 @@ function bindCourseEvents() {
     });
   }
 
+  const resetBtn = document.getElementById("resetBtn");
+if (resetBtn) {
+  resetBtn.addEventListener("click", () => {
+    if (!confirm("⚠️ Reset ALL progress?\n\nThis will erase all your answered questions and start fresh. This cannot be undone.")) return;
+    localStorage.removeItem(STORAGE_KEY);
+    state.progress = {};
+    state.streak = 0;
+    state.startTime = null;
+    showToast("✓ All progress reset");
+    render();
+    window.scrollTo(0, 0);
+  });
+}
+
   document.querySelectorAll("[data-open-notes-quick]").forEach(el => {
     el.addEventListener("click", () => {
       state.view = "notes";
@@ -8393,6 +8475,26 @@ function bindCourseEvents() {
       window.scrollTo(0, 0);
     });
   });
+
+  document.querySelectorAll("[data-open-bookmarks]").forEach(el => {
+  el.addEventListener("click", () => {
+    const first = Object.entries(state.bookmarks).find(([_, qs]) => Object.keys(qs).length > 0);
+    if (!first) return;
+    const [examId, qs] = first;
+    const exam = QUIZ_DATA.find(e => e.id === examId);
+    if (!exam) return;
+    const qIdx = parseInt(Object.keys(qs)[0]);
+    state.course = exam.subject;
+    state.exam = exam;
+    state.qIndex = qIdx;
+    state.showExplanation = false;
+    state.streak = 0;
+    state.startTime = Date.now();
+    state.view = "quiz";
+    render();
+    window.scrollTo(0, 0);
+  });
+});
 }
 
 /* =====================================================================
@@ -8773,11 +8875,16 @@ function renderQuiz() {
         <div class="quiz-header-title">${escapeHtml(exam.title)}</div>
         <div class="quiz-header-count">Q${state.qIndex + 1} of ${exam.questions.length}</div>
       </div>
-      <button class="icon-btn" id="closeBtn" title="Close">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-          <path d="M18 6L6 18M6 6l12 12"/>
-        </svg>
-      </button>
+    <button class="icon-btn" id="bookmarkBtn" title="Bookmark this question" style="${isBookmarked(exam.id, state.qIndex) ? 'background:rgba(245,184,0,0.15);border-color:rgba(245,184,0,0.5);color:#f5b800;' : ''}">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="${isBookmarked(exam.id, state.qIndex) ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2.2">
+    <path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/>
+  </svg>
+</button>
+<button class="icon-btn" id="closeBtn" title="Close">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+    <path d="M18 6L6 18M6 6l12 12"/>
+  </svg>
+</button>
     </div>
     <div class="quiz-progress"><div class="quiz-progress-fill" style="width:${pct}%"></div></div>
 
@@ -8843,6 +8950,14 @@ function bindQuizEvents() {
 
   document.getElementById("backBtn").addEventListener("click", goBackToYears);
   document.getElementById("closeBtn").addEventListener("click", goBackToYears);
+
+const bookmarkBtn = document.getElementById("bookmarkBtn");
+if (bookmarkBtn) {
+  bookmarkBtn.addEventListener("click", () => {
+    toggleBookmark(exam.id, state.qIndex);
+    renderQuiz();
+  });
+}
 
   const progress = state.progress[exam.id] || {};
   const answered = !!progress[state.qIndex];
