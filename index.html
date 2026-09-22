@@ -8130,6 +8130,29 @@ function getCourseStyle(subject) {
   };
 }
 
+/* ---- Storage Keys (must come first) ---- */
+const STORAGE_KEY = "cvs_module_progress_v1";
+const BOOKMARK_KEY = "cvs_bookmarks_v1";
+
+/* ---- Storage Helper Functions ---- */
+function loadProgress() {
+  try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; }
+  catch { return {}; }
+}
+function saveProgress() {
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state.progress)); } catch {}
+}
+
+function loadBookmarks() {
+  try { return JSON.parse(localStorage.getItem(BOOKMARK_KEY)) || {}; }
+  catch { return {}; }
+}
+
+function saveBookmarks() {
+  try { localStorage.setItem(BOOKMARK_KEY, JSON.stringify(state.bookmarks)); } catch {}
+}
+
+/* ---- App State ---- */
 const state = {
   view: "courses",
   search: "",
@@ -8144,25 +8167,6 @@ const state = {
   progress: loadProgress(),
   bookmarks: loadBookmarks()
 };
-
-function loadProgress() {
-  try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; }
-  catch { return {}; }
-}
-function saveProgress() {
-  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state.progress)); } catch {}
-}
-
-const BOOKMARK_KEY = "cvs_bookmarks_v1";
-
-function loadBookmarks() {
-  try { return JSON.parse(localStorage.getItem(BOOKMARK_KEY)) || {}; }
-  catch { return {}; }
-}
-
-function saveBookmarks() {
-  try { localStorage.setItem(BOOKMARK_KEY, JSON.stringify(state.bookmarks)); } catch {}
-}
 
 function isBookmarked(examId, qIdx) {
   return !!(state.bookmarks[examId] && state.bookmarks[examId][qIdx]);
