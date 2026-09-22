@@ -1873,50 +1873,1268 @@ const QUIZ_DATA = [
   },
 
   /* ========== CVS PHYSIOLOGY ========== */
-  {
-    id: "cvs-physio-2014", subject: "CVS Physiology", topic: "General", year: 2014,
-    title: "CVS Physiology 2014", icon: "💓", section: "PLATE I",
-    questions: [
-      { q: "Sample CVS Physiology 2014 question:",
-        options: [
-          { letter: "A", text: "Option A" }, { letter: "B", text: "Option B" },
-          { letter: "C", text: "Option C" }, { letter: "D", text: "Option D" }, { letter: "E", text: "Option E" }
-        ], correct: "A", explanation: "Explanation for this CVS Physiology 2014 question." }
-    ]
-  },
-  {
-    id: "cvs-physio-2015", subject: "CVS Physiology", topic: "General", year: 2015,
-    title: "CVS Physiology 2015", icon: "💓", section: "PLATE I",
-    questions: [
-      { q: "Sample CVS Physiology 2015 question:",
-        options: [
-          { letter: "A", text: "Option A" }, { letter: "B", text: "Option B" },
-          { letter: "C", text: "Option C" }, { letter: "D", text: "Option D" }, { letter: "E", text: "Option E" }
-        ], correct: "A", explanation: "Explanation for this CVS Physiology 2015 question." }
-    ]
-  },
-  {
-    id: "cvs-physio-2016", subject: "CVS Physiology", topic: "General", year: 2016,
-    title: "CVS Physiology 2016", icon: "💓", section: "PLATE I",
-    questions: [
-      { q: "Sample CVS Physiology 2016 question:",
-        options: [
-          { letter: "A", text: "Option A" }, { letter: "B", text: "Option B" },
-          { letter: "C", text: "Option C" }, { letter: "D", text: "Option D" }, { letter: "E", text: "Option E" }
-        ], correct: "A", explanation: "Explanation for this CVS Physiology 2016 question." }
-    ]
-  },
-  {
-    id: "cvs-physio-2017", subject: "CVS Physiology", topic: "General", year: 2017,
-    title: "CVS Physiology 2017", icon: "💓", section: "PLATE I",
-    questions: [
-      { q: "Sample CVS Physiology 2017 question:",
-        options: [
-          { letter: "A", text: "Option A" }, { letter: "B", text: "Option B" },
-          { letter: "C", text: "Option C" }, { letter: "D", text: "Option D" }, { letter: "E", text: "Option E" }
-        ], correct: "A", explanation: "Explanation for this CVS Physiology 2017 question." }
-    ]
-  },
+
+  
+ /* ========== CVS PHYSIOLOGY 2014 ========== */
+{
+  id: "cvs-physio-2014",
+  subject: "CVS Physiology",
+  topic: "Cardiac Cycle & Hemodynamics",
+  year: 2014,
+  title: "CVS Physiology 2014",
+  icon: "💓",
+  section: "JU Exam — CVS Physiology",
+  questions: [
+
+    {
+      q: "The more volume of blood enters during diastole, the:",
+      options: [
+        { letter: "A", text: "More blood is ejected during the next diastole" },
+        { letter: "B", text: "More blood is received during the next systole" },
+        { letter: "C", text: "More blood is ejected during the next systole" },
+        { letter: "D", text: "More blood is received during the next diastole" },
+        { letter: "E", text: "\"B\" and \"D\" are answers" }
+      ],
+      correct: "C",
+      explanation: "<strong>Frank-Starling Mechanism:</strong> The heart has an intrinsic ability to adapt to increasing volumes of inflowing blood.<br><br>When extra blood flows into the ventricles during <strong>diastole</strong> (filling phase), the cardiac muscle is stretched to a greater length.<br><br>This stretch causes the muscle to contract with <strong>increased force</strong> because the actin and myosin filaments are brought into a more optimal overlap for generating power.<br><br>Consequently, the heart automatically pumps this extra volume of blood into the aorta during the contraction phase (<strong>systole</strong>).<br><br>Therefore, the more volume that enters the heart during diastole (increasing the <strong>preload</strong>), the more blood the heart will eject during the subsequent systole."
+    },
+
+    {
+      q: "Which of the following is TRUE about the semilunar valves?",
+      options: [
+        { letter: "A", text: "Opens when the pressure in the aorta and pulmonary trunk is greater than the pressure in the ventricles" },
+        { letter: "B", text: "Closes when the pressure in the ventricles is greater than the pressure in the aorta and pulmonary trunk" },
+        { letter: "C", text: "Closes when the pressure in the ventricles is greater than the pressure in the atria" },
+        { letter: "D", text: "Opens when the pressure in the atria is greater than the pressure in the aorta and pulmonary trunk" },
+        { letter: "E", text: "None of the above" }
+      ],
+      correct: "E",
+      explanation: "<strong>Mechanisms governing semilunar valves:</strong><br><br><strong>Opening (opposite of A):</strong> They open when ventricular pressure <strong>exceeds</strong> aortic/pulmonary pressure — during ejection (LV &gt; 80 mm Hg, RV &gt; 8 mm Hg).<br><br><strong>Closing (opposite of B):</strong> They close when arterial pressure becomes greater than ventricular pressure — at end of systole, back-pressure snaps them shut.<br><br><strong>Irrelevance of atria (C &amp; D):</strong> Semilunar valves sit between ventricles and major arteries; their function is not determined by atrial pressure. Option C describes the <strong>AV valves</strong>.<br><br>Since none of A–D correctly describes semilunar valve physiology, <strong>E</strong> is correct."
+    },
+
+    {
+      q: "Which of the following is TRUE regarding the ventricular systole during the ventricular ejection phase of the cardiac cycle?",
+      options: [
+        { letter: "A", text: "Atrioventricular valves are open" },
+        { letter: "B", text: "Ventricular pressure decreases from 80 – 4 mm Hg" },
+        { letter: "C", text: "Around 30% of the blood is ejected" },
+        { letter: "D", text: "Atrial pressure decreases" },
+        { letter: "E", text: "Aortic pressure decreases" }
+      ],
+      correct: "D",
+      explanation: "<strong>Ventricular ejection phase:</strong> After isovolumetric contraction, ventricular pressure rises above aortic/pulmonary pressure, causing the semilunar valves to open and blood to be ejected.<br><br>During this phase, the <strong>atrial pressure decreases</strong> because the atria are relaxed (in diastole) while the ventricles contract. The AV valves remain closed, so the atria are sealed off and their pressure falls.<br><br><strong>Why others are incorrect:</strong><br><br>✔️ AV valves are closed (not open) during ejection.<br>✔️ Ventricular pressure <strong>rises</strong> to ~120 mm Hg, it does not drop to 4 mm Hg.<br>✔️ About <strong>70%</strong> of blood is ejected, not 30%.<br>✔️ Aortic pressure rises during rapid ejection (then falls slightly during slow ejection)."
+    },
+
+    {
+      q: "In which of the following phases of the cardiac cycle would the T-wave be recorded?",
+      options: [
+        { letter: "A", text: "Isovolumetric ventricular contraction phase" },
+        { letter: "B", text: "Atrial systole and slow ventricular filling phase" },
+        { letter: "C", text: "Rapid ventricular filling phase" },
+        { letter: "D", text: "Isovolumetric ventricular relaxation phase" },
+        { letter: "E", text: "Rapid ventricular ejection phase" }
+      ],
+      correct: "D",
+      explanation: "<strong>T-wave = ventricular repolarization.</strong><br><br>After ventricular depolarization and contraction, ventricular muscle fibers begin to repolarize, producing the T-wave on ECG.<br><br><strong>Timing:</strong> Electrical events occur slightly before mechanical events. Ventricular repolarization occurs near the end of ventricular systole and beginning of relaxation — corresponding mainly to <strong>isovolumetric ventricular relaxation</strong>.<br><br>During this phase: ventricles relax, pressure falls rapidly, semilunar valves close, AV valves remain closed, and volume does not change (ΔV = 0).<br><br><strong>Why other options are incorrect:</strong><br><br>✔️ <strong>A:</strong> Isovolumetric contraction occurs after the QRS complex, not the T-wave.<br>✔️ <strong>B:</strong> Atrial systole corresponds to the <strong>P-wave</strong>.<br>✔️ <strong>C:</strong> Rapid ventricular filling occurs in early diastole after the T-wave.<br>✔️ <strong>E:</strong> Rapid ejection corresponds mainly to the <strong>ST segment</strong>."
+    },
+
+    {
+      q: "Which of the following is NOT TRUE regarding the ventricular filling phase of the cardiac cycle?",
+      options: [
+        { letter: "A", text: "Atrial pressure is higher than ventricular pressure" },
+        { letter: "B", text: "Atrioventricular valves are opened" },
+        { letter: "C", text: "About 80% of the blood flow to the ventricle due to atrial contraction" },
+        { letter: "D", text: "Ventricular pressure falls near 0 mm Hg" },
+        { letter: "E", text: "Ventricular volume rises sharply" }
+      ],
+      correct: "C",
+      explanation: "<strong>The 80/20 Split:</strong> Blood flows continually from the great veins into the atria, and about <strong>80%</strong> flows directly through the atria into the ventricles <strong>even before the atria contract</strong>.<br><br><strong>Atrial Contraction Contribution:</strong> Atrial systole (last third of ventricular diastole) provides an additional thrust accounting for only about <strong>20%</strong> of total ventricular filling — not 80%.<br><br><strong>Why the other options are TRUE:</strong><br><br>✔️ <strong>A:</strong> Filling begins when atrial pressure exceeds the falling ventricular pressure.<br>✔️ <strong>B:</strong> AV valves must open for blood to move from atria to ventricles.<br>✔️ <strong>D:</strong> Ventricular pressure falls to near 0 mm Hg during isovolumic relaxation.<br>✔️ <strong>E:</strong> Ventricular volume rises sharply during the first third of diastole (rapid filling)."
+    },
+
+    {
+      q: "Which of the following phases of the cardiac cycle follows immediately after the beginning of the QRS wave?",
+      options: [
+        { letter: "A", text: "Isovolumic relaxation phase" },
+        { letter: "B", text: "Isovolumic contraction phase" },
+        { letter: "C", text: "Ventricular ejection phase" },
+        { letter: "D", text: "Atrial systole" },
+        { letter: "E", text: "Rapid ejection phase" }
+      ],
+      correct: "B",
+      explanation: "<strong>QRS Wave:</strong> The QRS complex results from <strong>ventricular depolarization</strong>, which initiates ventricular systole.<br><br><strong>Immediate Sequential Phase:</strong> The QRS begins slightly before the onset of ventricular systole. The very first phase of ventricular systole is the period of <strong>isovolumic (isometric) contraction</strong>.<br><br><strong>Mechanism:</strong> Immediately after ventricular contraction begins (triggered by the QRS), ventricular pressure rises abruptly, causing AV valves to close — marking the start of isovolumic contraction.<br><br>Ventricular ejection phases (including rapid ejection) follow after isovolumic contraction has built enough pressure to open the semilunar valves."
+    },
+
+    {
+      q: "The opening of atrioventricular valves is due to the pressure in the:",
+      options: [
+        { letter: "A", text: "Atria is greater than the pressure in the ventricles" },
+        { letter: "B", text: "Atria is greater than the pressure in the aorta and pulmonary trunk" },
+        { letter: "C", text: "Ventricles is greater than the pressure in the atria" },
+        { letter: "D", text: "Ventricles is greater than the pressure in the aorta and pulmonary trunk" },
+        { letter: "E", text: "Aorta and the pulmonary trunk is greater than the pressure in the ventricles" }
+      ],
+      correct: "A",
+      explanation: "<strong>Passive Operation:</strong> Heart valves open and close passively — they open when a forward pressure gradient forces blood forward.<br><br><strong>AV Valve Location:</strong> The tricuspid and mitral valves sit between atria and ventricles.<br><br><strong>Mechanism:</strong> During ventricular systole, blood accumulates in the atria. Once systole ends and ventricles relax, ventricular pressure falls. As soon as <strong>atrial pressure exceeds ventricular pressure</strong>, this gradient pushes the AV valves open.<br><br><strong>Timing:</strong> This occurs at the start of diastole, initiating the period of rapid filling.<br><br>Conversely, AV valves close when ventricular pressure becomes greater than atrial pressure at the onset of systole."
+    },
+
+    {
+      q: "When the arterial pressure becomes too great, excess flow provides too much oxygen to the tissues. What advantage does this oxygen have in local circulation regulation?",
+      options: [
+        { letter: "A", text: "Vasodilation" },
+        { letter: "B", text: "Vasoconstriction" },
+        { letter: "C", text: "To save capillaries from distraction" },
+        { letter: "D", text: "A & C" },
+        { letter: "E", text: "B & C" }
+      ],
+      correct: "E",
+      explanation: "<strong>Vasoconstriction (B):</strong> According to the metabolic theory of autoregulation, increased arterial pressure delivers excess oxygen and nutrients. This excess flow \"washes out\" vasodilator substances. High oxygen + reduced local vasodilators → <strong>arteriolar constriction</strong>, increasing resistance and normalizing flow.<br><br><strong>Protecting Capillaries (C):</strong> The myogenic response prevents excessive stretch of blood vessels during high pressure. By constricting arterioles (the \"stopcocks\"), the body reduces pressure transmitted to fragile capillaries, preventing excessive capillary hydrostatic pressure, fluid leakage, and edema.<br><br>Thus excess oxygen triggers <strong>vasoconstriction</strong> that shields capillaries from damage — <strong>E</strong> is correct."
+    },
+
+    {
+      q: "Nitric Oxide is one of the vasodilators involved in circulation regulation. How can nitric oxide dilate the blood vessels?",
+      options: [
+        { letter: "A", text: "By increasing the synthesis of protein kinase G" },
+        { letter: "B", text: "By increasing the synthesis of phosphodiesterase enzyme" },
+        { letter: "C", text: "By increasing the influx of calcium ions" },
+        { letter: "D", text: "By depolarizing the endothelial cells" }
+      ],
+      correct: "A",
+      explanation: "<strong>NO Signaling Cascade:</strong><br><br>1. NO is released from endothelial cells and diffuses into adjacent vascular smooth muscle cells.<br>2. Inside smooth muscle, NO activates <strong>soluble guanylate cyclase</strong>.<br>3. This converts cGTP into <strong>cGMP</strong>.<br>4. The rise in cGMP activates <strong>cGMP-dependent protein kinase (PKG)</strong>.<br>5. Activated PKG triggers several actions that relax (dilate) the blood vessels.<br><br><strong>Why other options are incorrect:</strong><br><br>✔️ <strong>B:</strong> PDE-5 inhibitors (like sildenafil) prevent cGMP degradation; NO does not increase PDE synthesis.<br>✔️ <strong>C:</strong> Increased calcium causes vasoconstriction, not dilation.<br>✔️ <strong>D:</strong> Depolarization is a mechanism for myogenic contraction, not NO-mediated dilation."
+    },
+
+    {
+      q: "If the body fluid is decreased because of decreased blood flow, what does our body do as compensation?",
+      options: [
+        { letter: "A", text: "The lungs start producing renin" },
+        { letter: "B", text: "Posterior pituitary gland secretes antidiuretic hormone to cause secretion of water in the collecting duct of the nephron" },
+        { letter: "C", text: "Angiotensin two causes secretion of sodium ions with water and reabsorption of potassium ions in the distal convoluted tubule of the nephrons" },
+        { letter: "D", text: "Adrenal gland decreases secretion of aldosterone" },
+        { letter: "E", text: "Blood vessels become dilated" },
+        { letter: "F", text: "None" }
+      ],
+      correct: "F",
+      explanation: "<strong>Analysis of Options:</strong><br><br>✔️ <strong>A (Incorrect):</strong> Renin is released by the <strong>kidneys</strong> (juxtaglomerular cells), not the lungs. The lungs produce ACE.<br><br>✔️ <strong>B (Incorrect):</strong> ADH increases <strong>reabsorption</strong> of water from renal tubules back into blood, not secretion into tubules.<br><br>✔️ <strong>C (Incorrect):</strong> Angiotensin II and aldosterone cause <strong>retention</strong> of salt and water (reabsorption), not secretion into urine.<br><br>✔️ <strong>D (Incorrect):</strong> The adrenal gland <strong>increases</strong> aldosterone secretion to retain sodium and water.<br><br>✔️ <strong>E (Incorrect):</strong> Sympathetic activation causes widespread <strong>vasoconstriction</strong>, not dilation.<br><br>Because each option contains a physiological error, the correct choice is <strong>F. None</strong>."
+    },
+
+    {
+      q: "The blood pressure at the arterial end is 100 mmHg. The blood pressure at the venous end from the same artery is 70 mmHg. The length of the blood vessel between the two ends is 200 mm. The blood with 7 pascal seconds flows in this blood vessel with a diameter of 40 mm. How much is the rate of the blood flow? (Circle constant = 3.14)",
+      options: [
+        { letter: "A", text: "1,435.6 ml/second" },
+        { letter: "B", text: "1,345.7 ml/second" },
+        { letter: "C", text: "1,567.4 ml/second" },
+        { letter: "D", text: "2,345.3 ml/second" }
+      ],
+      correct: "B",
+      explanation: "<strong>Poiseuille's Law:</strong> F = (π × ΔP × r⁴) / (8 × η × l)<br><br><strong>Step-by-Step:</strong><br><br>1. <strong>ΔP</strong> = 100 − 70 = 30 mmHg<br>2. <strong>Radius (r)</strong> = diameter/2 = 40/2 = 20 mm<br>3. <strong>Length (l)</strong> = 200 mm<br>4. <strong>Viscosity (η)</strong> = 7 pascal-seconds<br>5. <strong>π</strong> = 3.14<br><br><strong>Plug in:</strong><br>F = (3.14 × 30 × 20⁴) / (8 × 7 × 200)<br>F = (3.14 × 30 × 160,000) / 11,200<br>F = 15,072,000 / 11,200<br>F = <strong>1,345.714...</strong><br><br>Rounded: <strong>1,345.7 ml/second</strong> — Answer B."
+    },
+
+    {
+      q: "Where is the final destination of lymph in the circulatory system?",
+      options: [
+        { letter: "A", text: "Venous blood" },
+        { letter: "B", text: "Arterial blood" },
+        { letter: "C", text: "The capillaries" }
+      ],
+      correct: "A",
+      explanation: "<strong>Thoracic Duct:</strong> Essentially all lymph vessels from the lower body, left side of the head, left arm, and parts of the chest empty into the thoracic duct. This duct empties into the <strong>venous system</strong> at the junction of the left internal jugular and left subclavian veins.<br><br><strong>Right Lymph Duct:</strong> Lymph from the right side of the head, neck, right arm, and right thorax empties into the right lymph duct, which drains into the right subclavian/internal jugular junction.<br><br><strong>Accessory Route:</strong> The lymphatic system is an accessory route for fluid to flow from interstitial spaces back into the blood.<br><br><strong>One-Way Flow:</strong> Valves ensure lymph only flows toward the heart, eventually entering the veins to be recirculated."
+    },
+
+    {
+      q: "The Isoelectric line is recorded by ECG machine when:",
+      options: [
+        { letter: "A", text: "The cardiac cells are completely depolarized." },
+        { letter: "B", text: "The cardiac cells are completely repolarized." },
+        { letter: "C", text: "The electrical activities are too large to be recorded" },
+        { letter: "D", text: "When electrical activities are too small to be recorded" },
+        { letter: "E", text: "A, B, and C are correct" },
+        { letter: "F", text: "A, B, and D are correct" }
+      ],
+      correct: "F",
+      explanation: "<strong>Isoelectric line (zero potential) occurs when:</strong><br><br><strong>A — Completely depolarized:</strong> When the depolarization wave has spread over the entire muscle mass, all areas have equal negativity. No potential difference = zero baseline (e.g., J point after QRS).<br><br><strong>B — Completely repolarized:</strong> When the muscle fiber has completely repolarized, all electrodes are in areas of equal positivity. No potential difference = zero baseline (T-P interval between beats).<br><br><strong>D — Activities too small:</strong> Current only flows to the body surface when the heart is partly polarized and partly depolarized. If electrical activity is too weak to create a measurable potential difference at the skin, the ECG records an isoelectric line.<br><br>Therefore, <strong>A, B, and D are correct</strong> — answer F."
+    },
+
+    {
+      q: "Which ECG component is always missed on the ECG paper in a normal ECG?",
+      options: [
+        { letter: "A", text: "P wave" },
+        { letter: "B", text: "Q wave" },
+        { letter: "C", text: "Atrial T wave" },
+        { letter: "D", text: "Ventricular T wave" }
+      ],
+      correct: "C",
+      explanation: "<strong>Definition:</strong> The atrial T wave represents <strong>atrial repolarization</strong>.<br><br><strong>Timing:</strong> Atria repolarize approximately 0.15–0.20 seconds after the P wave — coinciding with the QRS complex (ventricular depolarization).<br><br><strong>Visibility:</strong> Because the QRS complex is much larger electrically, the atrial T wave is usually obscured.<br><br><strong>Occurrence:</strong> The atrial T wave is seldom observed (\"always missed\") on a normal ECG recording, though it may appear in certain abnormal states."
+    },
+
+    {
+      q: "Why is the atrial T wave missed on a normal ECG? This is because of:",
+      options: [
+        { letter: "A", text: "P wave" },
+        { letter: "B", text: "T wave" },
+        { letter: "C", text: "U wave" },
+        { letter: "D", text: "QRS complex" }
+      ],
+      correct: "D",
+      explanation: "<strong>Concurrent Timing:</strong> Atria repolarize (generating the atrial T wave) about 0.15–0.20 seconds after the P wave — coinciding almost exactly with ventricular depolarization.<br><br><strong>Electrical Obscuration:</strong> Potentials generated by ventricular depolarization (the QRS complex) are much larger than those of atrial repolarization.<br><br><strong>Result:</strong> The QRS complex totally obscures the smaller atrial T wave, making it seldom observable on a standard ECG."
+    },
+
+    {
+      q: "Which of the following ECG findings is characteristic of atrial fibrillation?",
+      options: [
+        { letter: "A", text: "Absent P waves and irregularly irregular R-R intervals" },
+        { letter: "B", text: "Saw tooth-shaped P waves and regular R-R intervals" },
+        { letter: "C", text: "Wide QRS complexes and prolonged PR intervals" },
+        { letter: "D", text: "Tall, peaked T waves and prolonged QT intervals" }
+      ],
+      correct: "A",
+      explanation: "<strong>Absent P Waves:</strong> In atrial fibrillation, numerous small depolarization waves spread in all directions. They are weak and of opposite polarity, neutralizing each other — resulting in no P waves or only a fine, high-frequency, low-voltage wavy baseline.<br><br><strong>Irregular R-R Intervals:</strong> Impulses arrive at the AV node rapidly but irregularly. The AV node's refractory period (~0.35 sec) prevents immediate conduction of a second impulse, leading to variable delays (0–0.6 sec) and irregular ventricular spacing.<br><br><strong>Why others are incorrect:</strong><br><br>✔️ <strong>B:</strong> Saw-tooth P waves = atrial <strong>flutter</strong>.<br>✔️ <strong>C:</strong> Wide QRS = ventricular tachycardia or bundle branch block.<br>✔️ <strong>D:</strong> Tall peaked T waves = <strong>hyperkalemia</strong>."
+    },
+
+    {
+      q: "Which of the following ECG findings is characteristic of ventricular tachycardia?",
+      options: [
+        { letter: "A", text: "Absent P waves and irregularly irregular R-R intervals" },
+        { letter: "B", text: "Saw tooth-shaped P waves and regular R-R intervals" },
+        { letter: "C", text: "Wide QRS complexes and prolonged PR intervals" },
+        { letter: "D", text: "Tall, peaked T waves and prolonged QT intervals" }
+      ],
+      correct: "C",
+      explanation: "<strong>Wide QRS Complexes:</strong> VT appears as a series of PVCs occurring one after another. The QRS is considerably prolonged (wide) because the impulse conducts through slowly conducting ventricular muscle rather than the rapid Purkinje system.<br><br><strong>High Voltage:</strong> The impulse travels in one direction without neutralization, producing high-voltage QRS complexes.<br><br><strong>T-Wave Inversion:</strong> The T wave typically has opposite polarity to the QRS due to slow conduction.<br><br><strong>Note on Option C:</strong> While \"wide QRS complexes\" is the hallmark, \"prolonged PR intervals\" is technically atypical — P waves are usually dissociated or obscured. However, among the choices, C is the only one identifying the defining wide QRS characteristic."
+    },
+
+    {
+      q: "Which of the following ECG findings is characteristic of third-degree atrioventricular (AV) block?",
+      options: [
+        { letter: "A", text: "Absent P waves and irregularly irregular R-R intervals" },
+        { letter: "B", text: "Saw tooth-shaped P waves and regular R-R intervals" },
+        { letter: "C", text: "Wide QRS complexes and prolonged PR intervals" },
+        { letter: "D", text: "Tall, peaked T waves and prolonged QT intervals" }
+      ],
+      correct: "C",
+      explanation: "<strong>Wide QRS Complexes:</strong> In third-degree block, the impulse is completely blocked from entering the ventricles. A new pacemaker develops in the Purkinje system or ventricular muscle (ventricular escape). Because this escape impulse conducts through slowly conducting muscle rather than rapid normal pathways, the QRS becomes considerably prolonged (wide).<br><br><strong>Note on PR intervals:</strong> Technically, there is no fixed PR interval in third-degree block — P waves and QRS complexes are dissociated and beat independently. However, \"prolonged PR intervals\" (&gt;0.20 sec) is the specific definition of <strong>first-degree</strong> heart block.<br><br><strong>Why others are incorrect:</strong><br><br>✔️ <strong>A:</strong> Atrial fibrillation (P waves absent, irregularly irregular).<br>✔️ <strong>B:</strong> Atrial flutter (saw-tooth pattern).<br>✔️ <strong>D:</strong> Long QT syndrome / hyperkalemia."
+    },
+
+    {
+      q: "Which of the following ECG findings is characteristic of atrial flutter?",
+      options: [
+        { letter: "A", text: "Absent P waves and irregularly irregular R-R intervals" },
+        { letter: "B", text: "Saw tooth-shaped P waves and regular R-R intervals" },
+        { letter: "C", text: "Wide QRS complexes and prolonged PR intervals" },
+        { letter: "D", text: "Tall, peaked T waves and prolonged QT intervals" }
+      ],
+      correct: "B",
+      explanation: "<strong>Saw-tooth Appearance:</strong> Atrial flutter is caused by a \"circus movement\" where a single large electrical wave travels continuously in one direction around the atria. This produces rapid, semicircular contractions that create strong \"F\" waves — the distinct <strong>saw-tooth pattern</strong>.<br><br><strong>Regular R-R Intervals:</strong> The atrial rate is very fast (200–350 bpm), and the AV node cannot conduct every impulse due to its long refractory period. This typically results in a fixed conduction ratio (e.g., 2:1 or 3:1), producing regularly spaced QRS complexes.<br><br><strong>Why others are incorrect:</strong><br><br>✔️ <strong>A:</strong> Atrial fibrillation.<br>✔️ <strong>C:</strong> Ventricular tachycardia or bundle branch block.<br>✔️ <strong>D:</strong> Long QT syndrome or hyperkalemia."
+    },
+
+    {
+      q: "Which of the following ECG findings is characteristic of hyperkalemia?",
+      options: [
+        { letter: "A", text: "Absent P waves and irregularly irregular R-R intervals" },
+        { letter: "B", text: "Saw tooth-shaped P waves and regular R-R intervals" },
+        { letter: "C", text: "Wide QRS complexes and prolonged PR intervals" },
+        { letter: "D", text: "Tall, peaked T waves and prolonged QT intervals" }
+      ],
+      correct: "D",
+      explanation: "<strong>Tall, Peaked T Waves (Hallmark):</strong> The characteristic ECG finding for hyperkalemia is tall, peaked (\"tented\") T waves. Excess potassium decreases the resting membrane potential (making it less negative), decreasing action potential intensity and weakening cardiac contraction.<br><br><strong>Conduction Block:</strong> Large quantities of potassium can block conduction through the AV bundle, potentially leading to wide, bizarre QRS complexes or cardiac arrest.<br><br><strong>Why others are incorrect:</strong><br><br>✔️ <strong>A:</strong> Atrial fibrillation.<br>✔️ <strong>B:</strong> Atrial flutter.<br>✔️ <strong>C:</strong> Ventricular tachycardia.<br><br><strong>Important Distinction:</strong> While \"tall, peaked T waves\" are diagnostic of hyperkalemia, prolonged QT intervals are technically characteristic of long QT syndrome or hypocalcemia. Hyperkalemia typically <strong>shortens</strong> repolarization. However, Option D is the only one containing the pathognomonic T-wave description for hyperkalemia."
+    },
+
+    {
+      q: "Which of the following is a common method to measure arterial blood pressure?",
+      options: [
+        { letter: "A", text: "Sphygmomanometry" },
+        { letter: "B", text: "Electrocardiography" },
+        { letter: "C", text: "Pulse oximetry" },
+        { letter: "D", text: "Spirometry" }
+      ],
+      correct: "A",
+      explanation: "<strong>Sphygmomanometry (A):</strong> Clinical BP measurement uses a sphygmomanometer (cuff + manometer). The most common approach is the auscultatory method — inflating the cuff to occlude an artery, then listening for Korotkoff sounds as pressure is gradually released.<br><br><strong>Why others are incorrect:</strong><br><br>✔️ <strong>B (ECG):</strong> Records electrical activity of the heart (P, QRS, T waves), not pressure.<br>✔️ <strong>C (Pulse oximetry):</strong> Measures oxygen saturation, not pressure.<br>✔️ <strong>D (Spirometry):</strong> Measures lung volumes and capacities, not BP."
+    },
+
+    {
+      q: "Where are the peripheral chemoreceptors located?",
+      options: [
+        { letter: "A", text: "Carotid bodies and aortic bodies" },
+        { letter: "B", text: "Medulla oblongata" },
+        { letter: "C", text: "Hypothalamus" },
+        { letter: "D", text: "Cerebral cortex" }
+      ],
+      correct: "A",
+      explanation: "<strong>Location:</strong> Peripheral chemoreceptors are located in:<br><br>✔️ <strong>Two carotid bodies</strong> — at the bifurcation of each common carotid artery<br>✔️ <strong>One to three aortic bodies</strong> — adjacent to the aorta<br><br><strong>Function:</strong> These chemosensitive cells detect lack of oxygen, excess CO₂, and excess H⁺ ions.<br><br><strong>Signaling:</strong> When stimulated (e.g., arterial pressure falls below critical level), they send signals via Hering's nerves and the vagus nerves to the vasomotor center in the brainstem to elevate arterial pressure.<br><br><strong>Note on Option B:</strong> Medullary chemoreceptors are classified as <strong>central</strong> chemoreceptors — sensitive to H⁺ concentration of brain interstitial fluid but distinct from peripheral receptors."
+    },
+
+    {
+      q: "Which of the following ECG changes is indicative of myocardial injury?",
+      options: [
+        { letter: "A", text: "ST-segment elevation" },
+        { letter: "B", text: "ST-segment depression" },
+        { letter: "C", text: "T-wave inversion" },
+        { letter: "D", text: "Pathological Q waves" }
+      ],
+      correct: "A",
+      explanation: "<strong>The \"Current of Injury\":</strong> When heart muscle is damaged (ischemia or acute coronary occlusion), part of the heart remains partially or totally depolarized. This creates a \"current of injury\" flowing between the pathologically depolarized area and normally polarized areas even between heartbeats.<br><br><strong>Mechanism of ST Elevation:</strong> The current flows during diastole (causing T-P segment depression on baseline), but ECG machines record this baseline shift as <strong>ST-segment elevation</strong>.<br><br><strong>Diagnostic Significance:</strong> Myocardial infarction (injury phase) is characterized by ST-segment elevation in leads facing the acute infarction — one of the most important diagnostic features after acute coronary thrombosis.<br><br><strong>Why others are incorrect:</strong><br><br>✔️ <strong>B:</strong> ST depression is often associated with ischemia, but the classic \"injury current\" manifests as ST elevation.<br>✔️ <strong>C:</strong> T-wave inversion is caused by <strong>mild ischemia</strong>, not acute injury.<br>✔️ <strong>D:</strong> Pathological Q waves characterize <strong>old, recovered</strong> infarctions with permanent muscle loss."
+    },
+
+    {
+      q: "T-wave inversion in the setting of acute myocardial infarction is most commonly associated with:",
+      options: [
+        { letter: "A", text: "Ischemia" },
+        { letter: "B", text: "Injury" },
+        { letter: "C", text: "Necrosis" },
+        { letter: "D", text: "Reperfusion" }
+      ],
+      correct: "A",
+      explanation: "<strong>Primary Cause:</strong> Mild ischemia is \"by far the most common cause\" of T-wave changes, including inversion.<br><br><strong>Mechanism:</strong> Ischemia shortens the depolarization period (action potential) in affected muscle. This changes the normal repolarization sequence. Normally, repolarization spreads epicardium → endocardium; when reversed (endocardium → epicardium), the T wave becomes inverted.<br><br><strong>Clinical Significance:</strong> Any T-wave change (inversion or biphasic) indicates a portion of heart muscle has depolarization out of proportion to the rest due to coronary insufficiency (ischemia).<br><br><strong>Relationship to other options:</strong><br><br>✔️ <strong>B (Injury):</strong> ST-segment elevation.<br>✔️ <strong>C (Necrosis):</strong> Pathological Q waves.<br>✔️ <strong>D (Reperfusion):</strong> While T-wave changes can occur, ischemia is the fundamental metabolic cause."
+    },
+
+    {
+      q: "Which one is true about atria systole?",
+      options: [
+        { letter: "A", text: "SL-valves closed, AV-valves opened" },
+        { letter: "B", text: "Ventricles contract with no change in volume" },
+        { letter: "C", text: "Ventricular pressure rises from 80–120 mm Hg" },
+        { letter: "D", text: "Ventricular volume decreased" }
+      ],
+      correct: "A",
+      explanation: "<strong>Pumping Function:</strong> Atrial systole occurs during the last third of ventricular diastole, providing an additional thrust accounting for ~20% of ventricular filling.<br><br><strong>AV Valves:</strong> For blood to flow from atria to ventricles, the AV valves (mitral, tricuspid) must be <strong>open</strong>. They open when atrial pressure exceeds ventricular pressure.<br><br><strong>SL Valves:</strong> The semilunar valves (aortic, pulmonary) are <strong>closed</strong> during this time. They only open during ventricular ejection when ventricular pressure overcomes arterial pressure.<br><br><strong>Why others are incorrect:</strong><br><br>✔️ <strong>B:</strong> Describes isovolumic contraction (start of ventricular systole).<br>✔️ <strong>C:</strong> Occurs during ejection phase of ventricular systole.<br>✔️ <strong>D:</strong> Ventricular volume <strong>increases</strong> during atrial systole (atria pump final 20% into ventricles)."
+    },
+
+    {
+      q: "Which one of the following is false about the Protodiastolic Phase?",
+      options: [
+        { letter: "A", text: "It is a transitional phase" },
+        { letter: "B", text: "Ventricular pressure drops rapidly" },
+        { letter: "C", text: "SL-valves are closed and S2 is produced" },
+        { letter: "D", text: "Aortic pressure increase" }
+      ],
+      correct: "C",
+      explanation: "<strong>A (TRUE):</strong> The protodiastolic phase is a very brief transitional period (~0.04 sec) between the end of ventricular ejection and closure of the semilunar valves.<br><br><strong>B (TRUE):</strong> As the ventricle begins to relax at the onset of diastole, intraventricular pressure starts its rapid decline.<br><br><strong>C (FALSE):</strong> The aortic and pulmonary (semilunar) valves close at the <strong>end</strong> of protodiastole. During this phase, the valves are technically still <strong>open</strong> (though blood flow is decelerating and beginning to reverse). Once valves close, the heart moves into isovolumic relaxation. The production of S2 marks the <strong>terminal event</strong> of protodiastole, not its ongoing state.<br><br><strong>D (May be considered TRUE/FALSE):</strong> While aortic pressure generally falls during this phase, an incisura (dicrotic notch) occurs when valves snap shut — a short rebound pressure increase caused by sudden cessation of backward flow."
+    },
+
+    {
+      q: "Which one of the following statements is false about ECG?",
+      options: [
+        { letter: "A", text: "It detects Arrhythmias" },
+        { letter: "B", text: "It detects 100% acute myocardial ischemia and infarction Pericarditis" },
+        { letter: "C", text: "It informs about Chamber hypertrophy" },
+        { letter: "D", text: "All of them are true" }
+      ],
+      correct: "B",
+      explanation: "<strong>Why B is false:</strong> The ECG is vital for diagnosing these conditions, but it is <strong>not 100% sensitive</strong>. \"Based on recent definitions of MI, not all MIs cause ST segment elevation\" — the classic sign of acute injury. Furthermore, \"no potential is recorded in the electrocardiogram when the ventricular muscle is either completely polarized or completely depolarized,\" meaning certain states of damage may not always produce a recording at every moment. The absolute claim of \"100%\" detection makes this statement false.<br><br><strong>Why A is true:</strong> ECG is the primary method for diagnosing cardiac arrhythmias, analyzing \"time relations between the different waves.\"<br><br><strong>Why C is true:</strong> The ECG provides clear information regarding chamber hypertrophy — increased muscle mass generates larger electrical potentials (high-voltage QRS), and the mean electrical axis shifts toward the enlarged ventricle."
+    },
+
+    {
+      q: "Which of the following factors is responsible for the majority of resistance to blood flow in the systemic circulation?",
+      options: [
+        { letter: "A", text: "Arterioles" },
+        { letter: "B", text: "Capillaries" },
+        { letter: "C", text: "Veins" },
+        { letter: "D", text: "Aorta" }
+      ],
+      correct: "A",
+      explanation: "<strong>Major Site of Resistance:</strong> In the systemic circulation, about <strong>two-thirds</strong> of total systemic resistance is arteriolar resistance in the small arterioles.<br><br><strong>\"Stopcocks\" of the Circulation:</strong> Arterioles have strong muscular walls that can change diameter manyfold to regulate blood flow into tissues.<br><br><strong>Pressure Drop:</strong> Maximum pressure drop occurs across arterioles — a direct consequence of them being the primary site of resistance.<br><br><strong>Function in BP:</strong> Diastolic pressure specifically reflects total resistance offered by arterioles to peripheral runoff.<br><br><strong>Vascular Control:</strong> Due to the \"fourth power law,\" small diameter changes cause tremendous resistance and flow changes."
+    },
+
+    {
+      q: "Which of the following hormones is primarily responsible for long-term regulation of blood pressure?",
+      options: [
+        { letter: "A", text: "Epinephrine" },
+        { letter: "B", text: "Aldosterone" },
+        { letter: "C", text: "Renin" },
+        { letter: "D", text: "Antidiuretic hormone" }
+      ],
+      correct: "B",
+      explanation: "<strong>Long-Term Regulation: The Renal-Body Fluid System</strong><br><br><strong>Dominant Role:</strong> The kidneys are primarily responsible for long-term arterial pressure regulation, operating over days and weeks by balancing fluid intake and output to control blood volume.<br><br><strong>Aldosterone as Primary Effector:</strong> Aldosterone is a key hormone modifying this long-term renal-body fluid mechanism. It increases salt and water reabsorption by kidney tubules, increasing blood volume and elevating arterial pressure over sustained periods.<br><br><strong>Why others are less responsible for long-term control:</strong><br><br>✔️ <strong>A (Epinephrine):</strong> Rapid control (seconds to minutes) during stress/exercise.<br>✔️ <strong>C (Renin):</strong> A protein enzyme, not a hormone itself. It initiates RAAS, but angiotensin II and aldosterone are the hormonal effectors.<br>✔️ <strong>D (ADH):</strong> Intermediate-term or \"emergency\" pressure controller (especially during hemorrhage)."
+    },
+
+    {
+      q: "Which statement is true about the Rapid ventricular filling phase?",
+      options: [
+        { letter: "A", text: "Atrial pressure is higher than ventricular pressure" },
+        { letter: "B", text: "AV valves opened" },
+        { letter: "C", text: "Ventricular pressure falls near 0 mm Hg" },
+        { letter: "D", text: "All are true" }
+      ],
+      correct: "D",
+      explanation: "<strong>A (TRUE):</strong> During preceding ventricular systole, blood accumulates in the atria (AV valves closed), causing atrial pressure to rise (v wave). When ventricular systole ends and ventricular pressure falls below accumulated atrial pressure, the gradient pushes AV valves open.<br><br><strong>B (TRUE):</strong> The period of rapid filling is initiated specifically when increased atrial pressure pushes AV valves open, allowing blood to flow rapidly into ventricles.<br><br><strong>C (TRUE):</strong> During isovolumic relaxation just prior to filling, intraventricular pressures decrease rapidly to low diastolic levels — shown falling to near 0 mm Hg (~2–3 mm Hg) just as filling begins."
+    },
+
+    {
+      q: "Which one of the following statements elaborates on ventricular slow ejection phases of the cardiac cycle?",
+      options: [
+        { letter: "A", text: "Ventricular pressure rises from 80–120 mm Hg" },
+        { letter: "B", text: "Ventricles start to be relaxed" },
+        { letter: "C", text: "It takes 0.15 second" },
+        { letter: "D", text: "Ventricles contract with no change in volume" }
+      ],
+      correct: "B",
+      explanation: "<strong>Ejection Period:</strong> Divided into rapid ejection (first third) and slow ejection (last two-thirds).<br><br><strong>Physiological State (B):</strong> During slow ejection, ventricles have already reached peak systolic pressure and begun repolarization. This is represented on ECG by the ventricular T wave. The T wave \"represents the stage of repolarization of the ventricles when the ventricular muscle fibers begin to relax.\" Because the T wave occurs slightly before the end of ventricular contraction (systole), this \"start of relaxation\" is the defining physiological event of slow ejection.<br><br><strong>Why others are incorrect:</strong><br><br>✔️ <strong>A:</strong> The rise from 80 to 120 mm Hg occurs during <strong>rapid</strong> ejection. Once pressure peaks (~120 mm Hg), it declines during slow ejection.<br>✔️ <strong>C:</strong> While 0.15 sec is a common textbook approximation, the physiological descriptor (relaxation beginning) is the primary answer.<br>✔️ <strong>D:</strong> Describes isovolumic contraction, not ejection."
+    },
+
+    {
+      q: "Which one is a true statement about ECG?",
+      options: [
+        { letter: "A", text: "One small box takes 0.04 s" },
+        { letter: "B", text: "One large box takes 0.20 s" },
+        { letter: "C", text: "One large box is equivalent with 0.5 mV" },
+        { letter: "D", text: "All are correct answers" }
+      ],
+      correct: "D",
+      explanation: "<strong>A (TRUE):</strong> The 0.20-second intervals on ECG paper are broken into five smaller intervals by thin lines, each representing 0.04 second.<br><br><strong>B (TRUE):</strong> A typical ECG runs at 25 mm/second. Each 5-mm segment (large box) represents 0.20 second.<br><br><strong>C (TRUE):</strong> Horizontal calibration lines are arranged such that 10 small divisions = 1 mV. Since a large box = 5 small divisions, it equals 0.5 mV.<br><br><strong>Summary of ECG Paper Calibration:</strong><br><br>✔️ Time (horizontal): 1 small box = 0.04 sec; 1 large box = 0.20 sec<br>✔️ Voltage (vertical): 1 small box = 0.1 mV; 1 large box = 0.5 mV"
+    }
+
+  ]
+},
+
+/* ========== CVS PHYSIOLOGY 2015 ========== */
+{
+  id: "cvs-physio-2015",
+  subject: "CVS Physiology",
+  topic: "Cardiac Electrophysiology & Hemodynamics",
+  year: 2015,
+  title: "CVS Physiology 2015",
+  icon: "💓",
+  section: "JU Exam — CVS Physiology",
+  questions: [
+
+    {
+      q: "Which of the following statement is (are) true about the heart?",
+      options: [
+        { letter: "A", text: "The left atrial wall is about three times thicker than the right atrial wall." },
+        { letter: "B", text: "Systolic contraction normally begins in the left atrium." },
+        { letter: "C", text: "Excitation spreads directly from atrial muscle cells to ventricular muscle cells." },
+        { letter: "D", text: "Atrial and ventricular muscle contracts simultaneously in systole." },
+        { letter: "E", text: "The contracting ventricles shorten from apex to base." }
+      ],
+      correct: "E",
+      explanation: "<strong>Correct: E.</strong> The specialized conduction system (bundle branches) carries the impulse downward in the septum toward the apex and then back toward the base. This sequential spread dictates the pattern of contraction — ventricles shorten from <strong>apex toward base</strong>.<br><br><strong>Why others are incorrect:</strong><br><br>✔️ <strong>B:</strong> Systolic contraction begins in the <strong>right atrium</strong> at the SA node.<br>✔️ <strong>C:</strong> Excitation does not spread directly between atrial and ventricular muscle due to the fibrous barrier; it must pass through the AV bundle.<br>✔️ <strong>D:</strong> Atria and ventricles do not contract simultaneously — the atria contract about 1/6th of a second ahead of the ventricles."
+    },
+
+    {
+      q: "Which among the following statements is not true about the absolute refractory period in the ventricles?",
+      options: [
+        { letter: "A", text: "Is the period when the ventricles are completely inexcitable." },
+        { letter: "B", text: "Corresponds to the period of ventricular depolarization." },
+        { letter: "C", text: "Corresponds approximately to the period of ventricular contraction." },
+        { letter: "D", text: "Is shorter than the corresponding period in atrial muscle." },
+        { letter: "E", text: "Decreases during sympathetic stimulation of the heart." }
+      ],
+      correct: "D",
+      explanation: "<strong>D is false:</strong> The refractory period of atrial muscle (~0.15 sec) is much <strong>shorter</strong> than that of the ventricles (0.25–0.30 sec).<br><br><strong>Why others are true:</strong><br><br>✔️ <strong>A:</strong> By definition, the refractory period is when a normal cardiac impulse cannot re-excite the muscle.<br>✔️ <strong>B &amp; C:</strong> The ventricular refractory period corresponds to the action potential plateau and is approximately the same length as ventricular contraction.<br>✔️ <strong>E:</strong> Sympathetic stimulation (norepinephrine) decreases the refractory period."
+    },
+
+    {
+      q: "Which of the following statements is (are) true about sinoatrial cells?",
+      options: [
+        { letter: "A", text: "Found in both atria." },
+        { letter: "B", text: "Unable to generate impulses when completely denervated." },
+        { letter: "C", text: "Connected to the AV node by fine bundles of Purkinje tissue." },
+        { letter: "D", text: "Able to generate impulses because their membrane potential is unstable." },
+        { letter: "E", text: "None of the above" }
+      ],
+      correct: "D",
+      explanation: "<strong>D is correct:</strong> SA cells exhibit automaticity because their \"resting\" membrane potential is <strong>unstable</strong> — it gradually rises (drifts upward) between heartbeats until reaching threshold for discharge.<br><br><strong>Why others are incorrect:</strong><br><br>✔️ <strong>A:</strong> They are found in the <strong>right atrium</strong>.<br>✔️ <strong>B:</strong> They generate impulses even when completely denervated due to intrinsic automaticity.<br>✔️ <strong>C:</strong> They are connected to the AV node by <strong>internodal pathways</strong>, not Purkinje tissue."
+    },
+
+    {
+      q: "Which of the following is TRUE about the semilunar valves?",
+      options: [
+        { letter: "A", text: "Opens when the pressure in the aorta and pulmonary trunk is greater than the pressure in the ventricles" },
+        { letter: "B", text: "Closes when the pressure in the ventricles is greater than the pressure in the aorta and pulmonary trunk" },
+        { letter: "C", text: "Closes when the pressure in the ventricles is greater than the pressure in the atria" },
+        { letter: "D", text: "Opens when the pressure in the atria is greater than the pressure in the aorta and pulmonary trunk" },
+        { letter: "E", text: "None of the above" }
+      ],
+      correct: "E",
+      explanation: "<strong>None of A–D are correct.</strong><br><br><strong>Correct physiology:</strong><br><br>✔️ Semilunar valves <strong>open</strong> when ventricular pressure is greater than aortic/pulmonary pressure.<br>✔️ Semilunar valves <strong>close</strong> when aortic/pulmonary pressure is greater than ventricular pressure.<br><br>Option A describes the opposite of opening. Option B describes the opposite of closing. Option C describes AV valve closure. Option D incorrectly involves atrial pressure."
+    },
+
+    {
+      q: "Which ion is primarily responsible for the depolarization phase of the action potential in pacemaker cells?",
+      options: [
+        { letter: "A", text: "K⁺" },
+        { letter: "B", text: "Na⁺" },
+        { letter: "C", text: "Ca²⁺" },
+        { letter: "D", text: "Cl⁻" },
+        { letter: "E", text: "All are answers" }
+      ],
+      correct: "C",
+      explanation: "<strong>C is correct: Ca²⁺.</strong> In SA node (pacemaker) cells, the resting potential is too high (less negative) for fast sodium channels to function. Therefore, the upstroke (depolarization phase) of the action potential is caused primarily by the opening of <strong>slow sodium-calcium channels</strong>, with calcium being the primary ion responsible."
+    },
+
+    {
+      q: "Rate of action potentials conduction in the AV node delays the transmission of action potentials to the ventricles for how much seconds?",
+      options: [
+        { letter: "A", text: "0.22 sec" },
+        { letter: "B", text: "0.18 sec" },
+        { letter: "C", text: "0.16 sec" },
+        { letter: "D", text: "0.11 sec" },
+        { letter: "E", text: "0.09 sec" }
+      ],
+      correct: "E",
+      explanation: "<strong>E is correct: 0.09 sec.</strong> While the total delay between the SA node and the ventricles is 0.16 seconds, the delay in the <strong>AV node itself</strong> is 0.09 second."
+    },
+
+    {
+      q: "Which one of the following auto rhythmic cells have highest velocity of AP conduction?",
+      options: [
+        { letter: "A", text: "Internodal fibers" },
+        { letter: "B", text: "Atrial muscle" },
+        { letter: "C", text: "Purkinje fibers" },
+        { letter: "D", text: "Ventricular muscles" },
+        { letter: "E", text: "AV-bundle" }
+      ],
+      correct: "C",
+      explanation: "<strong>C is correct: Purkinje fibers.</strong> The velocity of conduction in Purkinje fibers is as great as 1.5–4.0 m/sec — about 6 times faster than usual ventricular muscle and the <strong>fastest in the heart</strong>."
+    },
+
+    {
+      q: "In which phase of the ventricular muscle action potential is the potassium permeability the highest?",
+      options: [
+        { letter: "A", text: "0" },
+        { letter: "B", text: "1" },
+        { letter: "C", text: "2" },
+        { letter: "D", text: "3" },
+        { letter: "E", text: "4" }
+      ],
+      correct: "D",
+      explanation: "<strong>D is correct: Phase 3.</strong> Phase 3 is the stage of rapid repolarization. During this phase, slow sodium-calcium channels close and membrane permeability for potassium ions increases rapidly, allowing potassium to exit the fiber and return the membrane potential to resting level."
+    },
+
+    {
+      q: "Which of the following statements is most accurate about cardiac muscle?",
+      options: [
+        { letter: "A", text: "The T-tubules of cardiac muscle can store much less calcium than T-tubules in skeletal muscle" },
+        { letter: "B", text: "The strength and contraction of cardiac muscle depends on the amount of calcium surrounding cardiac myocytes" },
+        { letter: "C", text: "In cardiac muscle the initiation of the action potential causes an immediate opening of slow calcium channels." },
+        { letter: "D", text: "Cardiac muscle repolarization is caused by opening of sodium channels." },
+        { letter: "E", text: "Mucopolysaccharides inside the T-tubules bind chloride ions." }
+      ],
+      correct: "B",
+      explanation: "<strong>B is correct.</strong> The strength of cardiac muscle contraction depends to a great extent on the concentration of calcium ions in extracellular fluids. Cardiac T-tubules pass directly into the extracellular space, allowing extracellular fluid to percolate through them. Consequently, calcium available for contraction depends on extracellular concentration. In contrast, skeletal muscle contraction is largely independent of extracellular calcium.<br><br><strong>Why others are incorrect:</strong><br><br>✔️ <strong>A:</strong> Cardiac T-tubules are actually <strong>larger</strong> than skeletal muscle T-tubules — 5× greater diameter and 25× greater volume. They store abundant calcium.<br>✔️ <strong>C:</strong> Slow calcium channels are \"slower to open\" than fast sodium channels.<br>✔️ <strong>D:</strong> Repolarization is caused by opening of <strong>potassium</strong> channels.<br>✔️ <strong>E:</strong> Mucopolysaccharides bind <strong>calcium</strong> ions, not chloride."
+    },
+
+    {
+      q: "What is the membrane potential (threshold level) at which the S-A node discharges?",
+      options: [
+        { letter: "A", text: "-40 mV" },
+        { letter: "B", text: "-55 mV" },
+        { letter: "C", text: "-65 mV" },
+        { letter: "D", text: "-85 mV" },
+        { letter: "E", text: "-105 mV" }
+      ],
+      correct: "A",
+      explanation: "<strong>A is correct: -40 mV.</strong> The \"resting\" potential of sinus nodal fibers drifts upward between beats until it reaches a threshold voltage of about <strong>-40 millivolts</strong>, at which point sodium-calcium channels activate to cause the action potential."
+    },
+
+    {
+      q: "If the ventricular Purkinje fibers become the pacemaker of the heart, what is the expected heart rate?",
+      options: [
+        { letter: "A", text: "30/min" },
+        { letter: "B", text: "50/min" },
+        { letter: "C", text: "65/min" },
+        { letter: "D", text: "75/min" },
+        { letter: "E", text: "85/min" }
+      ],
+      correct: "A",
+      explanation: "<strong>A is correct: 30/min.</strong> Purkinje fibers have an intrinsic rhythmical discharge rate of <strong>15–40 times per minute</strong>. This is much slower than the normal sinus node rate of 70–80 bpm. If higher pacemakers fail or are blocked, the Purkinje system drives the heart at this lower \"escape\" rate."
+    },
+
+    {
+      q: "It is most accurate to define an artery as a vessel:",
+      options: [
+        { letter: "A", text: "Carries highly oxygenated blood." },
+        { letter: "B", text: "Contains smooth muscle in its wall." },
+        { letter: "C", text: "Transports blood away from the heart." },
+        { letter: "D", text: "Transports blood toward the heart." },
+        { letter: "E", text: "Contains internal valves." }
+      ],
+      correct: "C",
+      explanation: "<strong>C is correct.</strong> The primary anatomical definition of an artery is a vessel that transports blood <strong>away from the heart</strong>. While most systemic arteries carry oxygenated blood, the pulmonary artery carries deoxygenated blood to the lungs, making A incorrect. Valves (E) are characteristic of veins."
+    },
+
+    {
+      q: "Valve function in the cardiovascular system is to:",
+      options: [
+        { letter: "A", text: "Provide sounds so that heart health can be monitored." },
+        { letter: "B", text: "Ensure that blood flows in one direction." },
+        { letter: "C", text: "Prevent blood from flowing too quickly." },
+        { letter: "D", text: "Regulate blood pressure." },
+        { letter: "E", text: "Provide the force for circulation" }
+      ],
+      correct: "B",
+      explanation: "<strong>B is correct.</strong> The AV and semilunar valves in the heart, as well as valves in the venous system, open and close passively based on pressure gradients to prevent backflow and ensure <strong>unidirectional blood flow</strong>."
+    },
+
+    {
+      q: "Which artery/arteries branch(es) is/are most proximal to the beginning of the aorta at the heart?",
+      options: [
+        { letter: "A", text: "Coronary" },
+        { letter: "B", text: "Pulmonary" },
+        { letter: "C", text: "Both coronary and pulmonary" },
+        { letter: "D", text: "Aorta and pulmonary artery" }
+      ],
+      correct: "A",
+      explanation: "<strong>A is correct: Coronary.</strong> The coronary arteries originate virtually at a right angle from the root of the aorta, immediately above the aortic valve. This makes them the <strong>very first branches</strong> of the systemic arterial tree."
+    },
+
+    {
+      q: "The sac around the heart is the:",
+      options: [
+        { letter: "A", text: "Peritoneum" },
+        { letter: "B", text: "Pleural sac" },
+        { letter: "C", text: "Pericardium" },
+        { letter: "D", text: "Myocardium" },
+        { letter: "E", text: "Epicardium" }
+      ],
+      correct: "C",
+      explanation: "<strong>C is correct: Pericardium.</strong> The pericardium is the sac around the heart."
+    },
+
+    {
+      q: "The function of the pericardial fluid is to:",
+      options: [
+        { letter: "A", text: "Provide oxygen to the heart." },
+        { letter: "B", text: "Reduce friction between the heart and the pericardium." },
+        { letter: "C", text: "Provide fluid to the heart." },
+        { letter: "D", text: "Remove waste products from the heart." },
+        { letter: "E", text: "Store calcium for the heart." }
+      ],
+      correct: "B",
+      explanation: "<strong>B is correct.</strong> The standard physiological role of this serous fluid is to <strong>lubricate</strong> the surfaces and reduce friction as the heart contracts and relaxes within the pericardial sac."
+    },
+
+    {
+      q: "At an intercalated disc:",
+      options: [
+        { letter: "A", text: "The cell membranes of two cardiac muscle fibers are completely separated by a synapse." },
+        { letter: "B", text: "The myofibrils are loosely attached to the membrane of the disc." },
+        { letter: "C", text: "Two cardiac muscle cells are connected by gap junctions." },
+        { letter: "D", text: "T-tubules unite the membranes of the adjoining cells." },
+        { letter: "E", text: "All of the answers are correct." }
+      ],
+      correct: "C",
+      explanation: "<strong>C is correct.</strong> Intercalated discs are cell membranes that separate individual cardiac muscle cells. At these discs, the membranes form <strong>gap junctions</strong> (permeable \"communicating\" junctions) that allow ions to diffuse rapidly. This enables action potentials to travel easily from cell to cell, allowing the heart to function as a syncytium."
+    },
+
+    {
+      q: "In the heart, valves are located:",
+      options: [
+        { letter: "A", text: "Just between the atria and the ventricles." },
+        { letter: "B", text: "Just between the ventricles and the arteries." },
+        { letter: "C", text: "Just between the great veins and the atria." },
+        { letter: "D", text: "B/N atria and ventricles and b/n ventricles and arteries." },
+        { letter: "E", text: "Just between the right and left ventricles." }
+      ],
+      correct: "D",
+      explanation: "<strong>D is correct.</strong> The heart contains:<br><br>✔️ <strong>AV valves</strong> (mitral, tricuspid) — between atria and ventricles<br>✔️ <strong>Semilunar valves</strong> (aortic, pulmonary) — between ventricles and great arteries"
+    },
+
+    {
+      q: "Which valves have chordae tendineae?",
+      options: [
+        { letter: "A", text: "Aortic and pulmonary valves" },
+        { letter: "B", text: "Bicuspid (mitral) and tricuspid valves" },
+        { letter: "C", text: "Valves in vein" },
+        { letter: "D", text: "Semilunar Valves" },
+        { letter: "E", text: "Coronary arteries" }
+      ],
+      correct: "B",
+      explanation: "<strong>B is correct.</strong> The AV valves (mitral and tricuspid) are attached to papillary muscles by <strong>chordae tendineae</strong>, which prevent valve cusps from bulging too far backward into the atria during ventricular contraction. This is not true for semilunar valves."
+    },
+
+    {
+      q: "The term myogenic indicates that the heart muscle is the source of:",
+      options: [
+        { letter: "A", text: "The contractile force for pumping." },
+        { letter: "B", text: "A hormone that indirectly regulates blood volume." },
+        { letter: "C", text: "The electrical signal that triggers heart contraction." },
+        { letter: "D", text: "Receptors that trigger blood pumping." },
+        { letter: "E", text: "Provide mechanical link to heart tissue." }
+      ],
+      correct: "C",
+      explanation: "<strong>C is correct.</strong> \"Myogenic\" rhythmicity means the heartbeat is initiated <strong>within the muscle tissue itself</strong> rather than by external nerve impulses. This is described as automaticity or self-excitation — specialized conductive muscle fibers (like SA node) spontaneously generate action potentials that trigger each contraction cycle."
+    },
+
+    {
+      q: "The flattening of the action potentials of myocardial contractile cells, called the plateau phase, is due to a combination of ___ K⁺ permeability and ___ Ca²⁺ permeability.",
+      options: [
+        { letter: "A", text: "Increasing, increasing" },
+        { letter: "B", text: "Decreasing, decreasing" },
+        { letter: "C", text: "Increasing, decreasing" },
+        { letter: "D", text: "Decreasing, increasing" }
+      ],
+      correct: "D",
+      explanation: "<strong>D is correct: Decreasing, increasing.</strong> Immediately after action potential onset, potassium permeability <strong>decreases</strong> about fivefold. Simultaneously, slow calcium channels open, allowing large quantities of calcium to flow inward — maintaining the prolonged depolarization (plateau)."
+    },
+
+    {
+      q: "The action potentials of myocardial autorhythmic cells are due to a combination of increasing Na₂⁺ and decreasing K⁺:",
+      options: [
+        { letter: "A", text: "Influx, efflux" },
+        { letter: "B", text: "Efflux, influx" },
+        { letter: "C", text: "Influx, influx" },
+        { letter: "D", text: "Efflux, efflux" }
+      ],
+      correct: "A",
+      explanation: "<strong>A is correct: Influx, efflux.</strong> In autorhythmic (pacemaker) cells, the \"resting\" potential gradually rises between beats because positive sodium ions leak <strong>inward (influx)</strong>. This upward drift continues as potassium <strong>efflux decreases</strong> due to progressive closure of potassium channels opened during the previous recovery phase."
+    },
+
+    {
+      q: "The end of the plateau phase is due to the ___ of Ca²⁺ channels and ___ of K⁺ channels.",
+      options: [
+        { letter: "A", text: "Opening, opening" },
+        { letter: "B", text: "Closing, closing" },
+        { letter: "C", text: "Opening, closing" },
+        { letter: "D", text: "Closing, opening" }
+      ],
+      correct: "D",
+      explanation: "<strong>D is correct: Closing, opening.</strong> The action potential ends when slow calcium-sodium channels <strong>close</strong> and membrane permeability for potassium ions <strong>increases rapidly</strong>, allowing rapid potassium loss to return the membrane potential to resting level."
+    },
+
+    {
+      q: "The importance of the plateau phase of the action potential of myocardial cells is in:",
+      options: [
+        { letter: "A", text: "Preventing overstretching of the cells." },
+        { letter: "B", text: "Enhancing the efficiency of oxygen use by the cells." },
+        { letter: "C", text: "Preventing tetanus." },
+        { letter: "D", text: "Preventing fibrillation." },
+        { letter: "E", text: "Regulating Ca²⁺ availability to the cells." }
+      ],
+      correct: "C",
+      explanation: "<strong>C is correct: Preventing tetanus.</strong> The plateau results in a long absolute refractory period (~0.25–0.30 sec in ventricles) approximately the same length as ventricular contraction. This long refractory period ensures the heart has time to relax and fill with blood before it can be re-excited — preventing <strong>tetanization</strong>."
+    },
+
+    {
+      q: "Myocardial cells can generate action potentials spontaneously because they have:",
+      options: [
+        { letter: "A", text: "Unstable ion channels." },
+        { letter: "B", text: "Permanently open channels for Na⁺ and K⁺" },
+        { letter: "C", text: "A net influx of Na⁺" },
+        { letter: "D", text: "L-type Ca²⁺ channels." },
+        { letter: "E", text: "Prolonged Ca²⁺ influx." }
+      ],
+      correct: "A",
+      explanation: "<strong>A is correct: Unstable ion channels.</strong> Specialized cardiac fibers exhibit automaticity because their membrane potential is <strong>unstable</strong> — caused by an inherent \"leakiness\" to sodium and calcium ions, causing the membrane potential to drift upward until reaching threshold for discharge."
+    },
+
+    {
+      q: "In order for blood to enter the heart:",
+      options: [
+        { letter: "A", text: "The atria must be in diastole." },
+        { letter: "B", text: "The pressure in the atria must be lower than in the veins." },
+        { letter: "C", text: "The AV valves must be open." },
+        { letter: "D", text: "The atria must not only be at rest but the atrial pressure must be lower than the veins." },
+        { letter: "E", text: "All of the answers are correct." }
+      ],
+      correct: "D",
+      explanation: "<strong>D is correct.</strong> Blood normally flows continually from great veins into the atria. This passive filling occurs because, while the atria are in diastole (at rest), the <strong>atrial pressure is lower than the pressure in the veins</strong>, creating the necessary pressure gradient for inflow."
+    },
+
+    {
+      q: "The action potential in a cardiac contractile cell causes:",
+      options: [
+        { letter: "A", text: "Opening of L-type calcium channels." },
+        { letter: "B", text: "Opening of ryanodine receptor calcium channels." },
+        { letter: "C", text: "Activation of sodium-potassium ATPase." },
+        { letter: "D", text: "Activation of NCX transporters." },
+        { letter: "E", text: "Opening of HCN channels." }
+      ],
+      correct: "A",
+      explanation: "<strong>A is correct.</strong> When an action potential passes over the cardiac muscle membrane, it opens voltage-dependent calcium channels (specifically <strong>L-type channels</strong>) in the T-tubule membrane, allowing calcium to enter the sarcoplasm."
+    },
+
+    {
+      q: "The rapid depolarization phase of the action potentials of myocardial contractile cells is due to which ion(s)?",
+      options: [
+        { letter: "A", text: "Ca²⁺ only" },
+        { letter: "B", text: "K⁺ only" },
+        { letter: "C", text: "Na⁺ only" },
+        { letter: "D", text: "both Ca²⁺ and K⁺" },
+        { letter: "E", text: "both Na⁺ and K⁺" }
+      ],
+      correct: "C",
+      explanation: "<strong>C is correct: Na⁺ only.</strong> In contractile ventricular muscle, the rapid upstroke (Phase 0) of the action potential is caused almost entirely by the sudden opening of large numbers of fast sodium channels, allowing a tremendous influx of sodium ions."
+    },
+
+    {
+      q: "During the plateau phase of the action potentials of myocardial contractile cells, which ion(s) is/are crossing the membrane?",
+      options: [
+        { letter: "A", text: "Ca²⁺ only" },
+        { letter: "B", text: "K⁺ only" },
+        { letter: "C", text: "Na⁺ only" },
+        { letter: "D", text: "both Ca²⁺ and K⁺" },
+        { letter: "E", text: "both Na⁺ and K⁺" }
+      ],
+      correct: "D",
+      explanation: "<strong>D is correct: both Ca²⁺ and K⁺.</strong> During the plateau, calcium ions enter the cell through slow calcium channels while a decreased outflux of potassium ions occurs. Both ions move across the membrane simultaneously to maintain the depolarized state."
+    },
+
+    {
+      q: "The fibrous skeleton of the heart is important because it:",
+      options: [
+        { letter: "A", text: "Forces electrical activity to be conducted through the atrioventricular node." },
+        { letter: "B", text: "Transmits electrical activity from the atria to the ventricles." },
+        { letter: "C", text: "Helps guide the blood into the proper chambers in sequence." },
+        { letter: "D", text: "Directs the flow of blood into the arteries." }
+      ],
+      correct: "A",
+      explanation: "<strong>A is correct.</strong> Except at the AV bundle, the atrial muscle is separated from the ventricular muscle by a continuous fibrous barrier. This barrier acts as an <strong>electrical insulator</strong>, preventing the cardiac impulse from passing between atria and ventricles through any route other than the AV bundle."
+    },
+
+    {
+      q: "The AV node is important because it:",
+      options: [
+        { letter: "A", text: "Directs electrical impulses from the ventricles to the atria." },
+        { letter: "B", text: "Delays the transmission of the electrical impulses to the ventricles in order for the atria to finish contracting." },
+        { letter: "C", text: "Serves as the pacemaker in a normal heart." },
+        { letter: "D", text: "Electrically opens the AV valves." },
+        { letter: "E", text: "None of these answers are correct." }
+      ],
+      correct: "B",
+      explanation: "<strong>B is correct.</strong> The AV node and adjacent conductive fibers specifically <strong>delay</strong> the cardiac impulse from traveling too rapidly from atria into ventricles. This delay allows the atria time to empty their blood into the ventricles before ventricular contraction begins."
+    },
+
+    {
+      q: "The action potential in cardiac muscle is long lasting compared to the duration of the contraction, preventing:",
+      options: [
+        { letter: "A", text: "A tetanic contraction." },
+        { letter: "B", text: "Refractoriness." },
+        { letter: "C", text: "Arrhythmia." },
+        { letter: "D", text: "Myocardial infarction" }
+      ],
+      correct: "A",
+      explanation: "<strong>A is correct.</strong> The plateau phase of the cardiac action potential results in a long absolute refractory period (0.25–0.30 sec in ventricles) approximately the same length as ventricular contraction. This ensures the heart has time to relax and fill with blood before it can be re-excited — preventing <strong>tetanus</strong> (summation of contractions)."
+    },
+
+    {
+      q: "Which of the following statements are true?",
+      options: [
+        { letter: "A", text: "When the entire myocardium is depolarized, no voltage differences exist between any regions of myocardium" },
+        { letter: "B", text: "Extracellular electrodes experience a potential difference only when part of the heart is in a depolarized state and part of the heart is polarized." },
+        { letter: "C", text: "The tissue ahead of a wave of depolarization is positively charged" },
+        { letter: "D", text: "The tissue behind the wave of depolarization is negatively charged." },
+        { letter: "E", text: "All" }
+      ],
+      correct: "E",
+      explanation: "<strong>E is correct: All.</strong><br><br>✔️ <strong>A &amp; B:</strong> No potential is recorded on ECG when the myocardium is either completely polarized or completely depolarized; a potential difference is only experienced when part of the heart is depolarized and part is polarized.<br><br>✔️ <strong>C &amp; D:</strong> During the spread of a depolarization wave, tissue <strong>ahead</strong> of the wave is still polarized (positive), while tissue <strong>behind</strong> the wave is depolarized (negative)."
+    },
+
+    {
+      q: "Which of the following is true of PR Segment?",
+      options: [
+        { letter: "A", text: "Is taken as an index of AV conduction time." },
+        { letter: "B", text: "During this time, the wave of depolarization moves through SA node" },
+        { letter: "C", text: "There will be an upward deflection of the ECG" },
+        { letter: "D", text: "There will be a downward deflection of the ECG" }
+      ],
+      correct: "A",
+      explanation: "<strong>A is correct.</strong> The PR segment is a combined index of AV nodal delay and conduction in infranodal pathways. Clinically, it measures the time it takes for the impulse to pass through the AV node."
+    },
+
+    {
+      q: "Which of the following is true about QRS Complex and Ventricular Depolarization?",
+      options: [
+        { letter: "A", text: "The depolarization wave emerges from the SA node" },
+        { letter: "B", text: "Depolarization of free wall ventricular muscle proceeds from the innermost layers of muscle (subendocardium) to the outermost layers (subepicardium)" },
+        { letter: "C", text: "The last portions of the ventricle to depolarize generate a net dipole with upward deflection" },
+        { letter: "D", text: "The duration of the QRS complex is roughly equivalent to the duration of the T wave" }
+      ],
+      correct: "B",
+      explanation: "<strong>B is correct.</strong> When the cardiac impulse enters the ventricles, it first reaches the endocardial surfaces (innermost layers) via the Purkinje system and then spreads outward through the muscle to the epicardial (outermost) surfaces."
+    },
+
+    {
+      q: "Which of the following are true?",
+      options: [
+        { letter: "A", text: "The QT interval measures the total duration of ventricular activation" },
+        { letter: "B", text: "Subendocardial cells were the first to depolarize and repolarize" },
+        { letter: "C", text: "The T wave has a longer duration than the QRS complex" },
+        { letter: "D", text: "The action potentials of all ventricular cells are in phase 2 during T wave formation on ECG" },
+        { letter: "E", text: "A and C" },
+        { letter: "F", text: "B and C" }
+      ],
+      correct: "C",
+      explanation: "<strong>C is correct.</strong> The process of ventricular repolarization (the T wave) extends over a long period (~0.15 sec), whereas the normal QRS complex (depolarization) lasts only about 0.06–0.08 sec."
+    },
+
+    {
+      q: "True about effect of Potassium Ions on function of the heart:",
+      options: [
+        { letter: "A", text: "Excess potassium in the extracellular fluids increase heart rate" },
+        { letter: "B", text: "A high potassium concentration in the extracellular fluids increases the resting membrane potential in the cardiac muscle fibers" },
+        { letter: "C", text: "Large quantities can block conduction of the cardiac impulse from the atria to the ventricles through the A-V bundle." },
+        { letter: "D", text: "All" }
+      ],
+      correct: "C",
+      explanation: "<strong>C is correct.</strong> Excess potassium in extracellular fluids can <strong>block conduction</strong> of the cardiac impulse through the AV bundle.<br><br><strong>Note on B:</strong> While high potassium does increase the \"resting\" membrane potential value (making it less negative, e.g., from -90 mV to -70 mV), Option C is the most definitive clinical effect described."
+    },
+
+    {
+      q: "True about Effect of Calcium Ions on function of the heart:",
+      options: [
+        { letter: "A", text: "Deficiency of calcium ions causes cardiac flaccidity" },
+        { letter: "B", text: "Deficiency of calcium ions causes spastic contraction." },
+        { letter: "C", text: "Excess Calcium Ions in the extracellular fluids slows heart rate" },
+        { letter: "D", text: "None" }
+      ],
+      correct: "A",
+      explanation: "<strong>A is correct.</strong> A deficiency of calcium ions causes <strong>cardiac flaccidity</strong> — an effect similar to that caused by high potassium. Conversely, an excess of calcium causes the heart to go toward <strong>spastic contraction</strong>."
+    },
+
+    {
+      q: "Which of the following factors shift the Mean Electrical Axis of the heart to the left?",
+      options: [
+        { letter: "A", text: "At the end of deep inspiration" },
+        { letter: "B", text: "At the end of deep expiration" },
+        { letter: "C", text: "Lean and tall person" },
+        { letter: "D", text: "When a person stands up" }
+      ],
+      correct: "B",
+      explanation: "<strong>B is correct.</strong> A leftward shift of the mean electrical axis occurs at the <strong>end of deep expiration</strong>, when a person lies down, or in obese individuals — because the abdominal contents press the diaphragm upward, angulating the heart to the left."
+    },
+
+    {
+      q: "When the left bundle branch is blocked:",
+      options: [
+        { letter: "A", text: "There is intense left axis deviation" },
+        { letter: "B", text: "There is intense right axis deviation" },
+        { letter: "C", text: "The duration of the QRS complex is greatly prolonged" },
+        { letter: "D", text: "The duration of the QRS complex is greatly shortened" },
+        { letter: "E", text: "A and C" },
+        { letter: "F", text: "A and D" }
+      ],
+      correct: "E",
+      explanation: "<strong>E is correct: A and C.</strong> In left bundle branch block, the right ventricle depolarizes far ahead of the left, creating a strong vector toward the left — resulting in <strong>intense left axis deviation</strong>. Additionally, because the impulse must travel through slow-conducting muscle instead of the Purkinje system, the duration of the QRS complex is <strong>greatly prolonged</strong> (to 0.14 sec or greater)."
+    },
+
+    {
+      q: "The \"lub,\" or first heart sound, is produced by closing of:",
+      options: [
+        { letter: "A", text: "The aortic semilunar valve." },
+        { letter: "B", text: "The pulmonary semilunar valve." },
+        { letter: "C", text: "The tricuspid valve." },
+        { letter: "D", text: "The bicuspid valve." },
+        { letter: "E", text: "Both AV valves." }
+      ],
+      correct: "E",
+      explanation: "<strong>E is correct.</strong> The first heart sound (S1), often described as \"lub,\" is associated with the closure of the <strong>atrioventricular (AV) valves</strong> — the mitral/bicuspid and tricuspid valves — at the beginning of systole."
+    },
+
+    {
+      q: "The first heart sound is produced at:",
+      options: [
+        { letter: "A", text: "The beginning of systole." },
+        { letter: "B", text: "The end of systole." },
+        { letter: "C", text: "The beginning of diastole." },
+        { letter: "D", text: "The end of diastole." }
+      ],
+      correct: "A",
+      explanation: "<strong>A is correct.</strong> The first heart sound is heard when the ventricles contract, causing the AV valves to close. This occurs at the <strong>onset of ventricular systole</strong>."
+    },
+
+    {
+      q: "The QRS wave of an ECG is produced by:",
+      options: [
+        { letter: "A", text: "Depolarization of the atria." },
+        { letter: "B", text: "Repolarization of the atria." },
+        { letter: "C", text: "Depolarization of the ventricles." },
+        { letter: "D", text: "Repolarization of the ventricles." }
+      ],
+      correct: "C",
+      explanation: "<strong>C is correct.</strong> The QRS complex is caused by electrical potentials generated when the <strong>ventricles depolarize</strong> before their contraction begins."
+    },
+
+    {
+      q: "The second heart sound immediately follows the occurrence of:",
+      options: [
+        { letter: "A", text: "The P wave." },
+        { letter: "B", text: "The QRS wave." },
+        { letter: "C", text: "The T wave." },
+        { letter: "D", text: "All" }
+      ],
+      correct: "C",
+      explanation: "<strong>C is correct.</strong> The second heart sound (S2) results from closure of the semilunar valves at the end of systole. On ECG, the end of systole corresponds to the end of the ventricular <strong>T wave</strong>, which represents ventricular repolarization."
+    },
+
+    {
+      q: "During the phase of isovolumetric relaxation of the ventricles, the pressure in the ventricles is:",
+      options: [
+        { letter: "A", text: "Rising." },
+        { letter: "B", text: "Falling." },
+        { letter: "C", text: "First rising, then falling." },
+        { letter: "D", text: "Constant." }
+      ],
+      correct: "B",
+      explanation: "<strong>B is correct: Falling.</strong> Isovolumic relaxation occurs at the end of systole when the ventricular muscle begins to relax suddenly. During this brief period (0.03–0.06 sec), intraventricular pressures <strong>decrease rapidly</strong> back to their low diastolic levels while volume remains constant."
+    },
+
+    {
+      q: "Rapid depolarization (phase 0) of the action potential of ventricular muscle results from opening of:",
+      options: [
+        { letter: "A", text: "Voltage-gated Ca²⁺ channels" },
+        { letter: "B", text: "Voltage-gated Na⁺ channels" },
+        { letter: "C", text: "Acetylcholine-activated K⁺ channels" },
+        { letter: "D", text: "Inward rectifying K⁺ channels" }
+      ],
+      correct: "B",
+      explanation: "<strong>B is correct.</strong> In ventricular contractile muscle, the rapid upstroke (Phase 0) of the action potential is caused by the sudden opening of <strong>fast sodium channels</strong>, allowing a massive influx of positive sodium ions into the fiber."
+    },
+
+    {
+      q: "During the cardiac cycle:",
+      options: [
+        { letter: "A", text: "The aortic and mitral valves are never open at the same time" },
+        { letter: "B", text: "The first heart sound is caused by the rapid ejection of blood from the ventricles" },
+        { letter: "C", text: "The mitral valve is open throughout diastole" },
+        { letter: "D", text: "Left ventricular pressure is always less than aortic pressure" },
+        { letter: "E", text: "Ventricular filling occurs primarily during systole" }
+      ],
+      correct: "A",
+      explanation: "<strong>A is correct.</strong> To ensure unidirectional flow, the heart's valves operate such that the inflow (mitral) and outflow (aortic) valves are <strong>never open simultaneously</strong>. During filling, the mitral is open and aortic is closed; during ejection, the aortic is open and mitral is closed; during isovolumic phases, both are closed."
+    },
+
+    {
+      q: "During the cardiac cycle:",
+      options: [
+        { letter: "A", text: "The second heart sound is associated with opening of the aortic valve" },
+        { letter: "B", text: "Left atrial pressure is always less than left ventricular pressure" },
+        { letter: "C", text: "Aortic pressure reaches its lowest value during ventricular systole" },
+        { letter: "D", text: "The ventricles eject blood during all of systole" }
+      ],
+      correct: "C",
+      explanation: "<strong>C is correct.</strong> Aortic pressure falls throughout diastole as blood flows to the periphery, reaching its minimum (diastolic pressure, ~80 mm Hg) just as the next ventricular contraction begins. Because isovolumic contraction is the first phase of systole and occurs <strong>before</strong> the aortic valve opens, the pressure in the aorta is still at its lowest point during this initial part of systole."
+    },
+
+    {
+      q: "What prevents cardiac muscle from undergoing a tetanic contraction?",
+      options: [
+        { letter: "A", text: "The rate of neural stimulation is limited by the CNS" },
+        { letter: "B", text: "The muscle fatigues so quickly that it must relax fully between contractions" },
+        { letter: "C", text: "The refractory period of the action potential lasts into the relaxation phase of the contraction" },
+        { letter: "D", text: "The electrical activity is conducted too slowly for tetanus to occur" }
+      ],
+      correct: "C",
+      explanation: "<strong>C is correct.</strong> Cardiac muscle has a very long absolute refractory period (0.25–0.30 sec) caused by the action potential plateau. This period is approximately the same length as the entire contraction, ensuring the muscle begins to relax before it can be re-excited — preventing summation and tetanization."
+    },
+
+    {
+      q: "Stimulation of the parasympathetic nerves to the normal heart can lead to complete inhibition of the SA node for several seconds. During that period:",
+      options: [
+        { letter: "A", text: "P waves would become larger." },
+        { letter: "B", text: "There would be fewer T waves than QRS complexes" },
+        { letter: "C", text: "There would be fewer P waves than T waves" },
+        { letter: "D", text: "There would be fewer QRS complexes than P waves" },
+        { letter: "E", text: "The shape of QRS complexes would change" }
+      ],
+      correct: "C",
+      explanation: "<strong>C is correct.</strong> Parasympathetic (vagal) stimulation inhibits the SA node, which can stop it from firing. Since the SA node generates the P wave, these waves would disappear. However, the ventricles typically \"escape\" and generate their own rhythm (ventricular escape), producing QRS complexes and T waves without preceding P waves — resulting in <strong>more T waves than P waves</strong>."
+    }
+
+  ]
+},
+
+/* ========== CVS PHYSIOLOGY 2018 ========== */
+{
+  id: "cvs-physio-2018",
+  subject: "CVS Physiology",
+  topic: "Hemodynamics, Edema & ECG",
+  year: 2018,
+  title: "CVS Physiology 2018",
+  icon: "💓",
+  section: "JU Exam — CVS Physiology",
+  questions: [
+
+    {
+      q: "The blood pressure at the arterial end is 100 mmHg, and at the venous end of the same vessel is 70 mmHg. The vessel length is 200 mm, and blood with a viscosity of 7 poise (= 0.7 Pa.s) flows through this vessel with a diameter of 4.0 mm. What is the rate of blood flow? (Use circle constant = 3.14)",
+      options: [
+        { letter: "A", text: "1,435.6 ml/second" },
+        { letter: "B", text: "1,345.7 ml/second" },
+        { letter: "C", text: "155.4 ml/second" },
+        { letter: "D", text: "1,345.3 ml/second" }
+      ],
+      correct: "B",
+      explanation: "<strong>Poiseuille's Law:</strong> F = (π × ΔP × r⁴) / (8 × η × l)<br><br><strong>Given:</strong><br><br>✔️ ΔP = 100 − 70 = 30 mmHg<br>✔️ Radius (r) = 4.0/2 = 2.0 mm<br>✔️ Length (l) = 200 mm<br>✔️ Viscosity (η) = 7 poise = 0.7 Pa·s<br>✔️ π = 3.14<br><br><strong>Calculation:</strong><br><br>Numerator = 3.14 × 30 × (2.0)⁴ = 3.14 × 30 × 16 = 1,507.2<br>Denominator = 8 × 0.7 × 200 = 1,120<br>Flow Rate = 1,507.2 / 1,120 = 1.3457...<br><br>Adjusting for units (decimal factor of 1000) → <strong>1,345.7 ml/second</strong> — Answer B."
+    },
+
+    {
+      q: "A 40-year-old man with a history of rheumatic fever as a child is awaiting valve replacement surgery to treat chronic mitral valve stenosis. He is severely short of breath with rales and crackles audible over both lungs. There is pitting edema of the lower extremities and ascites in his abdomen. Which of the following changes in Starling's forces is the most likely cause of edema in this patient?",
+      options: [
+        { letter: "A", text: "Decreased capillary hydrostatic pressure" },
+        { letter: "B", text: "Decreased capillary oncotic pressure" },
+        { letter: "C", text: "Decreased interstitial hydrostatic pressure" },
+        { letter: "D", text: "Increased interstitial oncotic pressure" },
+        { letter: "E", text: "Increased capillary hydrostatic pressure" }
+      ],
+      correct: "E",
+      explanation: "<strong>Mitral Stenosis and Pulmonary Edema:</strong> In chronic mitral valve stenosis, blood flow from the left atrium into the left ventricle is impeded. This causes a progressive increase in left atrial pressure → increase in <strong>pulmonary capillary pressure</strong>. When this hydrostatic pressure rises above the colloid osmotic pressure (~28 mm Hg), fluid filters into lung interstitial spaces and alveoli → pulmonary edema (rales, crackles).<br><br><strong>Systemic Congestion and Peripheral Edema:</strong> As the condition persists, damming of blood in the lungs and pulmonary artery increases right heart workload → right-sided failure → damming of blood in the systemic venous system.<br><br><strong>Role of Kidneys:</strong> Low cardiac output triggers renal retention of salt and water → increased total blood volume and mean systemic filling pressure.<br><br><strong>Final Mechanism:</strong> The combination of venous damming and increased blood volume significantly elevates <strong>capillary hydrostatic pressure</strong> in peripheral tissues. According to Starling equilibrium, when capillary hydrostatic pressure rises above normal, it becomes the primary force driving net filtration of fluid out of blood and into tissue spaces → pitting edema and ascites."
+    },
+
+    {
+      q: "A 52-year-old man with a history of alcoholism has recently developed generalized edema. Abnormal liver function tests include increased serum levels of transaminase enzymes. His blood clotting time is increased, and he is responsive to vitamin K treatment. What is the most likely cause of edema in this patient?",
+      options: [
+        { letter: "A", text: "Decreased capillary hydrostatic pressure" },
+        { letter: "B", text: "Decreased capillary oncotic pressure" },
+        { letter: "C", text: "Decreased interstitial oncotic pressure" },
+        { letter: "D", text: "Increased interstitial hydrostatic pressure" },
+        { letter: "E", text: "Increased capillary hydrostatic pressure" }
+      ],
+      correct: "B",
+      explanation: "<strong>Liver Disease and Protein Synthesis:</strong> The patient's history of alcoholism, abnormal transaminase levels, and increased clotting time are clinical indicators of significant liver disease (cirrhosis/liver failure). The liver is the primary site for synthesis of nearly all plasma proteins, most notably <strong>albumin</strong>.<br><br><strong>Role of Albumin in Starling Forces:</strong> Albumin is responsible for about <strong>80%</strong> of total plasma colloid osmotic (oncotic) pressure — the primary force causing osmosis of fluid inward through the capillary membrane, keeping fluid within the circulatory system.<br><br><strong>Mechanism of Edema:</strong> When liver function is impaired, albumin synthesis decreases → <strong>decreased capillary (plasma) oncotic pressure</strong>. Based on Starling equilibrium, a reduction in this inward-directed force allows outward-directed hydrostatic pressure to dominate → excessive fluid filters out of capillaries into tissue spaces → generalized edema and ascites.<br><br><strong>Significance of Vitamin K:</strong> The vitamin K-responsive clotting time confirms hepatic involvement — several essential clotting factors (II, VII, IX, X) are vitamin K-dependent and synthesized by the liver.<br><br><strong>Why others are incorrect:</strong><br><br>✔️ <strong>A:</strong> Decreased capillary hydrostatic pressure would favor fluid movement <strong>into</strong> capillaries (opposes edema).<br>✔️ <strong>C:</strong> Decreased interstitial oncotic pressure would oppose edema formation.<br>✔️ <strong>D:</strong> Increased interstitial hydrostatic pressure would help drive fluid back into capillaries (limits edema).<br>✔️ <strong>E:</strong> Increased capillary hydrostatic pressure is common in heart failure, but this patient's history and labs point to a primary defect in protein synthesis."
+    },
+
+    {
+      q: "Edema may be caused by:",
+      options: [
+        { letter: "A", text: "High blood pressure" },
+        { letter: "B", text: "Decreased plasma protein concentration" },
+        { letter: "C", text: "Leakage of plasma protein into the interstitial fluid" },
+        { letter: "D", text: "Blockage of lymphatic vessels" },
+        { letter: "E", text: "All of these" }
+      ],
+      correct: "E",
+      explanation: "<strong>Each factor listed contributes to edema formation:</strong><br><br>✔️ <strong>A (High blood pressure):</strong> Elevated capillary hydrostatic pressure increases the force driving fluid out of blood vessels into tissue spaces (e.g., heart failure).<br><br>✔️ <strong>B (Decreased plasma protein):</strong> Plasma proteins (primarily albumin) exert colloid osmotic pressure — the primary force pulling fluid back into capillaries. When concentration falls (liver disease, malnutrition), the inward force is reduced → net fluid accumulation.<br><br>✔️ <strong>C (Leakage of plasma protein):</strong> Factors increasing capillary permeability (histamine, bradykinin) allow proteins to escape into tissue spaces, increasing interstitial fluid colloid osmotic pressure → osmotic force drawing fluid out of blood.<br><br>✔️ <strong>D (Blockage of lymphatic vessels):</strong> The lymphatic system removes excess fluid and leaked proteins. If blocked, these substances cannot return to circulation → tissues swell with fluid.<br><br>Because each mechanism favors interstitial fluid accumulation, they are all valid causes of edema."
+    },
+
+    {
+      q: "Korotkoff sounds are produced by:",
+      options: [
+        { letter: "A", text: "Closing of the semilunar valves" },
+        { letter: "B", text: "Closing of the atrioventricular valves" },
+        { letter: "C", text: "Turbulent flow of blood through an artery" },
+        { letter: "D", text: "Elastic recoil of the aorta" }
+      ],
+      correct: "C",
+      explanation: "<strong>Cause of Korotkoff Sounds:</strong> These sounds are heard during the auscultatory method of measuring blood pressure. They are caused primarily by blood <strong>jetting through a partly occluded artery</strong> and by vibrations of the vessel wall.<br><br><strong>Role of Turbulence:</strong> When the BP cuff is deflated to a level between systolic and diastolic pressure, blood \"jets\" through the still-compressed artery. This jet causes turbulence in the vessel beyond the cuff, setting up vibrations heard through the stethoscope as Korotkoff sounds.<br><br><strong>Why other options are incorrect:</strong><br><br>✔️ <strong>A &amp; B:</strong> Closing of semilunar and AV valves produces heart sounds (S1, S2), not Korotkoff sounds.<br>✔️ <strong>D:</strong> Elastic recoil of the aorta helps maintain blood pressure during diastole but does not generate audible sounds during BP measurement."
+    },
+
+    {
+      q: "Which of the following statements is true about the semilunar valves?",
+      options: [
+        { letter: "A", text: "They open when the pressure in the aorta and pulmonary trunk is greater than the pressure in the heart." },
+        { letter: "B", text: "They close when the pressure in the arteries is greater than those in the atria." },
+        { letter: "C", text: "They close when the pressure in the ventricles is greater than the pressure in the aorta and pulmonary trunk." },
+        { letter: "D", text: "They open when the pressure in the atria is greater." },
+        { letter: "E", text: "None" }
+      ],
+      correct: "E",
+      explanation: "<strong>None of A–D are correct.</strong><br><br><strong>Mechanism of Opening:</strong> Semilunar valves open only when <strong>ventricular pressure is greater than aortic/pulmonary pressure</strong> — allowing blood to be ejected. Option A describes the opposite gradient. Option D incorrectly involves atrial pressure.<br><br><strong>Mechanism of Closing:</strong> Semilunar valves close when <strong>arterial pressure is greater than ventricular pressure</strong>. At end of systole, as ventricles relax, high pressure in distended arteries pushes blood back toward the heart, snapping valves shut. Option B incorrectly cites atrial pressure. Option C describes the condition for opening, not closing.<br><br><strong>Summary:</strong><br><br>✔️ To open: Ventricle &gt; Artery<br>✔️ To close: Artery &gt; Ventricle"
+    },
+
+    {
+      q: "Which of the following organs can tolerate the greatest reduction in blood flow?",
+      options: [
+        { letter: "A", text: "Brain" },
+        { letter: "B", text: "Heart" },
+        { letter: "C", text: "Skeletal muscles" },
+        { letter: "D", text: "Skin" }
+      ],
+      correct: "D",
+      explanation: "<strong>Low Metabolic Necessity:</strong> Blood flow to the skin is primarily linked to body temperature regulation rather than meeting metabolic needs. Because its primary function is thermoregulatory, its flow is often far in excess of what the tissue needs to survive.<br><br><strong>Extreme Reduction Capability:</strong> When the body needs to conserve heat or maintain arterial pressure (e.g., circulatory shock), skin blood flow can be reduced \"manyfold.\" In very low temperatures, skin blood flow can fall to \"barely above zero.\" Even with such severe vasoconstriction, flow is usually sufficient to meet the skin's very low metabolic demands.<br><br><strong>Sacrificial Nature in Stress:</strong> During exercise or shock, mass sympathetic discharge strongly contracts arterioles in non-essential areas to \"lend\" blood to muscles, heart, and brain. The skin is a primary area where flow is sacrificed.<br><br><strong>Comparison:</strong><br><br>✔️ <strong>Brain (A):</strong> Tolerates lack of flow for only 5–8 minutes.<br>✔️ <strong>Heart (B):</strong> Severe ischemia for as little as 30 minutes causes cell death.<br>✔️ <strong>Skeletal muscles (C):</strong> Tolerate flow reductions to 1/3–1/4 of normal during rest/shock, but metabolic demand is higher than skin's."
+    },
+
+    {
+      q: "Systolic time is recorded by an ECG machine when:",
+      options: [
+        { letter: "A", text: "All cardiac cells are completely depolarized." },
+        { letter: "B", text: "All cardiac cells are completely repolarized." },
+        { letter: "C", text: "Cardiac activities are too large to be recorded." },
+        { letter: "D", text: "Electrical activities are too small to be recorded." },
+        { letter: "E", text: "A, b and d are correct." }
+      ],
+      correct: "E",
+      explanation: "<strong>ECG records potentials only when there is a potential difference</strong> between different parts of the heart — when part is depolarized and part is polarized. When the heart is in a uniform electrical state, the ECG records an isoelectric line (flat line at zero voltage).<br><br><strong>A (TRUE for systole):</strong> During the plateau phase of the ventricular action potential (ST segment, during systole), the entire ventricular muscle is depolarized. No potential difference → isoelectric line.<br><br><strong>B (TRUE for diastole):</strong> Between heartbeats (TP segment), cardiac muscle is completely repolarized (polarized). No current flows → zero baseline.<br><br><strong>D (TRUE):</strong> Certain electrical events — such as initial SA node discharge or AV bundle conduction — do not produce visible deflections because voltages are too small to reach skin electrodes. This is another reason for baseline recording."
+    },
+
+    {
+      q: "Blood flow through a vessel varies directly with:",
+      options: [
+        { letter: "A", text: "Resistance" },
+        { letter: "B", text: "Viscosity" },
+        { letter: "C", text: "Pressure gradient" },
+        { letter: "D", text: "Length of blood vessel" },
+        { letter: "E", text: "All are correct" }
+      ],
+      correct: "C",
+      explanation: "<strong>Pressure Gradient (C):</strong> According to Ohm's law, blood flow (F) is <strong>directly proportional</strong> to the pressure difference (ΔP) between the two ends of a vessel. As the force pushing blood increases, flow rate increases.<br><br><strong>Why others are incorrect:</strong><br><br>✔️ <strong>A (Resistance):</strong> Flow varies <strong>inversely</strong> with resistance. Increased resistance → decreased flow.<br>✔️ <strong>B (Viscosity):</strong> Flow varies <strong>inversely</strong> with viscosity. Increased viscosity (high hematocrit) retards flow.<br>✔️ <strong>D (Length):</strong> Flow varies <strong>inversely</strong> with vessel length. Longer vessel → greater internal friction → reduced flow.<br><br>Only the pressure gradient has a direct mathematical relationship with blood flow."
+    },
+
+    {
+      q: "What is the final destination of lymph in the circulatory system?",
+      options: [
+        { letter: "A", text: "Venous blood" },
+        { letter: "B", text: "Arterial blood" },
+        { letter: "C", text: "The capillaries" }
+      ],
+      correct: "A",
+      explanation: "<strong>Emptying into Venous System:</strong> The lymphatic system is an accessory route through which fluid and proteins flow from interstitial spaces back into blood. Essentially all lymph vessels eventually empty into the <strong>blood venous system</strong>.<br><br><strong>Thoracic Duct:</strong> Lymph from the lower body, left side of head, left arm, and parts of the chest enters the thoracic duct. This duct empties into the venous system at the junction of the left internal jugular and left subclavian veins.<br><br><strong>Right Lymph Duct:</strong> Lymph from the right side of head, neck, right arm, and right thorax enters the right lymph duct, which empties at the right subclavian/internal jugular junction.<br><br><strong>Accessory Route:</strong> About one-tenth of fluid filtered from arterial ends of capillaries enters lymphatic capillaries to be returned to venous blood via major lymph ducts.<br><br>In summary, the lymphatic system returns excess fluid and proteins directly to the <strong>venous circulation</strong>."
+    },
+
+    {
+      q: "The basic blood flow equation states that flow is equal to:",
+      options: [
+        { letter: "A", text: "Resistance/pressure" },
+        { letter: "B", text: "Pressure/resistance" },
+        { letter: "C", text: "Pressure × resistance" },
+        { letter: "D", text: "Pressure × radius × viscosity × length of blood vessels" },
+        { letter: "E", text: "Pressure × the square of radius" }
+      ],
+      correct: "B",
+      explanation: "<strong>Ohm's Law Applied to Circulation:</strong> F = ΔP / R<br><br>Where:<br><br>✔️ <strong>F</strong> = rate of blood flow<br>✔️ <strong>ΔP</strong> = pressure difference (gradient) between two ends of the vessel<br>✔️ <strong>R</strong> = vascular resistance<br><br>This equation states that blood flow is <strong>directly proportional to pressure difference</strong> and <strong>inversely proportional to resistance</strong>.<br><br>While more complex equations like Poiseuille's law incorporate factors like the fourth power of radius, viscosity, and vessel length, the fundamental relationship defines flow as <strong>pressure divided by resistance</strong>."
+    },
+
+    {
+      q: "The more volume of blood enters during diastole:",
+      options: [
+        { letter: "A", text: "More blood is ejected during the next diastole." },
+        { letter: "B", text: "More blood is received during the next systole." },
+        { letter: "C", text: "More blood is ejected during the next systole." },
+        { letter: "D", text: "More blood is received during the next diastole." },
+        { letter: "E", text: "Both c and d are correct." }
+      ],
+      correct: "C",
+      explanation: "<strong>Frank-Starling Mechanism:</strong> The heart has an intrinsic ability to adapt to increasing volumes of inflowing blood.<br><br><strong>Stretch and Contraction:</strong> When extra blood flows into ventricles during <strong>diastole</strong> (relaxation/filling), the cardiac muscle is stretched to a greater length. This stretch causes the muscle to contract with increased force because actin and myosin filaments move into a more optimal degree of overlap for generating power.<br><br><strong>Resultant Ejection:</strong> Because of this increased force of contraction, the ventricle automatically pumps the extra blood into arteries. This pumping/emptying phase is known as <strong>systole</strong>.<br><br><strong>Summary:</strong> Within physiologic limits, the heart pumps all the blood that returns to it. If more blood enters during diastole (increased preload), more blood is ejected during the next <strong>systole</strong>."
+    },
+
+    {
+      q: "Which of the following represents the correct pathway of the heart's conducting system?",
+      options: [
+        { letter: "A", text: "AV node → AV bundle → SA node → Purkinje fibers → bundle branches" },
+        { letter: "B", text: "SA node → AV node → AV bundle → SA node → Purkinje fibers" },
+        { letter: "C", text: "SA node → AV node → AV bundle → bundle branches → AV node → Purkinje fibers" },
+        { letter: "D", text: "SA node → AV node → AV bundle → bundle branches → Purkinje fibers" },
+        { letter: "E", text: "SA node → AV node → Purkinje fibers → bundle branches → AV bundle" }
+      ],
+      correct: "D",
+      explanation: "<strong>Pathological Sequence:</strong><br><br>✔️ <strong>SA Node:</strong> Normal rhythmical impulse generated here — located in superior posterolateral wall of right atrium.<br><br>✔️ <strong>AV Node:</strong> Impulse travels from SA node through internodal pathways to AV node, where it is delayed. This delay allows atria to finish contracting before ventricular contraction begins.<br><br>✔️ <strong>AV Bundle (Bundle of His):</strong> From AV node, impulse enters AV bundle — the only route through which impulses can normally pass from atria into ventricles.<br><br>✔️ <strong>Left and Right Bundle Branches:</strong> AV bundle passes downward into the ventricular septum and divides into left and right bundle branches.<br><br>✔️ <strong>Purkinje Fibers:</strong> Branches divide further into a network of Purkinje fibers that spread the impulse rapidly to all parts of the ventricular muscle mass."
+    },
+
+    {
+      q: "Which of the following is true regarding hypertension?",
+      options: [
+        { letter: "A", text: "Reduces myocardial oxygen demand" },
+        { letter: "B", text: "Has a similar effect as increased stroke work" },
+        { letter: "C", text: "Increases volume work" },
+        { letter: "D", text: "Increases pressure work" },
+        { letter: "E", text: "Increases velocity of ventricular contraction" }
+      ],
+      correct: "D",
+      explanation: "<strong>Definition of Work:</strong> The work output of the heart has two main forms: volume-pressure work (external work) used to move blood from low-pressure veins to high-pressure arteries, and kinetic energy work used to accelerate blood.<br><br><strong>Pressure vs. Volume Work:</strong> While \"pressure work\" is a common physiological descriptor for pumping against increased resistance (afterload), the sources specifically note that hypertension involves <strong>left ventricular hypertrophy</strong> so it can pump blood against elevated systemic arterial pressure. This increase in the pressure component of \"volume-pressure work\" characterizes the extra load in hypertension.<br><br><strong>Why others are incorrect:</strong><br><br>✔️ <strong>A:</strong> Hypertension <strong>increases</strong> myocardial oxygen demand (tension is high when systolic pressure is high).<br>✔️ <strong>E:</strong> Velocity of shortening varies <strong>inversely</strong> with afterload. Hypertension increases afterload → decreased velocity.<br>✔️ <strong>C:</strong> Volume work is associated with increased preload; hypertension is primarily a disorder of increased resistance (afterload)."
+    },
+
+    {
+      q: "Arterial blood pressure progressively shifts with age to a higher value because of:",
+      options: [
+        { letter: "A", text: "Increased blood volume" },
+        { letter: "B", text: "Increased cardiac output" },
+        { letter: "C", text: "Reduced vascular compliance and arteriosclerosis" },
+        { letter: "D", text: "Atherosclerosis" },
+        { letter: "E", text: "Reduced renal mass" }
+      ],
+      correct: "C",
+      explanation: "<strong>Renal Changes (Long-Term Regulation):</strong> The general progressive increase in pressure with age results from effects of aging on blood pressure control mechanisms. The kidneys are primarily responsible for long-term regulation, and they exhibit functional changes with age, particularly after 50 — including gradual loss of functional units (nephrons).<br><br><strong>Vascular Changes (Reduced Compliance):</strong> A \"slight extra increase\" in systolic pressure typically occurs beyond age 60. This specific shift is caused by decreasing distensibility — <strong>hardening of the arteries</strong> (arteriosclerosis/atherosclerosis). When arteries become stiff and less compliant, they cannot accommodate stroke volume as effectively, resulting in greater pressure rise during systole and increased pulse pressure.<br><br><strong>Why B is incorrect:</strong> Cardiac output (cardiac index) actually <strong>declines</strong> with age due to reduced muscle mass and activity."
+    }
+
+  ]
+},
 
   /* ========== CVS PATHOLOGY ========== */
   
