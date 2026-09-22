@@ -576,52 +576,1292 @@ const TELEGRAM_URL = "https://t.me/+_SmdJHWESxlhM2Rk";
    QUIZ DATA — CVS EXAMS
    ===================================================================== */
 const QUIZ_DATA = [
+   /* ========== ANATOMY 2016 ========== */
+  {
+    id: "anatomy-2016",
+    subject: "Anatomy",
+    topic: "Cardiovascular",
+    year: 2016,
+    title: "Anatomy 2016",
+    icon: "🫀",
+    section: "Cardiovascular System Module — Pre-clerkship",
+    questions: [
 
-  /* ========== CVS ANATOMY ========== */
-  {
-    id: "cvs-anatomy-2014", subject: "CVS Anatomy", topic: "General", year: 2014,
-    title: "CVS Anatomy 2014", icon: "🫀", section: "PLATE I",
-    questions: [
-      { q: "Sample CVS Anatomy 2014 question:",
+      {
+        q: "The sternal angle (angle of Louis) is located at the level of the lower border of the following thoracic vertebra:",
         options: [
-          { letter: "A", text: "Option A" }, { letter: "B", text: "Option B" },
-          { letter: "C", text: "Option C" }, { letter: "D", text: "Option D" }, { letter: "E", text: "Option E" }
-        ], correct: "A", explanation: "Explanation for this CVS Anatomy 2014 question." }
+          { letter: "A", text: "2nd" },
+          { letter: "B", text: "3rd" },
+          { letter: "C", text: "4th" },
+          { letter: "D", text: "5th" }
+        ],
+        correct: "C",
+        explanation: "🫀 A horizontal plane passing through the sternal angle to the intervertebral disc between the T4 and T5 vertebrae divides the mediastinum into: ✅ Superior mediastinum ✅ Inferior mediastinum 📍 Consequently, the angle corresponds to the level of the lower border of the 4th thoracic vertebra."
+      },
+
+      {
+        q: "Which of the following structures helps in prevention of regurgitation of the mitral valve cusps into the left atrium during systole?",
+        options: [
+          { letter: "A", text: "Crista terminalis" },
+          { letter: "B", text: "Pectinate muscle" },
+          { letter: "C", text: "Chordae tendineae" },
+          { letter: "D", text: "Trabeculae carneae" }
+        ],
+        correct: "C",
+        explanation: "🪢 Chordae tendineae (tendinous cords) connect the papillary muscles to the free edges of the valve cusps. 🎈 They act like parachute cords to prevent the cusps from being pushed back (regurgitating) or inverting into the atria when the ventricles contract."
+      },
+
+      {
+        q: "Incorrect about coronary circulation:",
+        options: [
+          { letter: "A", text: "The blood supply of the heart" },
+          { letter: "B", text: "Is the shortest circulation in the body" },
+          { letter: "C", text: "There are anastomosis between blood vessels" },
+          { letter: "D", text: "Course just deep to epicardium, embedded in fat" },
+          { letter: "E", text: "None of the above" }
+        ],
+        correct: "E",
+        explanation: "❤️ Coronary circulation provides the blood supply to the heart muscle. 🩸 It is the shortest circuit in the body. 🔄 Functional and anatomical anastomoses exist between branches. 🧈 The vessels typically run deep to the epicardium, often embedded in fat within the sulci. ✅ Therefore, all listed statements are correct."
+      },
+
+      {
+        q: "Which artery gives off SA nodal branch that supplies SA node near its origin?",
+        options: [
+          { letter: "A", text: "Right coronary artery" },
+          { letter: "B", text: "Left coronary artery" },
+          { letter: "C", text: "Marginal artery" },
+          { letter: "D", text: "Circumflex artery" }
+        ],
+        correct: "A",
+        explanation: "⚡ In approximately 60% of people, the sinoatrial (SA) nodal branch arises from the right coronary artery (RCA) near its origin. 🫀 The SA node is the natural pacemaker of the heart."
+      },
+
+      {
+        q: "Right coronary artery supplies:",
+        options: [
+          { letter: "A", text: "The whole of right atrium" },
+          { letter: "B", text: "Most of the right ventricle" },
+          { letter: "C", text: "Part of left ventricle (diaphragmatic surface)" },
+          { letter: "D", text: "Part of interventricular septum (posterior third)" },
+          { letter: "E", text: "All of the above" }
+        ],
+        correct: "E",
+        explanation: "❤️ The RCA typically supplies: ✅ The right atrium ✅ Most of the right ventricle ✅ Part of the diaphragmatic surface of the left ventricle ✅ The posterior third of the interventricular septum (IVS) 🎯 Therefore, All of the above is correct."
+      },
+
+      {
+        q: "Left coronary artery supplies except:",
+        options: [
+          { letter: "A", text: "The left atrium" },
+          { letter: "B", text: "Most of the left ventricle" },
+          { letter: "C", text: "Part of right ventricle" },
+          { letter: "D", text: "Most of interventricular septum (anterior two third)" },
+          { letter: "E", text: "None of the above" }
+        ],
+        correct: "E",
+        explanation: "❤️ The left coronary artery (LCA) supplies: ✅ The left atrium ✅ Most of the left ventricle ✅ Part of the right ventricle ✅ The anterior two-thirds of the interventricular septum. 📍 Since all listed territories (A–D) are supplied by the LCA, \"None of the above\" is the correct choice for an \"except\" question."
+      },
+
+      {
+        q: "Which one of the following arteries supplies much of the left ventricle and left and right bundle branches of the conduction system?",
+        options: [
+          { letter: "A", text: "Posterior interventricular artery" },
+          { letter: "B", text: "Right marginal artery" },
+          { letter: "C", text: "Anterior interventricular artery" },
+          { letter: "D", text: "Circumflex artery" }
+        ],
+        correct: "C",
+        explanation: "❤️ The anterior interventricular branch (also known as the Left Anterior Descending or LAD) supplies the anterior two-thirds of the IVS. ⚡ This region contains the AV bundle branches of the conducting system. 🫀 Therefore, blockage of the LAD can have serious effects on cardiac conduction."
+      },
+
+      {
+        q: "In physical diagnosis a physician asks his resident to indicate the chambers of the heart surface anatomy. On the surface of the chest, the resident can locate the apex of the heart on the:",
+        options: [
+          { letter: "A", text: "At the level of the sternal angle" },
+          { letter: "B", text: "In the left 4th intercostal space" },
+          { letter: "C", text: "In the left 5th intercostal space" },
+          { letter: "D", text: "In the right 5th intercostal space" }
+        ],
+        correct: "C",
+        explanation: "❤️ The apex of the heart is the pointed inferior end formed by the left ventricle. 📍 It is located deep to the left 5th intercostal space (ICS). 📏 Approximately 9 cm from the midsternal line. 📍 Just medial to the midclavicular line (MCL)."
+      },
+
+      {
+        q: "Identify mismatch between valve sounds and auscultatory areas used by clinicians:",
+        options: [
+          { letter: "A", text: "Pulmonary valve — medial end of 2nd left intercostal space" },
+          { letter: "B", text: "Aortic valve — medial end of the 2nd right intercostal space" },
+          { letter: "C", text: "Left atrioventricular valve — apex of the heart" },
+          { letter: "D", text: "Right atrioventricular area valve — left of lower end of sternum, near 5th intercostal space" },
+          { letter: "E", text: "None of the above" }
+        ],
+        correct: "E",
+        explanation: "🎧 All clinical mappings are correct. Clinicians listen to valve sounds away from the anatomical location to avoid bone interference. 🫀 Aortic area → Right 2nd ICS. 🫁 Pulmonary area → Left 2nd ICS. ❤️ Mitral area → Apex (Left 5th ICS). 🫀 Tricuspid area → Left lower sternal border. ✅ Therefore, there is no mismatch. ⚠️ Some lecturer handouts may list B as the answer, but standard anatomy references typically accept E."
+      },
+
+      {
+        q: "The most anterior structure in the superior mediastinum is:",
+        options: [
+          { letter: "A", text: "Arteries" },
+          { letter: "B", text: "Veins" },
+          { letter: "C", text: "Thymus" },
+          { letter: "D", text: "Trachea" }
+        ],
+        correct: "C",
+        explanation: "🧬 The superior mediastinum is organized into planes from anterior to posterior: 1️⃣ Glandular plane (Thymus). 2️⃣ Venous plane. 3️⃣ Arterial-nervous plane. 4️⃣ Visceral plane. 📍 The thymus sits immediately posterior to the manubrium of the sternum. ✅ Therefore, the thymus is the most anterior structure."
+      },
+
+      {
+        q: "What is the correct path through the circulatory system which describes the passage of blood originating in the leg?",
+        options: [
+          { letter: "A", text: "Vena cava → left atrium → right atrium → lungs → left ventricle → right ventricle → aorta" },
+          { letter: "B", text: "Vena cava → right atrium → left atrium → lungs → right ventricle → left ventricle → aorta" },
+          { letter: "C", text: "Vena cava → left atrium → left ventricle → lungs → right atrium → right ventricle → aorta" },
+          { letter: "D", text: "Vena cava → right atrium → right ventricle → lungs → left atrium → left ventricle → aorta" }
+        ],
+        correct: "D",
+        explanation: "Blood returning from the leg follows: 🦵 Leg veins → 🩸 Inferior vena cava → ❤️ Right atrium → ❤️ Right ventricle → 🫁 Lungs → ❤️ Left atrium → ❤️ Left ventricle → 🩸 Aorta. This is the normal pathway of systemic and pulmonary circulation."
+      },
+
+      {
+        q: "A 50-year-old patient is to undergo a coronary bypass operation. The artery of primary concern is the vessel that supplies much of the left ventricle and the right and left bundle branches of the cardiac conduction system. Which artery is the surgeon most concerned with?",
+        options: [
+          { letter: "A", text: "Right marginal" },
+          { letter: "B", text: "Anterior interventricular branch (LAD)" },
+          { letter: "C", text: "Artery to the sinoatrial (SA) node" },
+          { letter: "D", text: "Posterior interventricular" }
+        ],
+        correct: "B",
+        explanation: "The LAD supplies: ❤️ Much of the left ventricle. ❤️ Anterior two-thirds of interventricular septum. ❤️ Right bundle branch. ❤️ Left bundle branch. 🚨 Occlusion of the LAD is extremely dangerous and is commonly called the \"widow-maker lesion.\""
+      },
+
+      {
+        q: "Which heart valve's sounds are most likely to be heard if a stethoscope is placed over the right second intercostal space lateral to the sternum?",
+        options: [
+          { letter: "A", text: "Aortic" },
+          { letter: "B", text: "Pulmonary" },
+          { letter: "C", text: "Mitral" },
+          { letter: "D", text: "Tricuspid" }
+        ],
+        correct: "A",
+        explanation: "🎧 Auscultation sites: ❤️ Aortic valve → Right 2nd intercostal space. ❤️ Pulmonary valve → Left 2nd intercostal space. ❤️ Tricuspid valve → Left lower sternal border. ❤️ Mitral valve → Apex (Left 5th intercostal space). Therefore, sounds heard at the right 2nd intercostal space correspond to the aortic valve."
+      },
+
+      {
+        q: "ECG examination provides evidence of severe myocardial infarction of the lower part of the muscular interventricular septum. The function of which of the following valves will be most severely affected?",
+        options: [
+          { letter: "A", text: "Pulmonary" },
+          { letter: "B", text: "Aortic" },
+          { letter: "C", text: "Tricuspid" },
+          { letter: "D", text: "Mitral" }
+        ],
+        correct: "C",
+        explanation: "The septal papillary muscle of the right ventricle arises from the interventricular septum. ❤️ It attaches to the tricuspid valve via chordae tendineae. If the lower muscular interventricular septum is damaged by infarction: ➡️ Septal papillary muscle function is impaired. ➡️ Tricuspid valve support is weakened. ➡️ Tricuspid regurgitation may occur."
+      },
+
+      {
+        q: "To access the right side of the intraventricular septum, a wide incision is first made in the anterior surface of the right atrium. Which of the following structures is the most crucial to protect?",
+        options: [
+          { letter: "A", text: "Crista terminalis" },
+          { letter: "B", text: "Pectinate muscles" },
+          { letter: "C", text: "Tricuspid valve" },
+          { letter: "D", text: "Coronary sinus" }
+        ],
+        correct: "D",
+        explanation: "The AV node is located near: 📍 Opening of the coronary sinus. 📍 Septal leaflet of the tricuspid valve. 📍 Interatrial septum. Damage to this area may cause: ⚠️ Heart block. ⚠️ Conduction disturbances. Therefore, the coronary sinus region must be protected."
+      },
+
+      {
+        q: "During cardiac surgery, a surgeon can place her fingers in the transverse pericardial sinus to clamp which of the following vessels?",
+        options: [
+          { letter: "A", text: "Right and left pulmonary veins" },
+          { letter: "B", text: "Superior and inferior vena cava" },
+          { letter: "C", text: "Pulmonary trunk and ascending aorta" },
+          { letter: "D", text: "Pulmonary trunk and superior vena cava" }
+        ],
+        correct: "C",
+        explanation: "The transverse pericardial sinus lies: 📍 Posterior to the ascending aorta. 📍 Posterior to the pulmonary trunk. 📍 Anterior to the superior vena cava. During cardiac surgery, surgeons can pass a finger through this sinus and place a clamp around: ❤️ Ascending aorta. ❤️ Pulmonary trunk."
+      },
+
+      {
+        q: "In a coronary bypass of the posterior descending interventricular artery (PDA), which accompanying vessel is most susceptible to injury?",
+        options: [
+          { letter: "A", text: "Middle cardiac vein" },
+          { letter: "B", text: "Great cardiac vein" },
+          { letter: "C", text: "Small cardiac vein" },
+          { letter: "D", text: "Anterior cardiac vein" }
+        ],
+        correct: "A",
+        explanation: "The posterior interventricular artery (PDA) travels within the posterior interventricular groove. Running alongside it is the: 🩸 Middle cardiac vein. Because of their close relationship, the middle cardiac vein is most likely to be injured during surgery."
+      },
+
+      {
+        q: "A patient involved in an automobile accident presents with a sharp object puncture of the middle of the sternum at about the level of the 4th or 5th costal cartilage. If the object also penetrated pericardium and heart wall, which heart chamber would most likely be damaged?",
+        options: [
+          { letter: "A", text: "Left atrium" },
+          { letter: "B", text: "Left ventricle" },
+          { letter: "C", text: "Right atrium" },
+          { letter: "D", text: "Right auricle" }
+        ],
+        correct: "D",
+        explanation: "Remember, the anterior surface, or sternocostal surface, of the heart is mostly made up of the right ventricle. So, if an object punctured the sternum, it would be likely to pierce the right ventricle."
+      },
+
+      {
+        q: "Where should a physician place the stethoscope to listen to the sound of the mitral valve?",
+        options: [
+          { letter: "A", text: "Over the medial end of the second left intercostal space" },
+          { letter: "B", text: "Over the medial end of the second right intercostal space" },
+          { letter: "C", text: "In the left fourth intercostal space at the midclavicular line" },
+          { letter: "D", text: "In the left fifth intercostal space at the midclavicular line" }
+        ],
+        correct: "D",
+        explanation: "The mitral valve is best heard at the apex of the heart. 📍 Location: ❤️ Left 5th intercostal space. ❤️ Midclavicular line. 🎧 Auscultation Summary: Aortic → Right 2nd ICS. Pulmonary → Left 2nd ICS. Tricuspid → Left lower sternal border. Mitral → Left 5th ICS, MCL."
+      },
+
+      {
+        q: "The posterior tibial artery enters the sole and bifurcates into:",
+        options: [
+          { letter: "A", text: "Lateral and medial plantar arteries" },
+          { letter: "B", text: "Posterior tibial and dorsalis pedis" },
+          { letter: "C", text: "Anterior tibial and posterior tibial" },
+          { letter: "D", text: "All" }
+        ],
+        correct: "A",
+        explanation: "The posterior tibial artery passes behind the medial malleolus and enters the sole of the foot. It divides into: 🦶 Medial plantar artery. 🦶 Lateral plantar artery. These arteries supply the plantar surface of the foot."
+      },
+
+      {
+        q: "Blockage of which of the following arteries would lead to ischemia of the apex of the heart?",
+        options: [
+          { letter: "A", text: "Anterior interventricular (descending)" },
+          { letter: "B", text: "Posterior interventricular (descending)" },
+          { letter: "C", text: "Right marginal" },
+          { letter: "D", text: "Left marginal" }
+        ],
+        correct: "A",
+        explanation: "The Anterior Interventricular Artery (LAD): ❤️ Travels in the anterior interventricular groove. ❤️ Reaches the apex of the heart. ❤️ Supplies the apex and anterior ventricular walls. Blockage causes ischemia of the apex."
+      },
+
+      {
+        q: "Right dominance means:",
+        options: [
+          { letter: "A", text: "Left side of the heart is more important" },
+          { letter: "B", text: "Posterior interventricular branch is given off from right coronary artery" },
+          { letter: "C", text: "Posterior interventricular branch is given off by a large anterior interventricular artery" },
+          { letter: "D", text: "It is more common in left coronary artery" }
+        ],
+        correct: "B",
+        explanation: "Coronary dominance depends on which artery gives rise to the: 🩸 Posterior interventricular artery (PDA). Types of Dominance: ❤️ Right dominance → PDA arises from RCA. ❤️ Left dominance → PDA arises from circumflex artery. ❤️ Codominance → Contribution from both. Approximately 67% of people have right dominance."
+      },
+
+      {
+        q: "A 16-year-old boy has a CT scan revealing a midline tumor of the thymus gland. Which vein would most likely be compressed?",
+        options: [
+          { letter: "A", text: "Left internal jugular vein" },
+          { letter: "B", text: "Right brachiocephalic vein" },
+          { letter: "C", text: "Left brachiocephalic vein" },
+          { letter: "D", text: "Right subclavian vein" }
+        ],
+        correct: "C",
+        explanation: "The left brachiocephalic vein crosses horizontally through the superior mediastinum. 📍 It lies directly posterior to the thymus. A thymic tumor may compress it, leading to: ⚠️ Venous congestion. ⚠️ Facial swelling. ⚠️ Upper limb edema."
+      },
+
+      {
+        q: "Artery that supplies the lateral wall (obtuse margin) of the left ventricle is?",
+        options: [
+          { letter: "A", text: "Left anterior descending" },
+          { letter: "B", text: "Left anterior interventricular artery" },
+          { letter: "C", text: "Left marginal branch" },
+          { letter: "D", text: "Left circumflex branch" }
+        ],
+        correct: "C",
+        explanation: "The left marginal artery is a branch of the circumflex artery. ❤️ It runs along the obtuse (left) margin of the heart. ❤️ Supplies the lateral wall of the left ventricle. 🧠 Remember: Left Marginal Artery = Left Ventricular Lateral Wall."
+      },
+
+      {
+        q: "Which is the deepest layer that must be anesthetized to reduce pain during pericardiocentesis?",
+        options: [
+          { letter: "A", text: "Visceral pleura" },
+          { letter: "B", text: "Parietal pleura" },
+          { letter: "C", text: "Fibrous pericardium" },
+          { letter: "D", text: "All" }
+        ],
+        correct: "C",
+        explanation: "Pain fibers are present in: ⚡ Fibrous pericardium. ⚡ Parietal layer of serous pericardium. These layers receive sensory innervation from the phrenic nerve. The visceral pericardium (epicardium) is relatively insensitive to pain. Therefore, the deepest important pain-sensitive layer to anesthetize is the fibrous pericardium."
+      },
+
+      /* ⬇️ MORE QUESTIONS WILL BE ADDED IN PART 2 — DO NOT CLOSE THE ARRAY YET */
+
+              , // 👈 keep this comma so the array continues
+
+      {
+        q: "Cardiovascular system is histologically composed of the following tissues, Except:",
+        options: [
+          { letter: "A", text: "Endothelium" },
+          { letter: "B", text: "Loose areolar connective tissue" },
+          { letter: "C", text: "Elastic tissue" },
+          { letter: "D", text: "Vascular smooth muscle tissue" },
+          { letter: "E", text: "Skeletal muscle tissue" }
+        ],
+        correct: "E",
+        explanation: "The cardiovascular system contains: ✅ Endothelium. ✅ Connective tissue. ✅ Elastic fibers. ✅ Smooth muscle. It does not contain skeletal muscle tissue. The heart contains cardiac muscle, not skeletal muscle."
+      },
+
+      {
+        q: "Which of the following vessels belong to microvasculature?",
+        options: [
+          { letter: "A", text: "Muscular arteries" },
+          { letter: "B", text: "Small arteries" },
+          { letter: "C", text: "Medium sized veins" },
+          { letter: "D", text: "Lymphatic ducts" },
+          { letter: "E", text: "Blood capillaries" }
+        ],
+        correct: "E",
+        explanation: "Microvasculature consists mainly of: 🩸 Arterioles. 🩸 Capillaries. 🩸 Venules. Capillaries are the principal exchange vessels where: ✅ Oxygen exchange. ✅ Nutrient exchange. ✅ Waste removal occur."
+      },
+
+      {
+        q: "Select correct description about the wall of cardiovascular system.",
+        options: [
+          { letter: "A", text: "Arteries have well-developed tunica adventitia than corresponding veins" },
+          { letter: "B", text: "Tunica intima and media are thicker in veins than corresponding arteries" },
+          { letter: "C", text: "Endocardium is homologous with the tunica media" },
+          { letter: "D", text: "Arterioles lack subendothelial CT layer and elastic laminae" },
+          { letter: "E", text: "Arteries have wider lumen relative to the thickness of their walls" }
+        ],
+        correct: "D",
+        explanation: "Arterioles: ❤️ Have only 1–2 layers of smooth muscle. ❤️ Lack distinct internal and external elastic laminae. ❤️ Have minimal connective tissue. The other statements are incorrect because: ❌ Veins generally have larger lumens. ❌ Arteries have thicker tunica media. ❌ Endocardium corresponds to tunica intima, not tunica media."
+      },
+
+      {
+        q: "Epicardium of the heart histologically consists of:",
+        options: [
+          { letter: "A", text: "Mesothelium, submesothelial CT, cardiac muscle tissue and epicardial pad of fat" },
+          { letter: "B", text: "Endothelium, subendothelial CT, cardiac muscle tissue and subendocardial CT" },
+          { letter: "C", text: "Mesothelium, submesothelial loose CT and epicardial pad of fat" },
+          { letter: "D", text: "Endothelium, subendothelial CT, cardiac muscle tissue and subendocardial pad of fat" },
+          { letter: "E", text: "All of the above" }
+        ],
+        correct: "C",
+        explanation: "The epicardium (visceral pericardium) contains: ✅ Mesothelium. ✅ Loose connective tissue. ✅ Adipose tissue (fat). Coronary vessels are often found within this fatty layer."
+      },
+
+      {
+        q: "Cardiac valves are folds of:",
+        options: [
+          { letter: "A", text: "Endocardium" },
+          { letter: "B", text: "Myocardium" },
+          { letter: "C", text: "Epicardium" },
+          { letter: "D", text: "Pericardium" },
+          { letter: "E", text: "Tunica media" }
+        ],
+        correct: "A",
+        explanation: "Heart valves are formed from folds of: ❤️ Endocardium. Each valve contains: 🩸 Dense fibrous connective tissue core covered by endocardium on both surfaces. Examples: 🚪 Mitral valve, 🚪 Tricuspid valve, 🚪 Aortic valve, 🚪 Pulmonary valve."
+      },
+
+      {
+        q: "Vasa vasorum function in a way that is similar to:",
+        options: [
+          { letter: "A", text: "AV valves" },
+          { letter: "B", text: "Semilunar valves" },
+          { letter: "C", text: "Coronary arteries" },
+          { letter: "D", text: "Elastic arteries" },
+          { letter: "E", text: "Metarterioles" }
+        ],
+        correct: "C",
+        explanation: "Vasa vasorum means \"vessels of the vessels.\" They provide blood supply to: 🩸 Walls of large arteries. 🩸 Walls of large veins. Similarly: ❤️ Coronary arteries supply the wall of the heart. Therefore, their function is most similar."
+      },
+
+      {
+        q: "Which one of the following possesses a distinct internal elastic lamina?",
+        options: [
+          { letter: "A", text: "Capillary" },
+          { letter: "B", text: "Metarteriole" },
+          { letter: "C", text: "Arteriole" },
+          { letter: "D", text: "Muscular artery" },
+          { letter: "E", text: "Vein" }
+        ],
+        correct: "D",
+        explanation: "Muscular arteries are characterized by: ✅ Prominent internal elastic lamina. ✅ Prominent tunica media. ✅ Sometimes visible external elastic lamina. Examples: 🩸 Radial artery, 🩸 Femoral artery, 🩸 Brachial artery. The internal elastic lamina appears as a distinct wavy line under the microscope."
+      },
+
+      {
+        q: "Each cardiac valve leaflet consists of a dense fibrous connective tissue core known as:",
+        options: [
+          { letter: "A", text: "Bulbus cordis" },
+          { letter: "B", text: "Lamina fibrosa" },
+          { letter: "C", text: "Trigone" },
+          { letter: "D", text: "Annulae" },
+          { letter: "E", text: "None" }
+        ],
+        correct: "B",
+        explanation: "The core of each cardiac valve leaflet is composed of dense fibrous connective tissue called the: 🩺 Lamina fibrosa. Functions: ✅ Provides strength to the valve. ✅ Prevents valve deformation during cardiac contractions. ✅ Maintains valve shape during opening and closing."
+      },
+
+      {
+        q: "Metarterioles, vessels interposed between arterioles and capillary beds:",
+        options: [
+          { letter: "A", text: "Function to control blood flow into arterioles" },
+          { letter: "B", text: "Possess a complete layer of smooth muscle cells in their tunica media" },
+          { letter: "C", text: "Possess precapillary sphincters" },
+          { letter: "D", text: "Receive blood from thoroughfare channels" },
+          { letter: "E", text: "Possess valves to regulate the direction of blood flow" }
+        ],
+        correct: "C",
+        explanation: "Metarterioles are transitional vessels between: 🩸 Arterioles and 🩸 Capillary beds. Their key feature is: ✅ Precapillary sphincters. Functions: 🔹 Regulate blood flow into capillaries. 🔹 Open when tissues need oxygen. 🔹 Close when blood flow demand decreases."
+      },
+
+      {
+        q: "Fenestrated capillaries without diaphragm are found:",
+        options: [
+          { letter: "A", text: "Endocrine glands" },
+          { letter: "B", text: "CNS" },
+          { letter: "C", text: "Adipose tissue" },
+          { letter: "D", text: "Testes" },
+          { letter: "E", text: "Kidneys" }
+        ],
+        correct: "E",
+        explanation: "Fenestrated capillaries are specialized for rapid filtration. 🩸 Most fenestrated capillaries possess diaphragms. 🚨 Exception: 🩺 Renal glomeruli of the kidneys. These capillaries have: ✅ Large fenestrae. ✅ No diaphragms. This allows efficient filtration of blood plasma."
+      },
+
+      {
+        q: "Continuous capillaries without pinocytic vesicles are normally found in:",
+        options: [
+          { letter: "A", text: "Thymus" },
+          { letter: "B", text: "Tendon" },
+          { letter: "C", text: "CNS" },
+          { letter: "D", text: "Muscle tissues" },
+          { letter: "E", text: "Lungs" }
+        ],
+        correct: "C",
+        explanation: "Capillaries of the Central Nervous System have: ✅ Continuous endothelium. ✅ Tight junctions. ✅ Very few pinocytic vesicles. These features help form the: 🧠 Blood-Brain Barrier (BBB) which restricts movement of harmful substances into brain tissue."
+      },
+
+      {
+        q: "Which of the following characteristics distinguishes somatic capillaries from visceral capillaries?",
+        options: [
+          { letter: "A", text: "Presence or absence of fenestrae" },
+          { letter: "B", text: "Size of the lumen" },
+          { letter: "C", text: "Thickness of the vessel wall" },
+          { letter: "D", text: "Presence or absence of pericytes" },
+          { letter: "E", text: "Thickness of the basal lamina" }
+        ],
+        correct: "A",
+        explanation: "Somatic (Continuous) Capillaries: ✅ No fenestrae. Examples: 🧠 CNS, 💪 Skeletal muscle, 🫁 Lung. Visceral (Fenestrated) Capillaries: ✅ Possess fenestrae. Examples: 🧪 Endocrine glands, 🩺 Intestinal villi, 🩸 Kidney. Therefore, the distinguishing feature is the presence or absence of fenestrae."
+      },
+
+      {
+        q: "The blood-brain barrier is thought to exist because capillaries in the central nervous system have which of the following characteristics?",
+        options: [
+          { letter: "A", text: "Discontinuous basal lamina" },
+          { letter: "B", text: "Fenestrae with diaphragms" },
+          { letter: "C", text: "Fenestrae without diaphragms" },
+          { letter: "D", text: "A few pinocytic vesicles" },
+          { letter: "E", text: "No basement membrane" }
+        ],
+        correct: "D",
+        explanation: "The Blood-Brain Barrier depends on: 🧠 Tight junctions between endothelial cells. 🧠 Continuous basement membrane. 🧠 Astrocyte support. 🧠 Very few pinocytic vesicles. The scarcity of pinocytic vesicles helps prevent unwanted substances from entering nervous tissue."
+      },
+
+      {
+        q: "Which of the following statements about healthy, intact capillaries is true?",
+        options: [
+          { letter: "A", text: "They control blood pressure" },
+          { letter: "B", text: "They are lined by a simple columnar epithelium" },
+          { letter: "C", text: "They have a smooth muscle coat" },
+          { letter: "D", text: "They inhibit clot formation" },
+          { letter: "E", text: "Satellite cells share their basal lamina" }
+        ],
+        correct: "D",
+        explanation: "Healthy endothelial cells possess: ✅ Anticoagulant properties. ✅ Antithrombotic properties. They release substances such as: 🩸 Prostacyclin. 🩸 Nitric oxide. These inhibit platelet aggregation and clot formation."
+      },
+
+      {
+        q: "Sinusoidal capillaries are normally found in the following, Except:",
+        options: [
+          { letter: "A", text: "Spleen" },
+          { letter: "B", text: "Placenta" },
+          { letter: "C", text: "Liver" },
+          { letter: "D", text: "Lung" },
+          { letter: "E", text: "Red bone marrow" }
+        ],
+        correct: "D",
+        explanation: "Sinusoidal capillaries are: 🩸 Wide. 🩸 Irregular. 🩸 Highly permeable. Found in: ✅ Liver. ✅ Spleen. ✅ Bone marrow. ✅ Placenta. The lungs contain: 🫁 Continuous capillaries for efficient gas exchange."
+      },
+
+      {
+        q: "Choroid plexus and synovial membrane consist of which types of blood capillaries?",
+        options: [
+          { letter: "A", text: "Somatic/continuous capillaries" },
+          { letter: "B", text: "Visceral/fenestrated capillaries" },
+          { letter: "C", text: "Sinusoidal capillaries" },
+          { letter: "D", text: "All of the above" },
+          { letter: "E", text: "None of the above" }
+        ],
+        correct: "B",
+        explanation: "Fenestrated capillaries allow increased fluid exchange and secretion. Found in: 🧠 Choroid plexus. 🦴 Synovial membrane. 🧪 Endocrine glands. 🩺 Intestinal mucosa. Thus these structures contain visceral (fenestrated) capillaries."
+      },
+
+      {
+        q: "Thick connective tissue capsule, red pulp and white pulp are distinguishing features of which lymphoid organ?",
+        options: [
+          { letter: "A", text: "Thymus" },
+          { letter: "B", text: "Lymph node" },
+          { letter: "C", text: "Tonsil" },
+          { letter: "D", text: "Spleen" },
+          { letter: "E", text: "Peyer's patch" }
+        ],
+        correct: "D",
+        explanation: "The spleen is characterized by: 🔴 Red Pulp — Functions: 🩸 Filters blood, 🩸 Removes old red blood cells, 🩸 Stores blood cells. ⚪ White Pulp — Functions: 🛡️ Immune response, 🛡️ Lymphocyte proliferation. 🧱 Thick Connective Tissue Capsule — Provides structural support and protection. These three features are classic histological hallmarks of the spleen."
+      }
+
     ]
   },
+
+  /* ⬇️ NEXT EXAM (Anatomy 2015) WILL BE ADDED IN PART 3 — do NOT close the outer array */
+
+  /* ========== ANATOMY 2015 ========== */
   {
-    id: "cvs-anatomy-2015", subject: "CVS Anatomy", topic: "General", year: 2015,
-    title: "CVS Anatomy 2015", icon: "🫀", section: "PLATE I",
+    id: "anatomy-2015",
+    subject: "Anatomy",
+    topic: "Cardiovascular",
+    year: 2015,
+    title: "Anatomy 2015",
+    icon: "🫀",
+    section: "Gross Anatomy Past Year Exam",
     questions: [
-      { q: "Sample CVS Anatomy 2015 question:",
+
+      {
+        q: "A 43-year-old woman is diagnosed with mitral valve stenosis. During physical examination the first heart sound is abnormally loud. Which of the following heart valves are responsible for production of the first heart sound?",
         options: [
-          { letter: "A", text: "Option A" }, { letter: "B", text: "Option B" },
-          { letter: "C", text: "Option C" }, { letter: "D", text: "Option D" }, { letter: "E", text: "Option E" }
-        ], correct: "A", explanation: "Explanation for this CVS Anatomy 2015 question." }
+          { letter: "A", text: "Aortic and pulmonary" },
+          { letter: "B", text: "Mitral and pulmonary" },
+          { letter: "C", text: "Aortic and tricuspid" },
+          { letter: "D", text: "Tricuspid and mitral" },
+          { letter: "E", text: "Tricuspid and pulmonary" }
+        ],
+        correct: "D",
+        explanation: "📌 The first heart sound (S1) is produced by closure of the atrioventricular valves: Mitral valve and Tricuspid valve."
+      },
+
+      {
+        q: "A 45-year-old male patient is to undergo a coronary bypass operation. The artery of primary concern is the vessel that supplies much of the left ventricle and the right and left bundle branches of the cardiac conduction system. Which artery is the surgeon most concerned with?",
+        options: [
+          { letter: "A", text: "Right marginal" },
+          { letter: "B", text: "Anterior interventricular" },
+          { letter: "C", text: "Circumflex" },
+          { letter: "D", text: "Posterior interventricular" }
+        ],
+        correct: "B",
+        explanation: "📌 The anterior interventricular artery (LAD) supplies much of the left ventricle and the interventricular septum containing the bundle branches."
+      },
+
+      {
+        q: "Which of the following is true about tough external layer pericardium?",
+        options: [
+          { letter: "A", text: "Superiorly continuous with perivascular connective tissue of the great vessels pretracheal layer of deep cervical fascia" },
+          { letter: "B", text: "Protects the heart against sudden overfilling" },
+          { letter: "C", text: "Anteriorly bound by loose connective tissue to structures in the anterior mediastinum" },
+          { letter: "D", text: "Its floor firmly attached and confluent centrally with the central tendon of the diaphragm" }
+        ],
+        correct: "D",
+        explanation: "📌 The fibrous pericardium is firmly attached inferiorly to the central tendon of the diaphragm and prevents excessive expansion of the heart."
+      },
+
+      {
+        q: "Superior border formed by the right and left atria and auricles and in an anterior view this border contains entering and emerging structures except?",
+        options: [
+          { letter: "A", text: "Arch of aorta" },
+          { letter: "B", text: "Superior vena cava" },
+          { letter: "C", text: "Ascending aorta" },
+          { letter: "D", text: "Pulmonary trunk" }
+        ],
+        correct: "A",
+        explanation: "📌 The superior border contains the SVC, ascending aorta, and pulmonary trunk. The arch of aorta is not part of this border."
+      },
+
+      {
+        q: "Which structure is a smooth, muscular ridge that begins on the opening of the SVC & extends down to anterior lip of IVC? Internally divides interior of right atrium.",
+        options: [
+          { letter: "A", text: "Sinus of venae cavae" },
+          { letter: "B", text: "Crista terminalis" },
+          { letter: "C", text: "Sulcus terminalis cordis" },
+          { letter: "D", text: "Coronary sulcus" }
+        ],
+        correct: "B",
+        explanation: "📌 The crista terminalis separates the smooth posterior part of the right atrium from the rough anterior part containing pectinate muscles."
+      },
+
+      {
+        q: "Which of the following is incorrect about semilunar cusps of the pulmonary valve?",
+        options: [
+          { letter: "A", text: "Have no tendinous cords to support" },
+          { letter: "B", text: "They are smaller in area than the cusps of the AV valves" },
+          { letter: "C", text: "Force exerted on them is less than half that exerted on the cusps of the AV valves" },
+          { letter: "D", text: "None" }
+        ],
+        correct: "D",
+        explanation: "📌 All statements are correct. Semilunar valves do not have chordae tendineae and experience lower pressure than AV valves."
+      },
+
+      {
+        q: "Which structure is a thick muscular ridge that separates the ridged muscular wall of the inflow part of the chamber from the smooth wall of the outflow part of the interior of the right ventricle?",
+        options: [
+          { letter: "A", text: "Conus arteriosus" },
+          { letter: "B", text: "Supraventricular crest" },
+          { letter: "C", text: "Trabeculae carneae" },
+          { letter: "D", text: "Chordae tendineae" }
+        ],
+        correct: "B",
+        explanation: "📌 The supraventricular crest is a thick muscular ridge in the right ventricle that separates: The rough inflow part containing trabeculae carneae, and The smooth outflow part (conus arteriosus)."
+      },
+
+      {
+        q: "Left dominance means:",
+        options: [
+          { letter: "A", text: "Left side of the heart is more important" },
+          { letter: "B", text: "Posterior interventricular branch is given off from right coronary artery" },
+          { letter: "C", text: "Posterior interventricular branch is given off by a large anterior interventricular artery traveling off left coronary artery" },
+          { letter: "D", text: "It is more common than right dominance" },
+          { letter: "E", text: "It is given off directly from left coronary artery" }
+        ],
+        correct: "C",
+        explanation: "📌 Left dominance means the posterior interventricular branch is supplied by the left coronary artery system. The question's wording is not perfectly accurate because it usually arises from the left circumflex artery, but C is the intended answer."
+      },
+
+      {
+        q: "A 55-year-old male is undergoing an aortic valve replacement. During the procedure the heart is connected to the heart-lung machine. As the surgeon explores the oblique pericardial sinus, which of the following is not directly palpable with the tips of the fingers?",
+        options: [
+          { letter: "A", text: "Inferior vena cava" },
+          { letter: "B", text: "Superior vena cava" },
+          { letter: "C", text: "Posterior wall of the left atrium" },
+          { letter: "D", text: "Inferior right pulmonary vein" }
+        ],
+        correct: "B",
+        explanation: "📌 The oblique pericardial sinus is located behind the left atrium and is related to the pulmonary veins and inferior vena cava. The superior vena cava is related to the transverse pericardial sinus."
+      },
+
+      {
+        q: "An unconscious 4-month-old infant is admitted to the emergency department after an automobile collision. An emergency tracheostomy is performed. Which of the following structures is most commonly at high risk of injury during this procedure?",
+        options: [
+          { letter: "A", text: "Left brachiocephalic vein" },
+          { letter: "B", text: "Left common carotid artery" },
+          { letter: "C", text: "Vagus nerve" },
+          { letter: "D", text: "Phrenic nerve" }
+        ],
+        correct: "A",
+        explanation: "📌 The left brachiocephalic vein crosses anterior to the trachea and is at risk during tracheostomy, especially in infants."
+      },
+
+      {
+        q: "The sternocostal surface of the heart is formed primarily by the anterior wall of which heart chamber?",
+        options: [
+          { letter: "A", text: "Left atrium" },
+          { letter: "B", text: "Left ventricle" },
+          { letter: "C", text: "Right atrium" },
+          { letter: "D", text: "Right ventricle" }
+        ],
+        correct: "D",
+        explanation: "📌 The right ventricle forms most of the anterior (sternocostal) surface of the heart."
+      },
+
+      {
+        q: "A patient involved in an automobile accident presents with a sharp object puncture of the middle of the sternum at about the level of the 4th or 5th costal cartilage. If the object also penetrated pericardium and heart wall, which heart chamber would most likely be damaged?",
+        options: [
+          { letter: "A", text: "Left atrium" },
+          { letter: "B", text: "Left ventricle" },
+          { letter: "C", text: "Right atrium" },
+          { letter: "D", text: "Right ventricle" }
+        ],
+        correct: "D",
+        explanation: "📌 The right ventricle lies directly behind the sternum and forms most of the anterior surface of the heart, making it most vulnerable to anterior injury."
+      },
+
+      {
+        q: "A 23-year-old male injured in an industrial explosion was found to have multiple small metal fragments in his thoracic cavity. Since the pericardium was torn inferiorly, the surgeon began to explore for fragments in the pericardial sac. Slipping her hand under the heart apex, she slid her fingers upward and to the right within the sac until they were stopped by the cul-de-sac formed by the pericardial reflection near the base of the heart. Her fingertips were then in the:",
+        options: [
+          { letter: "A", text: "Coronary sinus" },
+          { letter: "B", text: "Coronary sulcus" },
+          { letter: "C", text: "Costomediastinal recess" },
+          { letter: "D", text: "Oblique sinus" },
+          { letter: "E", text: "Transverse sinus" }
+        ],
+        correct: "D",
+        explanation: "📌 The oblique pericardial sinus is a blind cul-de-sac behind the left atrium formed by reflections around the pulmonary veins and inferior vena cava."
+      },
+
+      {
+        q: "A patient comes to you for a follow-up after removal of his thymus to treat a thymoma. During surgery which artery did the surgeon ligate that supplies blood to the thymus?",
+        options: [
+          { letter: "A", text: "Common carotid artery" },
+          { letter: "B", text: "Musculophrenic artery" },
+          { letter: "C", text: "Anterior intercostal artery" },
+          { letter: "D", text: "Posterior intercostal artery" },
+          { letter: "E", text: "Superior epigastric artery" }
+        ],
+        correct: "C",
+        explanation: "📌 The thymus receives blood supply mainly from branches of the internal thoracic artery, including the anterior intercostal arteries."
+      },
+
+      {
+        q: "The venous plane of the superior mediastinum consist of all of the following except?",
+        options: [
+          { letter: "A", text: "Left and right brachiocephalic vein" },
+          { letter: "B", text: "Superior vena cava" },
+          { letter: "C", text: "Arch of azygos vein" },
+          { letter: "D", text: "Great saphenous vein" }
+        ],
+        correct: "D",
+        explanation: "📌 The great saphenous vein is located in the lower limb and is not part of the superior mediastinum."
+      },
+
+      {
+        q: "Which of the following correctly lists the three basic layers of the heart wall from innermost to outermost?",
+        options: [
+          { letter: "A", text: "Endocardium → Myocardium → Epicardium" },
+          { letter: "B", text: "Epicardium → Myocardium → Endocardium" },
+          { letter: "C", text: "Myocardium → Endocardium → Epicardium" },
+          { letter: "D", text: "Endocardium → Epicardium → Myocardium" }
+        ],
+        correct: "A",
+        explanation: "📌 The heart wall consists of three layers (innermost to outermost): ❤️ Endocardium — composed of endothelium (simple squamous epithelium), subendothelial layer (collagen and elastic fibers), and subendocardial layer (loose CT with blood vessels, nerves, and Purkinje fibers). Function: provides a smooth internal surface. 💪 Myocardium — middle and thickest layer; made of cardiac muscle tissue (cardiomyocytes) with rich blood supply. Function: contraction and pumping blood. 🫀 Epicardium — outer layer (visceral pericardium); sub-layers: mesothelium (simple squamous epithelium producing serous fluid) and subepicardial connective tissue (fat, coronary vessels, lymphatics, nerves). Function: protects the heart and allows smooth movement."
+      }
+
     ]
   },
+
+  /* ⬇️ NEXT EXAM (Anatomy 2018) WILL BE ADDED IN PART 4 */
+
+    /* ========== ANATOMY 2018 ========== */
   {
-    id: "cvs-anatomy-2016", subject: "CVS Anatomy", topic: "General", year: 2016,
-    title: "CVS Anatomy 2016", icon: "🫀", section: "PLATE I",
+    id: "anatomy-2018",
+    subject: "Anatomy",
+    topic: "Cardiovascular",
+    year: 2018,
+    title: "Anatomy 2018",
+    icon: "🫀",
+    section: "Gross Anatomy Past Year Exam",
     questions: [
-      { q: "Sample CVS Anatomy 2016 question:",
+
+      {
+        q: "The most anterior structure in the superior mediastinum is:",
         options: [
-          { letter: "A", text: "Option A" }, { letter: "B", text: "Option B" },
-          { letter: "C", text: "Option C" }, { letter: "D", text: "Option D" }, { letter: "E", text: "Option E" }
-        ], correct: "A", explanation: "Explanation for this CVS Anatomy 2016 question." }
+          { letter: "A", text: "Phrenic nerve" },
+          { letter: "B", text: "Vagus nerve" },
+          { letter: "C", text: "Left common carotid artery" },
+          { letter: "D", text: "Brachiocephalic vein" }
+        ],
+        correct: "D",
+        explanation: "The brachiocephalic vein (specifically the left brachiocephalic vein) is the most anterior structure in the superior mediastinum, lying just posterior to the manubrium and thymus."
+      },
+
+      {
+        q: "A tape passed through the transverse pericardial sinus would lie behind:",
+        options: [
+          { letter: "A", text: "Ascending aorta alone" },
+          { letter: "B", text: "Ascending aorta and superior vena cava" },
+          { letter: "C", text: "Ascending aorta and pulmonary trunk" },
+          { letter: "D", text: "Superior vena cava alone" },
+          { letter: "E", text: "Superior vena cava and four pulmonary veins" }
+        ],
+        correct: "C",
+        explanation: "The transverse pericardial sinus lies posterior to the ascending aorta and pulmonary trunk."
+      },
+
+      {
+        q: "In physical diagnosis, a physician asks a resident to indicate the chambers of the heart's surface anatomy. On the surface of the chest, the resident can locate the apex of the heart at:",
+        options: [
+          { letter: "A", text: "The level of the sternal angle" },
+          { letter: "B", text: "The left 4th intercostal space" },
+          { letter: "C", text: "The left 5th intercostal space" },
+          { letter: "D", text: "The right 5th intercostal space" }
+        ],
+        correct: "C",
+        explanation: "The apex of the heart is located at the left 5th intercostal space, midclavicular line."
+      },
+
+      {
+        q: "In the upper extremity, which vein is a usual site of venipuncture?",
+        options: [
+          { letter: "A", text: "Median cubital vein" },
+          { letter: "B", text: "Basilic vein" },
+          { letter: "C", text: "Cephalic vein" },
+          { letter: "D", text: "Brachial vein" }
+        ],
+        correct: "A",
+        explanation: "The median cubital vein is the most common site for venipuncture in the upper extremity because it is superficial, large, and easily accessible in the cubital fossa."
+      },
+
+      {
+        q: "Which artery is a branch of the ascending aorta?",
+        options: [
+          { letter: "A", text: "Bronchoesophageal artery" },
+          { letter: "B", text: "Coronary artery" },
+          { letter: "C", text: "Right common carotid artery" },
+          { letter: "D", text: "Renal artery" }
+        ],
+        correct: "B",
+        explanation: "The coronary arteries are the only branches of the ascending aorta."
+      },
+
+      {
+        q: "In normal anatomy, where is the location of the sinoatrial node?",
+        options: [
+          { letter: "A", text: "Right atrial wall" },
+          { letter: "B", text: "Left atrial wall" },
+          { letter: "C", text: "Right ventricular wall" },
+          { letter: "D", text: "Interatrial septum" }
+        ],
+        correct: "A",
+        explanation: "The SA node is located in the right atrial wall, near the opening of the superior vena cava."
+      },
+
+      {
+        q: "The transverse pericardial sinus is bounded by the following great vessels within the pericardial cavity:",
+        options: [
+          { letter: "A", text: "Right and left pairs of pulmonary veins superiorly and IVC inferiorly" },
+          { letter: "B", text: "SVC posteriorly, ascending aorta and pulmonary trunk anteriorly" },
+          { letter: "C", text: "SVC anteriorly, ascending aorta and pulmonary trunk posteriorly" },
+          { letter: "D", text: "Pulmonary veins posteriorly and IVC anteriorly" },
+          { letter: "E", text: "All of the above" }
+        ],
+        correct: "B",
+        explanation: "The transverse pericardial sinus lies posterior to the ascending aorta and pulmonary trunk, and anterior to the superior vena cava."
+      },
+
+      {
+        q: "Which structure is not found in the posterior mediastinum?",
+        options: [
+          { letter: "A", text: "Esophagus" },
+          { letter: "B", text: "Aortic arch" },
+          { letter: "C", text: "Azygos vein" },
+          { letter: "D", text: "Hemiazygos vein" },
+          { letter: "E", text: "Splanchnic nerves" }
+        ],
+        correct: "B",
+        explanation: "The aortic arch is located in the superior mediastinum, not the posterior mediastinum."
+      },
+
+      {
+        q: "Which artery does not contribute to the blood supply of the pericardium?",
+        options: [
+          { letter: "A", text: "Musculophrenic artery" },
+          { letter: "B", text: "Superior phrenic arteries" },
+          { letter: "C", text: "Coronary arteries" },
+          { letter: "D", text: "Intercostal artery" }
+        ],
+        correct: "C",
+        explanation: "The pericardium is supplied by the musculophrenic artery, superior phrenic arteries, and intercostal arteries. The coronary arteries supply the heart itself, not the pericardium."
+      },
+
+      {
+        q: "All of the following arteries directly arise from the arch of the aorta except:",
+        options: [
+          { letter: "A", text: "Right common carotid artery" },
+          { letter: "B", text: "Left common carotid artery" },
+          { letter: "C", text: "Left subclavian artery" },
+          { letter: "D", text: "Brachiocephalic artery" }
+        ],
+        correct: "A",
+        explanation: "The arch of the aorta gives rise to the brachiocephalic artery, left common carotid artery, and left subclavian artery. The right common carotid artery arises from the brachiocephalic artery."
+      },
+
+      {
+        q: "A stethoscope placed over the right 2nd intercostal space just lateral to the sternum is best positioned to detect sound produced by the closure of which heart valve?",
+        options: [
+          { letter: "A", text: "Aortic semilunar valve" },
+          { letter: "B", text: "Tricuspid valve" },
+          { letter: "C", text: "Pulmonary semilunar valve" },
+          { letter: "D", text: "Mitral valve" },
+          { letter: "E", text: "Both a and c" }
+        ],
+        correct: "A",
+        explanation: "The aortic valve is best heard at the right 2nd intercostal space, just lateral to the sternum."
+      },
+
+      {
+        q: "The smooth outlet on the interior of the left ventricle is termed:",
+        options: [
+          { letter: "A", text: "Supraventricular crest" },
+          { letter: "B", text: "Conus arteriosus" },
+          { letter: "C", text: "Aortic vestibule" },
+          { letter: "D", text: "Coronary aortic sinus" }
+        ],
+        correct: "C",
+        explanation: "The smooth outlet on the interior of the left ventricle is termed the aortic vestibule. The corresponding smooth outflow tract in the right ventricle is the conus arteriosus."
+      },
+
+      {
+        q: "All of the following are branches of the right coronary artery, except:",
+        options: [
+          { letter: "A", text: "SA nodal artery (60%)" },
+          { letter: "B", text: "Left ventricular branch" },
+          { letter: "C", text: "Posterior interventricular artery" },
+          { letter: "D", text: "Right marginal artery" },
+          { letter: "E", text: "Diagonal (anterior left ventricular artery)" }
+        ],
+        correct: "E",
+        explanation: "The diagonal artery is a branch of the left anterior descending artery (LAD), not the right coronary artery."
+      },
+
+      {
+        q: "A 48-year-old male patient is admitted with chronic angina. Coronary angiography reveals nearly total blockage of the circumflex artery near its origin from the left coronary artery. When this artery is exposed for a bypass procedure, which accompanying vein must be protected from injury?",
+        options: [
+          { letter: "A", text: "Middle cardiac vein" },
+          { letter: "B", text: "Great cardiac vein" },
+          { letter: "C", text: "Small cardiac vein" },
+          { letter: "D", text: "Anterior cardiac vein" },
+          { letter: "E", text: "Posterior cardiac vein" }
+        ],
+        correct: "B",
+        explanation: "Great cardiac vein: Accompanies the left anterior descending (anterior interventricular) artery and the circumflex artery. Middle cardiac vein: Accompanies the posterior descending (posterior interventricular) artery. Small cardiac vein: Accompanies the right marginal branch or travels in the right atrioventricular sulcus."
+      },
+
+      {
+        q: "Which statement about the blood supply of the heart is incorrect?",
+        options: [
+          { letter: "A", text: "The left coronary artery arises from the left aortic sinus" },
+          { letter: "B", text: "The coronary sinus ends in the left atrium" },
+          { letter: "C", text: "The great cardiac vein is a tributary of the coronary sinus" },
+          { letter: "D", text: "The anterior interventricular artery is usually a branch of the left coronary artery" }
+        ],
+        correct: "B",
+        explanation: "The coronary sinus ends in the right atrium, not the left atrium."
+      },
+
+      {
+        q: "All arteries in the body contain oxygen-rich blood except:",
+        options: [
+          { letter: "A", text: "The aorta" },
+          { letter: "B", text: "The pulmonary artery" },
+          { letter: "C", text: "The renal artery" },
+          { letter: "D", text: "The coronary arteries" }
+        ],
+        correct: "B",
+        explanation: "The pulmonary artery is the only artery in the body that carries oxygen-poor (deoxygenated) blood, from the right ventricle to the lungs."
+      },
+
+      {
+        q: "Which of the following veins does not return blood to the right atrium?",
+        options: [
+          { letter: "A", text: "Superior vena cava" },
+          { letter: "B", text: "Inferior vena cava" },
+          { letter: "C", text: "Pulmonary vein" },
+          { letter: "D", text: "Coronary sinus" }
+        ],
+        correct: "C",
+        explanation: "The pulmonary veins return oxygenated blood from the lungs to the left atrium, not the right atrium."
+      },
+
+      {
+        q: "The anterior surface of the heart is formed by the following structures except:",
+        options: [
+          { letter: "A", text: "Right ventricle" },
+          { letter: "B", text: "Left ventricle" },
+          { letter: "C", text: "Left atrium" },
+          { letter: "D", text: "Right auricle" }
+        ],
+        correct: "C",
+        explanation: "The anterior surface of the heart is formed mainly by the right ventricle, with contributions from the left ventricle and right auricle. The left atrium does not contribute significantly to the anterior surface."
+      },
+
+      {
+        q: "Which of the following statements is not true about the right atrium of the human heart?",
+        options: [
+          { letter: "A", text: "The right atrium forms the right border of the heart" },
+          { letter: "B", text: "Internally, its anterior wall is less muscular (thinner) than the posterior wall" },
+          { letter: "C", text: "Internally, the smooth and rough parts of the atrial wall are separated internally by the crista terminalis" },
+          { letter: "D", text: "The right atrioventricular orifice is opened during ventricular contraction by the tricuspid valve" }
+        ],
+        correct: "D",
+        explanation: "Statement D is incorrect. The right AV orifice is CLOSED during ventricular contraction by the tricuspid valve, preventing backflow of blood into the right atrium. (Note: both B and D are considered incorrect in the source, but D is the more clearly wrong statement.)"
+      },
+
+      {
+        q: "Which of the following statements is incorrect regarding the anatomy of the lymphatic system?",
+        options: [
+          { letter: "A", text: "Lymphatic vessels are structurally more similar to arteries" },
+          { letter: "B", text: "Lymphatic vessels are structurally more similar to veins" },
+          { letter: "C", text: "Lymphatic fluid in the lymphatic vessels moves from body tissues to the venous blood" },
+          { letter: "D", text: "Lymphatic fluid in the lymphatic vessels moves against the pressure gradient" }
+        ],
+        correct: "A",
+        explanation: "Statement A is incorrect. Lymphatic vessels have very thin walls, wide lumens, and numerous valves — making them structurally more similar to veins, not arteries. Arteries have thick, muscular, elastic walls designed to withstand high pressure."
+      },
+
+      {
+        q: "All of the following statements concerning the pericardium are correct except:",
+        options: [
+          { letter: "A", text: "The external layer of the sac is fibrous" },
+          { letter: "B", text: "The internal layer is reflected onto the heart as the visceral serous layer (epicardium)" },
+          { letter: "C", text: "The external layer of the fibrous sac is the parietal serous layer" },
+          { letter: "D", text: "The pericardial cavity is the potential space between the parietal and visceral serous layers" },
+          { letter: "E", text: "The fibrous pericardium is attached to the sternum by the pericardiocophrenic ligament" }
+        ],
+        correct: "C",
+        explanation: "Statement C is incorrect. The external layer of the pericardial sac is the fibrous pericardium itself, not the parietal serous layer. The parietal serous layer lines the inner surface of the fibrous pericardium."
+      }
+
     ]
   },
+
+  /* ⬇️ NEXT EXAM (Anatomy 2024) WILL BE ADDED IN PART 5 */
+  
+    /* ========== ANATOMY 2024 (Mixed / General) ========== */
   {
-    id: "cvs-anatomy-2017", subject: "CVS Anatomy", topic: "General", year: 2017,
-    title: "CVS Anatomy 2017", icon: "🫀", section: "PLATE I",
+    id: "anatomy-2024",
+    subject: "Anatomy",
+    topic: "Cardiovascular",
+    year: 2024,
+    title: "Anatomy — Mixed Review",
+    icon: "🫀",
+    section: "Cardiovascular System — Mixed Practice",
     questions: [
-      { q: "Sample CVS Anatomy 2017 question:",
+
+      {
+        q: "Which of the following correctly describes the fibrous pericardium?",
         options: [
-          { letter: "A", text: "Option A" }, { letter: "B", text: "Option B" },
-          { letter: "C", text: "Option C" }, { letter: "D", text: "Option D" }, { letter: "E", text: "Option E" }
-        ], correct: "A", explanation: "Explanation for this CVS Anatomy 2017 question." }
+          { letter: "A", text: "Serous membrane lining the outer surface of the heart" },
+          { letter: "B", text: "Tough external layer that prevents sudden overfilling of the heart" },
+          { letter: "C", text: "Same as the visceral layer of serous pericardium" },
+          { letter: "D", text: "Lines the inner surface of the heart chambers" }
+        ],
+        correct: "B",
+        explanation: "The fibrous pericardium is the tough, external fibrous sac that surrounds the heart. It protects the heart, anchors it to surrounding structures (especially the central tendon of the diaphragm), and prevents sudden overfilling of the heart."
+      },
+
+      {
+        q: "Which of the following is a direct branch of the aortic arch?",
+        options: [
+          { letter: "A", text: "Right common carotid artery" },
+          { letter: "B", text: "Left common carotid artery" },
+          { letter: "C", text: "Right subclavian artery" },
+          { letter: "D", text: "Coronary artery" }
+        ],
+        correct: "B",
+        explanation: "The arch of the aorta gives rise to three branches: brachiocephalic artery, left common carotid artery, and left subclavian artery. The right common carotid and right subclavian arteries arise from the brachiocephalic artery, not directly from the arch."
+      },
+
+      {
+        q: "The posterior interventricular artery (PDA) is most commonly a branch of:",
+        options: [
+          { letter: "A", text: "Left anterior descending artery" },
+          { letter: "B", text: "Right coronary artery" },
+          { letter: "C", text: "Left circumflex artery" },
+          { letter: "D", text: "Left marginal artery" }
+        ],
+        correct: "B",
+        explanation: "In about 67% of people (right dominance), the posterior interventricular artery (PDA) arises from the right coronary artery. In left dominance (~15%), it arises from the left circumflex artery."
+      },
+
+      {
+        q: "Which of the following layers of the heart wall contains Purkinje fibers?",
+        options: [
+          { letter: "A", text: "Epicardium" },
+          { letter: "B", text: "Myocardium" },
+          { letter: "C", text: "Subendocardial layer of the endocardium" },
+          { letter: "D", text: "Fibrous pericardium" }
+        ],
+        correct: "C",
+        explanation: "Purkinje fibers are located in the subendocardial layer of the endocardium. This layer also contains blood vessels and nerves. The Purkinje fibers are specialized for rapid conduction of electrical impulses through the ventricular walls."
+      },
+
+      {
+        q: "The great cardiac vein runs alongside which artery?",
+        options: [
+          { letter: "A", text: "Right coronary artery" },
+          { letter: "B", text: "Posterior interventricular artery" },
+          { letter: "C", text: "Anterior interventricular artery (LAD)" },
+          { letter: "D", text: "Right marginal artery" }
+        ],
+        correct: "C",
+        explanation: "The great cardiac vein runs alongside the anterior interventricular artery (LAD) in the anterior interventricular groove. It drains into the coronary sinus. The middle cardiac vein runs with the posterior interventricular artery, and the small cardiac vein runs with the right marginal artery."
+      },
+
+      {
+        q: "Which of the following statements about the coronary sinus is TRUE?",
+        options: [
+          { letter: "A", text: "It opens into the left atrium" },
+          { letter: "B", text: "It opens into the right atrium near the opening of the IVC" },
+          { letter: "C", text: "It is located in the anterior interventricular groove" },
+          { letter: "D", text: "It drains blood directly into the pulmonary trunk" }
+        ],
+        correct: "B",
+        explanation: "The coronary sinus is a large venous channel that collects most of the venous blood from the heart muscle. It opens into the right atrium, between the opening of the inferior vena cava and the right atrioventricular orifice."
+      },
+
+      {
+        q: "Which of the following statements about the semilunar valves is TRUE?",
+        options: [
+          { letter: "A", text: "They have chordae tendineae attached to their cusps" },
+          { letter: "B", text: "They are supported by papillary muscles" },
+          { letter: "C", text: "They open during ventricular contraction and close during ventricular relaxation" },
+          { letter: "D", text: "They open during ventricular relaxation and close during ventricular contraction" }
+        ],
+        correct: "C",
+        explanation: "Semilunar valves (aortic and pulmonary valves) open during ventricular systole (contraction) to allow blood to leave the ventricles, and they close during ventricular diastole (relaxation) to prevent backflow into the ventricles. They do not have chordae tendineae or papillary muscles."
+      },
+
+      {
+        q: "Which of the following veins is NOT part of the superior mediastinum?",
+        options: [
+          { letter: "A", text: "Left brachiocephalic vein" },
+          { letter: "B", text: "Right brachiocephalic vein" },
+          { letter: "C", text: "Superior vena cava" },
+          { letter: "D", text: "Great saphenous vein" }
+        ],
+        correct: "D",
+        explanation: "The great saphenous vein is the longest vein in the body and is located in the lower limb, running from the foot to the femoral triangle. The brachiocephalic veins and superior vena cava are located in the superior mediastinum."
+      },
+
+      {
+        q: "Which structure lies MOST anteriorly in the superior mediastinum?",
+        options: [
+          { letter: "A", text: "Trachea" },
+          { letter: "B", text: "Esophagus" },
+          { letter: "C", text: "Thymus gland" },
+          { letter: "D", text: "Aortic arch" }
+        ],
+        correct: "C",
+        explanation: "The superior mediastinum is organized into four planes from anterior to posterior: glandular (thymus), venous (brachiocephalic veins, SVC), arterial-nervous (aortic arch, vagus, phrenic nerves), and visceral (trachea, esophagus). The thymus gland is the most anterior structure."
+      },
+
+      {
+        q: "Which structure is formed by the right and left atria, along with their auricles, in the anterior view of the heart?",
+        options: [
+          { letter: "A", text: "Inferior border" },
+          { letter: "B", text: "Right border" },
+          { letter: "C", text: "Superior border" },
+          { letter: "D", text: "Left border" }
+        ],
+        correct: "C",
+        explanation: "The superior border of the heart is formed by the right and left atria and their auricles. It is at this border that the superior vena cava, ascending aorta, and pulmonary trunk enter or leave the heart."
+      },
+
+      {
+        q: "Which of the following statements about the crista terminalis is correct?",
+        options: [
+          { letter: "A", text: "It is a smooth, muscular ridge in the left atrium" },
+          { letter: "B", text: "It separates the smooth posterior part from the rough anterior part of the right atrium" },
+          { letter: "C", text: "It is located in the right ventricle" },
+          { letter: "D", text: "It separates the two ventricles" }
+        ],
+        correct: "B",
+        explanation: "The crista terminalis is a smooth, muscular ridge in the right atrium. It runs from the opening of the superior vena cava down to the anterior lip of the inferior vena cava and separates the smooth posterior part of the right atrium (sinus venarum) from the rough anterior part containing pectinate muscles."
+      },
+
+      {
+        q: "Which chamber of the heart is most likely damaged in a stab wound to the anterior chest wall at the level of the 4th–5th intercostal space near the sternum?",
+        options: [
+          { letter: "A", text: "Left atrium" },
+          { letter: "B", text: "Left ventricle" },
+          { letter: "C", text: "Right atrium" },
+          { letter: "D", text: "Right ventricle" }
+        ],
+        correct: "D",
+        explanation: "The right ventricle forms the majority of the anterior (sternocostal) surface of the heart. Therefore, penetrating injuries to the anterior chest wall at the level of the 4th–5th intercostal space near the sternum are most likely to damage the right ventricle."
+      },
+
+      {
+        q: "Which of the following structures is found in the oblique pericardial sinus but NOT the transverse pericardial sinus?",
+        options: [
+          { letter: "A", text: "Ascending aorta" },
+          { letter: "B", text: "Pulmonary trunk" },
+          { letter: "C", text: "Posterior wall of the left atrium" },
+          { letter: "D", text: "Superior vena cava" }
+        ],
+        correct: "C",
+        explanation: "The oblique pericardial sinus is a blind cul-de-sac behind the left atrium, bounded by the reflections of serous pericardium around the pulmonary veins and inferior vena cava. The transverse pericardial sinus, on the other hand, is bounded by the ascending aorta and pulmonary trunk anteriorly and the superior vena cava posteriorly."
+      },
+
+      {
+        q: "The internal elastic lamina is most prominent in which type of blood vessel?",
+        options: [
+          { letter: "A", text: "Capillary" },
+          { letter: "B", text: "Arteriole" },
+          { letter: "C", text: "Muscular artery" },
+          { letter: "D", text: "Vein" }
+        ],
+        correct: "C",
+        explanation: "Muscular arteries have a prominent internal elastic lamina, a prominent tunica media (with many smooth muscle layers), and sometimes a visible external elastic lamina. Examples include the radial, femoral, and brachial arteries. Under the microscope, the internal elastic lamina appears as a distinct wavy line."
+      },
+
+      {
+        q: "Which of the following correctly matches a capillary type with its location?",
+        options: [
+          { letter: "A", text: "Continuous — Renal glomerulus" },
+          { letter: "B", text: "Fenestrated — CNS" },
+          { letter: "C", text: "Sinusoidal — Liver, spleen, bone marrow" },
+          { letter: "D", text: "Fenestrated without diaphragm — Choroid plexus" }
+        ],
+        correct: "C",
+        explanation: "Sinusoidal capillaries are wide, irregular, and highly permeable; they are found in the liver, spleen, bone marrow, and placenta. Continuous capillaries are found in the CNS, skeletal muscle, and lungs. Fenestrated capillaries are found in endocrine glands, intestinal villi, kidney (with diaphragms, except renal glomeruli which lack diaphragms), choroid plexus, and synovial membrane."
+      },
+
+      {
+        q: "Which of the following descriptions about capillaries is TRUE?",
+        options: [
+          { letter: "A", text: "Capillaries have a thick tunica media" },
+          { letter: "B", text: "Capillaries have valves to regulate blood flow" },
+          { letter: "C", text: "Capillaries are the principal exchange vessels of the body" },
+          { letter: "D", text: "Capillaries are lined by stratified squamous epithelium" }
+        ],
+        correct: "C",
+        explanation: "Capillaries are the principal exchange vessels of the body. They consist of a single layer of simple squamous endothelium and a basement membrane, allowing for efficient exchange of oxygen, nutrients, and waste products. They lack a tunica media and do not have valves."
+      },
+
+      {
+        q: "Which layer of the heart wall is composed primarily of cardiac muscle tissue?",
+        options: [
+          { letter: "A", text: "Endocardium" },
+          { letter: "B", text: "Myocardium" },
+          { letter: "C", text: "Epicardium" },
+          { letter: "D", text: "Pericardium" }
+        ],
+        correct: "B",
+        explanation: "The myocardium is the middle and thickest layer of the heart wall. It is composed primarily of cardiac muscle tissue (cardiomyocytes) and is responsible for the pumping action of the heart. The endocardium is the inner lining, and the epicardium is the outer layer (visceral pericardium)."
+      },
+
+      {
+        q: "The blood supply to the walls of large blood vessels is provided by:",
+        options: [
+          { letter: "A", text: "Coronary arteries" },
+          { letter: "B", text: "Vasa vasorum" },
+          { letter: "C", text: "Pulmonary arteries" },
+          { letter: "D", text: "Bronchial arteries" }
+        ],
+        correct: "B",
+        explanation: "Vasa vasorum means \"vessels of the vessels.\" They are small blood vessels that supply the walls of large arteries and veins (their tunica media and adventitia are too thick to be nourished by diffusion from the lumen alone). Their function is similar to that of the coronary arteries, which supply the heart."
+      },
+
+      {
+        q: "Which of the following correctly lists the tissue layers of a muscular artery from innermost to outermost?",
+        options: [
+          { letter: "A", text: "Tunica adventitia → Tunica media → Tunica intima" },
+          { letter: "B", text: "Tunica intima → Tunica media → Tunica adventitia" },
+          { letter: "C", text: "Tunica media → Tunica intima → Tunica adventitia" },
+          { letter: "D", text: "Tunica intima → Tunica adventitia → Tunica media" }
+        ],
+        correct: "B",
+        explanation: "Blood vessel walls (arteries and veins) consist of three layers from innermost to outermost: Tunica intima (endothelium and subendothelial layer), Tunica media (smooth muscle and elastic fibers), and Tunica adventitia (connective tissue). Muscular arteries have a prominent tunica media."
+      },
+
+      {
+        q: "Which of the following is a feature that distinguishes veins from arteries?",
+        options: [
+          { letter: "A", text: "Veins have thicker tunica media" },
+          { letter: "B", text: "Veins have valves to prevent backflow of blood" },
+          { letter: "C", text: "Veins have a more prominent internal elastic lamina" },
+          { letter: "D", text: "Veins have smaller lumens than arteries" }
+        ],
+        correct: "B",
+        explanation: "Veins have valves (especially in the limbs) to prevent backflow of blood toward the heart. Veins also have thinner walls, larger lumens, and less prominent internal elastic laminae than arteries. Their tunica media is thinner than that of arteries."
+      }
+
     ]
   },
+      
 
   /* ========== CVS PHYSIOLOGY ========== */
   {
