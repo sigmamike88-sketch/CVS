@@ -8213,13 +8213,13 @@ function getCourses() {
   return [...new Set(QUIZ_DATA.map(e => e.subject))];
 }
 
-const app = document.getElementById("app");
 function render() {
   if (state.view === "quiz") return renderQuiz();
   if (state.view === "finish") return renderFinish();
   if (state.view === "years") return renderYears();
   if (state.view === "notes") return renderNotesCourses();
   if (state.view === "note") return renderNoteDetail();
+  if (state.view === "bookmarks") return renderBookmarks();
   renderCourses();
 }
 
@@ -8330,7 +8330,7 @@ ${(() => {
         <div class="course-thumb" style="background:rgba(245,184,0,0.12);border-color:rgba(245,184,0,0.3);">⭐</div>
         <div class="course-body">
           <div class="course-title">Review Bookmarked</div>
-          <div class="course-meta">${bookmarkCount} question${bookmarkCount === 1 ? "" : "s"} saved for later</div>
+<div class="course-meta">${bookmarkCount} question${bookmarkCount === 1 ? "" : "s"} · tap to open list</div>
         </div>
         <svg class="course-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 18l6-6-6-6"/></svg>
       </button>
@@ -8478,26 +8478,13 @@ if (resetBtn) {
     });
   });
 
-  document.querySelectorAll("[data-open-bookmarks]").forEach(el => {
+document.querySelectorAll("[data-open-bookmarks]").forEach(el => {
   el.addEventListener("click", () => {
-    const first = Object.entries(state.bookmarks).find(([_, qs]) => Object.keys(qs).length > 0);
-    if (!first) return;
-    const [examId, qs] = first;
-    const exam = QUIZ_DATA.find(e => e.id === examId);
-    if (!exam) return;
-    const qIdx = parseInt(Object.keys(qs)[0]);
-    state.course = exam.subject;
-    state.exam = exam;
-    state.qIndex = qIdx;
-    state.showExplanation = false;
-    state.streak = 0;
-    state.startTime = Date.now();
-    state.view = "quiz";
+    state.view = "bookmarks";
     render();
     window.scrollTo(0, 0);
   });
 });
-}
 
 /* =====================================================================
    YEARS VIEW
@@ -8805,6 +8792,141 @@ function renderNoteCard(note) {
   `;
 }
 
+/* =====================================================================
+   BOOKMARKS LIST VIEW
+   ===================================================================== */
+function renderBookmarks() {
+  // Collect every bookmarked question with its exam reference
+  const items = [];
+  Object.entries(state.bookmarks).forEach(([examId, qs]) => {
+    const exam = QUIZ_DATA.find(e => e.id === examId);
+    if (!exam) return;
+    Object.keys(qs).forEach(qIdxStr => {
+      const qIdx = parseInt(qIdxStr);
+      const question = exam.questions[qIdx];
+      if (!question) return;
+      items.push({ exam, qIdx, question });
+    });
+  });
+
+  app.innerHTML = `
+    <header class="topbar">
+      <div class="logo-wrap">
+        <button class="icon-btn" id="backFromBookmarks" title="Back" style="margin-right: 4px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+          </svg>
+        </button>
+        <div class="logo-badge" style="background:linear-gradient(135deg,#f5b800,#ff6d00);">
+          ⭐
+        </div>
+        <div>
+          <div class="logo-text">Bookmarks</div>
+          <div class="logo-sub">${items.length} ${items.length === 1 ? "question" : "questions"} saved</div>
+        </div>
+      </div>
+      <div class="avatar">CV</div>
+    </header>
+
+    <div class="crumbs">
+      <span class="crumb link" data-crumb-bookmarks="courses">Courses</span>
+      <span class="crumb-sep">›</span>
+      <span class="crumb current">Bookmarks</span>
+    </div>
+
+    ${items.length === 0
+      ? `<div class="empty-state">
+           <span class="emoji">⭐</span>
+           <div class="title">No bookmarks yet</div>
+           <div class="desc">Open any exam and tap the ⭐ icon to save a question for later.</div>
+         </div>`
+      : `
+        <div class="section-title">
+          Saved Questions
+          <span class="count">${items.length}</span>
+        </div>
+        <div class="list">
+          ${items.map(renderBookmarkCard).join("")}
+        </div>
+      `
+    }
+  `;
+
+  bindBookmarkEvents();
+}
+
+function renderBookmarkCard({ exam, qIdx, question }) {
+  const style = getCourseStyle(exam.subject);
+  // Truncate question text if too long
+  const qText = question.q.length > 120
+    ? question.q.slice(0, 120).trim() + "…"
+    : question.q;
+
+  return `
+    <button class="course-card"
+            data-bookmark-exam="${exam.id}"
+            data-bookmark-q="${qIdx}"
+            style="--course-color:${style.color};--course-color-2:${style.color2};--course-bg:${style.bg};--course-border:${style.border};">
+      <div class="course-thumb" style="background:${style.bg};border-color:${style.border};">
+        ${style.icon}
+      </div>
+      <div class="course-body">
+        <div class="course-title" style="font-size:14px;">
+          ${escapeHtml(exam.subject)} — ${escapeHtml(exam.title)}
+        </div>
+        <div class="course-meta" style="margin-bottom:6px;">
+          <span style="color:${style.color};font-weight:800;">Q${qIdx + 1}</span>
+          <span class="dot">·</span>
+          <span>${escapeHtml(exam.topic)}</span>
+        </div>
+        <div style="font-size:12.5px;color:var(--text-dim);line-height:1.5;">
+          ${escapeHtml(qText)}
+        </div>
+      </div>
+      <svg class="course-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
+  `;
+}
+
+function bindBookmarkEvents() {
+  const back = document.getElementById("backFromBookmarks");
+  if (back) {
+    back.addEventListener("click", () => {
+      state.view = "courses";
+      render();
+      window.scrollTo(0, 0);
+    });
+  }
+
+  document.querySelectorAll("[data-crumb-bookmarks]").forEach(el => {
+    el.addEventListener("click", () => {
+      state.view = "courses";
+      render();
+      window.scrollTo(0, 0);
+    });
+  });
+
+  document.querySelectorAll("[data-bookmark-exam]").forEach(el => {
+    el.addEventListener("click", () => {
+      const examId = el.dataset.bookmarkExam;
+      const qIdx = parseInt(el.dataset.bookmarkQ);
+      const exam = QUIZ_DATA.find(e => e.id === examId);
+      if (!exam) return;
+
+      state.course = exam.subject;
+      state.exam = exam;
+      state.qIndex = qIdx;
+      state.showExplanation = false;
+      state.streak = 0;
+      state.startTime = Date.now();
+      state.view = "quiz";
+      render();
+      window.scrollTo(0, 0);
+    });
+  });
+}
+
+  
 function bindNoteDetailEvents() {
   document.querySelectorAll("[data-crumb-notes]").forEach(el => {
     el.addEventListener("click", () => {
